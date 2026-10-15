@@ -110,76 +110,89 @@
     var fmt = function (s) { return parse(s).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }); };
     var nights = v['in'] ? Math.round((parse(v.out) - parse(v['in'])) / 864e5) : 0;
     var provs = JSON.parse(dataEl.textContent);
-    document.getElementById('hh-res-title').textContent = 'Hotels in ' + q + ': compare ' + provs.length + ' sites';
+    document.getElementById('hh-res-title').textContent = 'Hotels in ' + q.replace(/\b\w/g, function (c) { return c.toUpperCase(); }) + ': compare ' + provs.length + ' sites';
     document.getElementById('hh-res-sub').textContent = (v['in'] ? fmt(v['in']) + ' – ' + fmt(v.out) + ' · ' + nights + ' night' + (nights > 1 ? 's' : '') + ' · ' : '') +
       v.adults + ' guest' + (v.adults > 1 ? 's' : '') + ', ' + v.rooms + ' room' + (v.rooms > 1 ? 's' : '') + '. Each button opens that site’s live prices for the same stay in a new tab.';
     out.innerHTML = provs.map(function (p, n) {
       var href = p.go || fill(v['in'] && p.url ? p.url : p.urlNoDates || p.home);
       var rel = p.go ? 'sponsored nofollow noopener' : 'nofollow noopener';
-      return '<li class="hh-row" data-id="' + esc(p.id) + '" style="--pc:' + esc(p.color) + '"><span class="hh-rank">' + (n + 1) + '</span><span class="hh-mark">' + esc(p.name) + '</span>' +
-        '<span class="hh-note"><span class="hh-state" data-state>Not checked yet</span>' + esc(p.note) + '</span>' +
-        '<label class="hh-price"><span aria-hidden="true">£</span><input inputmode="decimal" autocomplete="off" placeholder="Price you saw" aria-label="Total price you saw on ' + esc(p.name) + ', in pounds" data-price></label>' +
-        '<a class="hh-open" href="' + esc(href) + '" rel="' + rel + '" target="_blank" data-open>Search ' + esc(p.name) + ' ↗</a></li>';
+      return '<li class="hh-row" style="--pc:' + esc(p.color) + '"><span class="hh-rank">' + (n + 1) + '</span><span class="hh-mark">' + esc(p.name) + '</span><span class="hh-note">' + esc(p.note) +
+        '</span><a class="hh-open" href="' + esc(href) + '" rel="' + rel + '" target="_blank" data-open>See live prices ↗</a></li>';
     }).join('');
     out.classList.add('is-live');
+    // Tick off the sites already opened, so it's easy to work down the list
+    out.addEventListener('click', function (e) { var a = e.target.closest('[data-open]'); if (a) a.closest('.hh-row').classList.add('is-done'); });
 
-    /* Price check: no prices are shown until the visitor types the ones they saw on each site
-       (we have no live price feed, and never show made-up prices). Saved in this browser per search. */
-    var icon = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1"/></svg>';
-    var box = document.createElement('div');
-    box.className = 'hh-check';
-    box.setAttribute('aria-live', 'polite');
-    box.innerHTML = '<div class="hh-check-top"><strong>' + icon + 'Your price check</strong><span data-count></span></div><div class="hh-meter" aria-hidden="true"><span data-bar></span></div><p data-msg></p>';
-    out.parentNode.insertBefore(box, out);
-    var key = 'hh:' + [v.q.toLowerCase(), v['in'], v.out, v.adults, v.rooms].join('|');
-    var st = { opened: {}, prices: {} };
-    try { st = JSON.parse(localStorage.getItem(key)) || st; } catch (e) { /* storage blocked */ }
-    var save = function () { try { localStorage.setItem(key, JSON.stringify(st)); } catch (e) { /* ignore */ } };
-    var gbp = function (x) { return '£' + x.toLocaleString('en-GB', { minimumFractionDigits: x % 1 ? 2 : 0, maximumFractionDigits: 2 }); };
-    var nameOf = {}; provs.forEach(function (p) { nameOf[p.id] = p.name; });
-    var rows = Array.prototype.slice.call(out.querySelectorAll('.hh-row'));
-    rows.forEach(function (r) { var x = st.prices[r.getAttribute('data-id')]; if (x) r.querySelector('[data-price]').value = x; });
-
-    function update() {
-      var ids = Object.keys(st.prices).filter(function (id) { return st.prices[id] > 0 && nameOf[id]; });
-      var min = Infinity, max = 0, best = '', worst = '';
-      ids.forEach(function (id) { var x = st.prices[id]; if (x < min) { min = x; best = id; } if (x > max) { max = x; worst = id; } });
-      var checked = 0;
-      rows.forEach(function (r) {
-        var id = r.getAttribute('data-id'), x = st.prices[id], s = r.querySelector('[data-state]');
-        var done = !!(st.opened[id] || x);
-        if (done) checked++;
-        r.classList.toggle('is-done', done);
-        r.classList.toggle('is-best', ids.length > 1 && id === best);
-        s.className = 'hh-state' + (x ? (ids.length > 1 && id === best ? ' best' : ' priced') : done ? ' opened' : '');
-        s.textContent = x ? (ids.length > 1 && id === best ? 'Cheapest: ' + gbp(x) : ids.length > 1 ? gbp(x) + ' · +' + gbp(Math.round((x - min) * 100) / 100) : gbp(x)) : done ? 'Opened: add the price' : 'Not checked yet';
-      });
-      var left = provs.length - checked;
-      box.querySelector('[data-count]').textContent = checked + ' of ' + provs.length + ' sites checked';
-      box.querySelector('[data-bar]').style.width = Math.round(checked / provs.length * 100) + '%';
-      var perNight = nights > 1 ? ' (' + gbp(Math.round(min / nights * 100) / 100) + ' a night)' : '';
-      var msg = !ids.length ? 'The same room can cost different amounts on different sites. Open each one, then type the <b>total price</b> you see for the same room so we can show you the cheapest.'
-        : ids.length === 1 ? '<b>' + gbp(min) + '</b> on ' + esc(nameOf[best]) + '. ' + (left ? 'Check ' + left + ' more site' + (left > 1 ? 's' : '') + ' to see if anyone beats it.' : 'Add prices from the other sites to compare.')
-        : 'Cheapest so far: <b>' + gbp(min) + '</b> on ' + esc(nameOf[best]) + perNight + (max > min ? ', <b class="save">' + gbp(Math.round((max - min) * 100) / 100) + ' less</b> than ' + esc(nameOf[worst]) : '') + '. ' +
-          (left ? left + ' site' + (left > 1 ? 's' : '') + ' still to check: one of them could be cheaper.' : 'All sites checked: book with ' + esc(nameOf[best]) + '.');
-      box.querySelector('[data-msg]').innerHTML = msg;
-      box.classList.toggle('has-best', ids.length > 1);
-    }
-    out.addEventListener('click', function (e) {
-      var a = e.target.closest('[data-open]');
-      if (!a) return;
-      st.opened[a.closest('.hh-row').getAttribute('data-id')] = 1;
-      save(); update();
-      setTimeout(function () { var i = a.closest('.hh-row').querySelector('[data-price]'); if (i && !i.value) i.focus({ preventScroll: true }); }, 300);
-    });
-    out.addEventListener('input', function (e) {
-      if (!e.target.matches('[data-price]')) return;
-      var x = parseFloat(e.target.value.replace(/[£,\s]/g, ''));
-      var id = e.target.closest('.hh-row').getAttribute('data-id');
-      if (x > 0 && x < 100000) st.prices[id] = Math.round(x * 100) / 100; else delete st.prices[id];
-      save(); update();
-    });
-    update();
+    /* Top hotels: REAL hotels for this destination from assets/hotels.json (OpenStreetMap + Wikidata,
+       made by tools/fetch-hotels.js). Each gets "See price" buttons that open that hotel on each site
+       with the same dates. No prices are shown here: only the booking sites have them. */
+    var HOTEL_SITES = ['booking', 'hotelscom', 'expedia', 'google'];
+    // Free-licence Unsplash hotel photos for hotels with no photo of their own (labelled "Illustrative photo")
+    var STOCK = ['photo-1611892440504-42a792e24d32', 'photo-1618773928121-c32242e63f39', 'photo-1621293954908-907159247fc8', 'photo-1566665797739-1674de7a421a',
+      'photo-1496417263034-38ec4f0b665a', 'photo-1761039265583-9489b4246454', 'photo-1631049307264-da0ec9d70304', 'photo-1584622650111-993a426fbf0a', 'photo-1625244724120-1fd1d34d00f6'];
+    var norm = function (s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').replace(/\b(hotels?|deals?|cheap|uk|in|near)\b/g, ' ').replace(/\s+/g, ' ').trim(); };
+    // Not in the saved list? Ask OpenStreetMap's free Nominatim search for hotels there (cached in this browser for 2 weeks)
+    var live = function (q) {
+      var ck = 'hh-hotels:' + norm(q), hit = null;
+      try { hit = JSON.parse(localStorage.getItem(ck)); } catch (e) { /* storage blocked */ }
+      if (hit && hit.t > Date.now() - 12096e5) return Promise.resolve(hit.place);
+      return fetch('https://nominatim.openstreetmap.org/search?q=' + encodeURIComponent('hotels in ' + q) + '&countrycodes=gb&format=jsonv2&limit=30&extratags=1&addressdetails=1')
+        .then(function (r) { return r.json(); }).then(function (rows) {
+          var seen = {}, list = rows.filter(function (x) { return x.type === 'hotel' && x.name && !seen[x.name.toLowerCase()] && (seen[x.name.toLowerCase()] = 1); }).map(function (x) {
+            var t = x.extratags || {}, a = x.address || {}, st = parseFloat(t.stars);
+            return { name: x.name, stars: st >= 1 && st <= 5 ? st : undefined, area: a.road || a.suburb, wd: t.wikidata, s: (st || 0) * 10 + (t.wikidata ? 6 : 0) + (x.name.split(' ').length > 1 ? 2 : 0) + (t.website ? 1 : 0) };
+          }).sort(function (a, b) { return b.s - a.s; }).slice(0, 6);
+          var town = rows[0] && rows[0].address ? rows[0].address.city || rows[0].address.town || rows[0].address.village : '';
+          var place = { q: town || q.replace(/\b\w/g, function (c) { return c.toUpperCase(); }), hotels: list };
+          // Photos for hotels that have a Wikidata entry (free licences on Wikimedia Commons)
+          return Promise.all(list.map(function (h) {
+            if (!h.wd) return null;
+            return fetch('https://www.wikidata.org/w/api.php?action=wbgetclaims&entity=' + h.wd + '&property=P18&format=json&origin=*').then(function (r) { return r.json(); }).then(function (j) {
+              var f = j.claims && j.claims.P18 && j.claims.P18[0].mainsnak.datavalue.value;
+              if (f) { f = encodeURIComponent(f.replace(/ /g, '_')); h.photo = { src: 'https://commons.wikimedia.org/wiki/Special:FilePath/' + f + '?width=640', page: 'https://commons.wikimedia.org/wiki/File:' + f }; }
+            }).catch(function () {});
+          })).then(function () {
+            list.forEach(function (h) { delete h.wd; delete h.s; });
+            if (list.length) try { localStorage.setItem(ck, JSON.stringify({ t: Date.now(), place: place })); } catch (e) { /* ignore */ }
+            return place;
+          });
+        });
+    };
+    fetch('/assets/hotels.json').then(function (r) { return r.json(); }).catch(function () { return { places: {} }; }).then(function (data) {
+      var k = norm(q), place = data.places[k];
+      if (!place) Object.keys(data.places).some(function (pk) { var n = norm(pk); if (n && (k.indexOf(n) === 0 || n.indexOf(k) === 0)) { place = data.places[pk]; return true; } return false; });
+      return place && place.hotels.length ? place : live(q);
+    }).then(function (place) {
+      if (!place || !place.hotels.length) return;
+      var sites = provs.filter(function (p) { return HOTEL_SITES.indexOf(p.id) > -1 && (p.go || p.url); });
+      var stars = function (n) { return n ? '<span class="hh-stars" title="' + n + '-star hotel (OpenStreetMap)">' + new Array(Math.floor(n) + 1).join('★') + '</span>' : ''; };
+      var card = function (h, n) {
+        var vq = { q: h.name + ', ' + place.q };
+        var link = function (p) {
+          if (p.go) return p.go;
+          var t = v['in'] && p.url ? p.url : p.urlNoDates || p.url;
+          return t.replace(/{(q|qp|in|out|adults|rooms)}/g, function (m, x) { return x === 'q' ? encodeURIComponent(vq.q) : x === 'qp' ? encodeURIComponent(vq.q.replace(/\s+/g, '-')) : encodeURIComponent(v[x] || ''); });
+        };
+        var stock = STOCK[[].reduce.call(h.name, function (t, c) { return t + c.charCodeAt(0); }, 0) % STOCK.length];
+        var img = h.photo ? '<img src="' + esc(h.photo.src) + '" alt="' + esc(h.name) + '" loading="lazy" width="640" height="420">'
+          : '<img src="https://images.unsplash.com/' + stock + '?w=640&h=360&fit=crop&q=70&auto=format" alt="" loading="lazy" width="640" height="360"><span class="hh-illus">Illustrative photo</span>';
+        return '<article class="hh-hotel' + (n > 2 ? ' is-more' : '') + '"><div class="hh-hotel-img">' + img + (n === 0 ? '<span class="hh-badge">Popular pick</span>' : '') +
+          (h.photo ? '<a class="hh-hotel-credit" href="' + esc(h.photo.page) + '" rel="nofollow noopener" target="_blank">Photo: Wikimedia Commons</a>' : '') + '</div>' +
+          '<div class="hh-hotel-body">' + stars(h.stars) + '<h3>' + esc(h.name) + '</h3><p class="hh-place">' + esc((h.area ? h.area + ', ' : '') + place.q) + '</p>' +
+          '<ul class="hh-hprices">' + sites.map(function (p) {
+            return '<li style="--pc:' + esc(p.color) + '"><a href="' + esc(link(p)) + '" rel="' + (p.go ? 'sponsored ' : '') + 'nofollow noopener" target="_blank"><span class="hh-hp-name">' + esc(p.name) + '</span><span class="hh-hp-go">Live price ↗</span></a></li>';
+          }).join('') + '</ul></div></article>';
+      };
+      var sec = document.createElement('div');
+      sec.className = 'hh-top';
+      sec.innerHTML = '<div class="hh-top-head"><h3>Top hotels in ' + esc(place.q) + '</h3><p>Tap a site to see its live price for ' + (v['in'] ? 'your dates' : 'this hotel') + ' in a new tab. Sites often charge different amounts for the same room, so it pays to check two or three.</p></div>' +
+        '<div class="hh-hotels">' + place.hotels.map(card).join('') + '</div>' +
+        (place.hotels.length > 3 ? '<button type="button" class="hh-more">Show ' + (place.hotels.length - 3) + ' more hotels</button>' : '') +
+        '<p class="hh-src">Hotel list: <a href="https://www.openstreetmap.org/copyright" rel="nofollow noopener" target="_blank">© OpenStreetMap contributors</a>. Not a price or quality ranking. Prices are set by each booking site.</p>';
+      out.parentNode.insertBefore(sec, out);
+      var more = sec.querySelector('.hh-more');
+      if (more) more.addEventListener('click', function () { sec.classList.add('show-all'); more.remove(); });
+    }).catch(function () { /* no hotel list: the site list below still works */ });
   }
 
   // /search/: offer a straight price comparison for the search term

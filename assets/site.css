@@ -442,42 +442,31 @@ section h2, .block-head h2 { font-size: clamp(22px, 2.6vw, 30px); }
 .nav-compact .hh-head-cta { margin-left: auto; }
 @media (max-width: 560px) { .menu { margin-left: auto; } }
 
-/* Price check on /compare/: visitor-entered prices, progress meter, cheapest highlight */
-.hh-check { background: var(--navy); color: #D6DDF0; border-radius: 14px; padding: 16px 18px; margin-bottom: 14px; box-shadow: var(--shadow); border: 2px solid transparent; transition: border-color .3s; }
-.hh-check.has-best { border-color: var(--gold); }
-.hh-check-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
-.hh-check-top strong { display: inline-flex; align-items: center; gap: 8px; color: #fff; font-size: 17px; }
-.hh-check-top strong svg { color: var(--gold); }
-.hh-check-top span { font-size: 13px; font-weight: 700; color: var(--gold); }
-.hh-meter { height: 8px; border-radius: 99px; background: rgba(255,255,255,.14); margin: 10px 0; overflow: hidden; }
-.hh-meter span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), #7EE2A8); border-radius: inherit; transition: width .4s; }
-.hh-check p { margin: 0; font-size: 15px; }
-.hh-check b { color: #fff; }
-.hh-check b.save { color: #7EE2A8; }
-.hh-row { grid-template-columns: 34px minmax(130px, 190px) 1fr 150px auto; }
-.hh-note { display: flex; flex-direction: column; gap: 4px; }
-.hh-state { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 800; padding: 3px 9px; border-radius: 999px; background: #FFF4D6; color: #8A5A00; }
-.hh-state::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); animation: hh-pulse 1.4s ease-in-out infinite; }
-.hh-state.opened { background: #EEF1F8; color: var(--ink-2); }
-.hh-state.opened::before { background: var(--ink-3); animation: none; }
-.hh-state.priced { background: #EEF1F8; color: var(--navy); }
-.hh-state.priced::before, .hh-state.best::before { display: none; }
-.hh-state.best { background: var(--green); color: #fff; }
-@keyframes hh-pulse { 50% { opacity: .3; transform: scale(.7); } }
-@media (prefers-reduced-motion: reduce) { .hh-state::before { animation: none; } }
-.hh-price { display: flex; align-items: center; gap: 4px; border: 1.5px solid var(--line); border-radius: 9px; padding: 0 10px; background: #fff; height: 42px; }
-.hh-price:focus-within { border-color: var(--navy); }
-.hh-price span { font-weight: 800; color: var(--ink-3); }
-.hh-price input { border: 0; outline: 0; width: 100%; min-width: 0; font: 700 15px var(--font); color: var(--navy); background: transparent; }
-.hh-price input::placeholder { font-weight: 500; font-size: 13px; color: #9AA3B9; }
-.hh-row.is-done { opacity: 1; }
-.hh-row.is-best { border-color: var(--green); border-left-color: var(--green); box-shadow: 0 0 0 2px rgba(11,132,87,.25), var(--shadow); }
-.hh-row.is-best .hh-price { border-color: var(--green); background: #E7F5EE; }
-@media (max-width: 680px) {
-  .hh-row { grid-template-columns: 30px 1fr 1fr; }
-  .hh-mark { grid-column: 2 / -1; }
-  .hh-note { grid-column: 2 / -1; }
-  .hh-price { grid-column: 1 / 3; }
-  .hh-open { grid-column: 3; padding: 11px 10px; font-size: 13.5px; }
-}
-@media (max-width: 400px) { .hh-price { grid-column: 1 / -1; } .hh-open { grid-column: 1 / -1; } }
+/* Top hotels on /compare/ (real hotels from assets/hotels.json, per-site "See price" links) */
+.hh-top { margin-bottom: 22px; }
+.hh-top-head h3 { font-size: 21px; margin: 0 0 4px; }
+.hh-top-head p { margin: 0 0 12px; color: var(--ink-2); font-size: 14.5px; }
+.hh-hotels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.hh-hotel { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.hh-hotel.is-more { display: none; }
+.show-all .hh-hotel.is-more { display: flex; }
+.hh-hotel-img { position: relative; aspect-ratio: 16 / 9; background: linear-gradient(135deg, var(--navy), var(--navy-2)); }
+.hh-hotel-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hh-ph { position: absolute; inset: 0; display: grid; place-items: center; font: 800 54px var(--display); color: rgba(255,255,255,.22); }
+.hh-ph::after { content: "🛏"; position: absolute; right: 12px; bottom: 8px; font-size: 22px; opacity: .6; }
+.hh-hotel-credit { position: absolute; right: 6px; bottom: 5px; font-size: 10.5px; color: #fff; background: rgba(0,0,0,.45); padding: 1px 6px; border-radius: 4px; text-decoration: none; }
+.hh-hotel-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.hh-stars { color: #F5A400; font-size: 14px; letter-spacing: 1px; }
+.hh-hotel h3 { font-size: 17px; line-height: 1.25; }
+.hh-hprices { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+.hh-hprices a { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 10px; border: 1px solid var(--line); border-left: 4px solid var(--pc); border-radius: 8px; text-decoration: none; transition: background .15s, border-color .15s; }
+.hh-hprices a:hover { background: var(--surface-2); border-color: var(--pc); }
+.hh-hp-name { font-weight: 800; font-size: 14px; color: var(--pc); }
+.hh-hp-go { font-size: 13px; font-weight: 800; color: #fff; background: var(--green); padding: 5px 10px; border-radius: 6px; white-space: nowrap; }
+.hh-more { margin-top: 12px; font: 800 14.5px var(--font); background: #fff; color: var(--navy); border: 1.5px solid var(--navy); border-radius: 9px; padding: 10px 16px; cursor: pointer; }
+.hh-more:hover { background: var(--navy); color: #fff; }
+.hh-src { margin: 10px 0 0; font-size: 12.5px; color: var(--ink-3); }
+.hh-src a { color: inherit; }
+@media (max-width: 900px) { .hh-hotels { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .hh-hotels { grid-template-columns: 1fr; } }
+.hh-illus { position: absolute; left: 8px; bottom: 6px; font-size: 10.5px; font-weight: 700; color: #fff; background: rgba(15,26,60,.65); padding: 2px 7px; border-radius: 4px; }

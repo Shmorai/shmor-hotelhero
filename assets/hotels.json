@@ -1,0 +1,3731 @@
+{
+ "places": {
+  "york": {
+   "q": "York",
+   "hotels": [
+    {
+     "name": "The Grand Hotel & Spa",
+     "stars": 4,
+     "area": "Station Rise",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/York_MMB_41_Cedar_Court_Grand_Hotel_and_Spa.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:York_MMB_41_Cedar_Court_Grand_Hotel_and_Spa.jpg"
+     }
+    },
+    {
+     "name": "Hilton York",
+     "stars": 4,
+     "area": "Tower Street"
+    },
+    {
+     "name": "DoubleTree by Hilton York",
+     "stars": 4,
+     "area": "St. Maurice's Road"
+    },
+    {
+     "name": "Hampton York",
+     "stars": 3,
+     "area": "Toft Green"
+    },
+    {
+     "name": "Hampton by Hilton York Piccadilly",
+     "area": "Piccadilly",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampton_by_Hilton_Piccadilly_York_Jul25.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hampton_by_Hilton_Piccadilly_York_Jul25.jpg"
+     }
+    },
+    {
+     "name": "Watergate Inn",
+     "area": "Walmgate",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Watergate_Inn_Walmgate_York.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Watergate_Inn_Walmgate_York.jpg"
+     }
+    }
+   ]
+  },
+  "london": {
+   "q": "London",
+   "hotels": [
+    {
+     "name": "The Trafalgar St. James London, Curio Collection by Hilton",
+     "stars": 5,
+     "area": "Spring Gardens",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Trafalgar_(5820447213).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Trafalgar_(5820447213).jpg"
+     }
+    },
+    {
+     "name": "Great Scotland Yard Hotel",
+     "stars": 5,
+     "area": "Great Scotland Yard"
+    },
+    {
+     "name": "The Ned",
+     "stars": 5,
+     "area": "Poultry",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Midland_Bank%2C_City_of_London.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Midland_Bank%2C_City_of_London.jpg"
+     }
+    },
+    {
+     "name": "St Martins Lane Hotel",
+     "area": "St Martin's Lane"
+    },
+    {
+     "name": "The Royal Horseguards Hotel, London",
+     "area": "Whitehall Court",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Whitehall_Court_(35146651290).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Whitehall_Court_(35146651290).jpg"
+     }
+    },
+    {
+     "name": "Corinthia Hotel",
+     "area": "Whitehall Place",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Metropole_Hotel%2C_Northumberland_Avenue%2C_London.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Metropole_Hotel%2C_Northumberland_Avenue%2C_London.jpg"
+     }
+    }
+   ]
+  },
+  "edinburgh": {
+   "q": "Edinburgh",
+   "hotels": [
+    {
+     "name": "Hilton Edinburgh Carlton",
+     "stars": 4,
+     "area": "North Bridge",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edinburgh_-_Hilton_Edinburgh_Carlton_-_20140427123304.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Edinburgh_-_Hilton_Edinburgh_Carlton_-_20140427123304.jpg"
+     }
+    },
+    {
+     "name": "Radisson Blu Hotel",
+     "stars": 4,
+     "area": "High Street"
+    },
+    {
+     "name": "Apex Waterloo Place Hotel",
+     "stars": 4,
+     "area": "Waterloo Place",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Apex_Hotel%2C_Waterloo_Place_-_geograph.org.uk_-_1608509.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Apex_Hotel%2C_Waterloo_Place_-_geograph.org.uk_-_1608509.jpg"
+     }
+    },
+    {
+     "name": "Hotel Indigo",
+     "stars": 3,
+     "area": "Princes Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_British_Hotel%2C_Princes_St_(geograph_2371199).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Royal_British_Hotel%2C_Princes_St_(geograph_2371199).jpg"
+     }
+    },
+    {
+     "name": "The Scotsman Hotel",
+     "area": "North Bridge",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/ScotsmanDayExterior.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:ScotsmanDayExterior.jpg"
+     }
+    },
+    {
+     "name": "Market Street Hotel",
+     "area": "Market Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Market_Street_Hotel%2C_Edinburgh_-_geograph.org.uk_-_6114084.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Market_Street_Hotel%2C_Edinburgh_-_geograph.org.uk_-_6114084.jpg"
+     }
+    }
+   ]
+  },
+  "manchester": {
+   "q": "Manchester",
+   "hotels": [
+    {
+     "name": "Maldron Hotel Manchester Cathedral Quarter",
+     "stars": 4,
+     "area": "Chapel Street"
+    },
+    {
+     "name": "King Street Townhouse",
+     "stars": 4,
+     "area": "Booth Street"
+    },
+    {
+     "name": "Midland Hotel",
+     "area": "Peter Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Midland_Hotel_west%2C_Manchester.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Midland_Hotel_west%2C_Manchester.jpg"
+     }
+    },
+    {
+     "name": "Radisson",
+     "area": "Peter Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Free_Trade_Hall%2C_Manchester.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Free_Trade_Hall%2C_Manchester.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Lower Mosley Street"
+    },
+    {
+     "name": "Wilde Aparthotels",
+     "area": "Dickinson Street"
+    }
+   ]
+  },
+  "bath": {
+   "q": "Bath",
+   "hotels": [
+    {
+     "name": "DoubleTree by Hilton Bath",
+     "stars": 4,
+     "area": "Walcot Street"
+    },
+    {
+     "name": "The Gainsborough Bath Spa",
+     "area": "Beau Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Gainsborough_Bath_Spa.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Gainsborough_Bath_Spa.jpg"
+     }
+    },
+    {
+     "name": "The Abbey Hotel",
+     "area": "North Parade"
+    },
+    {
+     "name": "Haringtons Hotel",
+     "area": "Queen Street"
+    },
+    {
+     "name": "Hampton by Hilton Bath City",
+     "area": "Avon Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampton_by_Hilton_Bath_City.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hampton_by_Hilton_Bath_City.jpg"
+     }
+    },
+    {
+     "name": "The Francis Hotel",
+     "area": "Queen Square",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Queensquaresouthside_(Francis_Hotel).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Queensquaresouthside_(Francis_Hotel).jpg"
+     }
+    }
+   ]
+  },
+  "liverpool": {
+   "q": "Liverpool",
+   "hotels": [
+    {
+     "name": "DoubleTree by Hilton Hotel & Spa Liverpool",
+     "stars": 4,
+     "area": "Sir Thomas Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/DoubleTree_by_Hilton_Hotel_%26_Spa_Liverpool.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:DoubleTree_by_Hilton_Hotel_%26_Spa_Liverpool.jpg"
+     }
+    },
+    {
+     "name": "Hilton Liverpool City Centre",
+     "stars": 4,
+     "area": "Thomas Steers Way",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hilton_Liverpool_City_Centre_2.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hilton_Liverpool_City_Centre_2.jpg"
+     }
+    },
+    {
+     "name": "Atlantic Tower Hotel",
+     "stars": 4,
+     "area": "Chapel Street"
+    },
+    {
+     "name": "Hard Days Night Hotel",
+     "area": "North John Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hard_Days_Night_Hotel%2C_Liverpool.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hard_Days_Night_Hotel%2C_Liverpool.jpg"
+     }
+    },
+    {
+     "name": "62 Castle Street Hotel",
+     "area": "Castle Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/60_%26_62_Castle_Street_2018_-_Castle_Street.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:60_%26_62_Castle_Street_2018_-_Castle_Street.jpg"
+     }
+    },
+    {
+     "name": "Malmaison",
+     "area": "William Jessop Way",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Malmaison_Hotel%2C_Princes_Dock%2C_Liverpool_(geograph_2978564).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Malmaison_Hotel%2C_Princes_Dock%2C_Liverpool_(geograph_2978564).jpg"
+     }
+    }
+   ]
+  },
+  "brighton": {
+   "q": "Brighton",
+   "hotels": [
+    {
+     "name": "DoubleTree by Hilton Brighton Metropole",
+     "stars": 4,
+     "area": "Kings Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/DoubleTree_by_Hilton_Brighton_Metropole_2023-08-27.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:DoubleTree_by_Hilton_Brighton_Metropole_2023-08-27.jpg"
+     }
+    },
+    {
+     "name": "Royal Albion Hotel",
+     "area": "Old Steine",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Albion_Hotel_-_geograph.org.uk_-_1116635.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Royal_Albion_Hotel_-_geograph.org.uk_-_1116635.jpg"
+     }
+    },
+    {
+     "name": "New Steine",
+     "area": "New Steine"
+    },
+    {
+     "name": "Gulliver's Hotel",
+     "area": "New Steine"
+    },
+    {
+     "name": "The Charm Brighton Boutique Hotel",
+     "area": "New Steine"
+    },
+    {
+     "name": "The Old Ship Hotel",
+     "area": "Ship Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_Ship_Hotel%2C_Kings_Road%2C_Brighton_(January_2010).JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Old_Ship_Hotel%2C_Kings_Road%2C_Brighton_(January_2010).JPG"
+     }
+    }
+   ]
+  },
+  "glasgow": {
+   "q": "Glasgow",
+   "hotels": [
+    {
+     "name": "Carlton George",
+     "stars": 4,
+     "area": "West George Street"
+    },
+    {
+     "name": "Maldron Hotel Glasgow City",
+     "stars": 4,
+     "area": "Renfrew Street"
+    },
+    {
+     "name": "Ibis Styles Glasgow Centre George Square",
+     "stars": 3,
+     "area": "Miller Street"
+    },
+    {
+     "name": "Millennium Hotel Glasgow",
+     "area": "George Square",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/DSCN3226_Copthorne_Hotel_from_roof_of_College_of_Building_and_Printing.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:DSCN3226_Copthorne_Hotel_from_roof_of_College_of_Building_and_Printing.jpg"
+     }
+    },
+    {
+     "name": "Merchant City Inn",
+     "area": "Virginia Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Merchant_City_Inn.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Merchant_City_Inn.jpg"
+     }
+    },
+    {
+     "name": "CitizenM Hotel",
+     "area": "Renfrew Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Citizen_M_Hotel_-_geograph.org.uk_-_2831156.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Citizen_M_Hotel_-_geograph.org.uk_-_2831156.jpg"
+     }
+    }
+   ]
+  },
+  "cornwall": {
+   "q": "Cornwall",
+   "hotels": [
+    {
+     "name": "The Old Quay House Hotel",
+     "area": "Fore Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fowey_(2021-09-07)_48.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Fowey_(2021-09-07)_48.jpg"
+     }
+    },
+    {
+     "name": "King of Prussia",
+     "area": "Town Quay",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/King_of_Prussia_pub%2C_Town_Quay%2C_Fowey%2C_Cornwall_-_February_2024.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:King_of_Prussia_pub%2C_Town_Quay%2C_Fowey%2C_Cornwall_-_February_2024.jpg"
+     }
+    },
+    {
+     "name": "Fowey Hall Hotel",
+     "area": "Hanson Drive",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fowey_(2021-09-07)_02.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Fowey_(2021-09-07)_02.jpg"
+     }
+    },
+    {
+     "name": "Fowey Harbour Hotel",
+     "area": "Esplanade",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fowey_Harbour_Hotel_-_geograph.org.uk_-_6947539.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Fowey_Harbour_Hotel_-_geograph.org.uk_-_6947539.jpg"
+     }
+    },
+    {
+     "name": "Tredethy House",
+     "area": "Helland Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Helland_Bridge%2C_a_%22Stick_Insect%22_at_Tredethy_-_geograph.org.uk_-_222558.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Helland_Bridge%2C_a_%22Stick_Insect%22_at_Tredethy_-_geograph.org.uk_-_222558.jpg"
+     }
+    },
+    {
+     "name": "St Benet’s Abbey",
+     "area": "Truro Road"
+    }
+   ]
+  },
+  "st ives cornwall": {
+   "q": "St Ives, Cornwall",
+   "hotels": [
+    {
+     "name": "The Garrack Hotel",
+     "stars": 3
+    },
+    {
+     "name": "Carbis Bay Hotel",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/CarbisBayCornwallUK.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:CarbisBayCornwallUK.jpg"
+     }
+    },
+    {
+     "name": "The Western Hotel",
+     "area": "Gabriel Street"
+    },
+    {
+     "name": "St Ives Harbour Hotel",
+     "area": "The Terrace",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/St_Ives_Harbour_Hotel_-_geograph.org.uk_-_5749351.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:St_Ives_Harbour_Hotel_-_geograph.org.uk_-_5749351.jpg"
+     }
+    },
+    {
+     "name": "Tregenna Castle Hotel",
+     "area": "Tregenna Castle Valley Bridge",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tregenna_Castle-by-Alan-Simkins.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Tregenna_Castle-by-Alan-Simkins.jpg"
+     }
+    },
+    {
+     "name": "Lanyons House",
+     "area": "Bishops Road"
+    }
+   ]
+  },
+  "lake district": {
+   "q": "Lake District",
+   "hotels": [
+    {
+     "name": "Langdale Hotel",
+     "stars": 4,
+     "area": "Glazing Mill Hill"
+    },
+    {
+     "name": "Victorian House Hotel",
+     "stars": 2,
+     "area": "Broadgate"
+    },
+    {
+     "name": "Grasmere Hotel",
+     "stars": 2,
+     "area": "Broadgate"
+    },
+    {
+     "name": "Dale Lodge Hotel",
+     "area": "Red Bank Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dale_Lodge_Hotel_2.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Dale_Lodge_Hotel_2.jpg"
+     }
+    },
+    {
+     "name": "Swan Hotel",
+     "area": "A591",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Swan_Hotel%2C_Grasmere.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Swan_Hotel%2C_Grasmere.jpg"
+     }
+    },
+    {
+     "name": "The Lancrigg Hotel",
+     "area": "Easedale Road"
+    }
+   ]
+  },
+  "cotswolds": {
+   "q": "Cotswolds",
+   "hotels": [
+    {
+     "name": "Mercure Hatfield Oak Hotel",
+     "area": "Roehyde Way",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel_on_Roehyde_Way%2C_Hatfield_-_geograph.org.uk_-_83449.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hotel_on_Roehyde_Way%2C_Hatfield_-_geograph.org.uk_-_83449.jpg"
+     }
+    },
+    {
+     "name": "The Comet",
+     "area": "St Albans Road West",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Comet_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Comet_Hotel.jpg"
+     }
+    },
+    {
+     "name": "Travelodge Hatfield Central",
+     "area": "Comet Way"
+    },
+    {
+     "name": "Homestead Court Hotel",
+     "area": "Homestead Lane"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Wellfield Road"
+    },
+    {
+     "name": "Holiday Inn Express",
+     "area": "The Bell Roundabout"
+    }
+   ]
+  },
+  "isle of skye": {
+   "q": "Isle of Skye",
+   "hotels": [
+    {
+     "name": "Toravaig House Hotel",
+     "area": "A851"
+    },
+    {
+     "name": "Hotel Eilean Iarmain",
+     "area": "Slèite"
+    },
+    {
+     "name": "Kinloch Lodge",
+     "area": "A851"
+    },
+    {
+     "name": "Duisdale House Hotel",
+     "area": "A851"
+    }
+   ]
+  },
+  "whitby": {
+   "q": "Whitby",
+   "hotels": [
+    {
+     "name": "Holiday Inn Ellesmere Port",
+     "stars": 3,
+     "area": "Lower Mersey Street"
+    },
+    {
+     "name": "The Angel Hotel",
+     "area": "New Quay Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Angel_Hotel%2C_Whitby_-_geograph.org.uk_-_5582770.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Angel_Hotel%2C_Whitby_-_geograph.org.uk_-_5582770.jpg"
+     }
+    },
+    {
+     "name": "Bagdale Hall Hotel & Restaurant",
+     "area": "Bagdale"
+    },
+    {
+     "name": "Ruswarp Hall",
+     "area": "High Street"
+    },
+    {
+     "name": "George Hotel",
+     "area": "Baxtergate"
+    },
+    {
+     "name": "Royal Hotel",
+     "area": "North Terrace"
+    }
+   ]
+  },
+  "cardiff": {
+   "q": "Cardiff",
+   "hotels": [
+    {
+     "name": "Hilton Cardiff",
+     "stars": 4,
+     "area": "Kingsway",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Hilton_Hotel_and_adjacent_tower_block_-_Cardiff_-_geograph.org.uk_-_1558074.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Hilton_Hotel_and_adjacent_tower_block_-_Cardiff_-_geograph.org.uk_-_1558074.jpg"
+     }
+    },
+    {
+     "name": "The Angel Hotel",
+     "stars": 4,
+     "area": "Castle Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Angel_Hotel_-_geograph.org.uk_-_1453512.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Angel_Hotel_-_geograph.org.uk_-_1453512.jpg"
+     }
+    },
+    {
+     "name": "Marriott",
+     "stars": 4,
+     "area": "Mill Lane",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cardiff_Marriott_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Cardiff_Marriott_Hotel.jpg"
+     }
+    },
+    {
+     "name": "Holiday Inn",
+     "stars": 3,
+     "area": "Castle Street"
+    },
+    {
+     "name": "Sandringham Hotel",
+     "area": "Saint Mary Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandringham_Hotel%2C_St_Mary_Street%2C_Cardiff.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Sandringham_Hotel%2C_St_Mary_Street%2C_Cardiff.jpg"
+     }
+    },
+    {
+     "name": "The Royal Hotel",
+     "area": "Saint Mary Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Hotel%2C_Cardiff.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Royal_Hotel%2C_Cardiff.jpg"
+     }
+    }
+   ]
+  },
+  "belfast": {
+   "q": "Belfast",
+   "hotels": [
+    {
+     "name": "voco",
+     "stars": 4,
+     "area": "Cromac Place"
+    },
+    {
+     "name": "Maldron Hotel Belfast City",
+     "area": "Brunswick Street"
+    },
+    {
+     "name": "Grand Central Hotel",
+     "area": "Bedford Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Windsor_House%2C_Belfast%2C_May_2010_(02).JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Windsor_House%2C_Belfast%2C_May_2010_(02).JPG"
+     }
+    },
+    {
+     "name": "Europa Hotel",
+     "area": "Great Victoria Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Europa_Hotel_2.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Europa_Hotel_2.jpg"
+     }
+    },
+    {
+     "name": "The Merchant Hotel",
+     "area": "Skipper Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Merchant_Hotel_-_geograph.org.uk_-_485099.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Merchant_Hotel_-_geograph.org.uk_-_485099.jpg"
+     }
+    },
+    {
+     "name": "DoubleTree by Hilton Belfast City Ten Square",
+     "area": "Donegall Square South"
+    }
+   ]
+  },
+  "birmingham": {
+   "q": "Birmingham",
+   "hotels": [
+    {
+     "name": "Grand Hotel",
+     "stars": 5,
+     "area": "Church Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Hotel_Renovation.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Grand_Hotel_Renovation.jpg"
+     }
+    },
+    {
+     "name": "Hyatt Regency Birmingham",
+     "stars": 4,
+     "area": "Bridge Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Birmingham_-_Hyawt.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Birmingham_-_Hyawt.JPG"
+     }
+    },
+    {
+     "name": "Holiday Inn Express",
+     "area": "St Chads Queensway",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1_snow_hill_plaza.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:1_snow_hill_plaza.jpg"
+     }
+    },
+    {
+     "name": "The Burlington Hotel",
+     "area": "New Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_south_front_of_the_Burlington_Hotel_-_geograph.org.uk_-_2094307.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_south_front_of_the_Burlington_Hotel_-_geograph.org.uk_-_2094307.jpg"
+     }
+    },
+    {
+     "name": "Radisson Blu hotel",
+     "area": "Holloway Circus Queensway",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Holloway_Circus_Tower_Birmingham_(cropped).JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Holloway_Circus_Tower_Birmingham_(cropped).JPG"
+     }
+    },
+    {
+     "name": "Comfort Inn",
+     "area": "Station Street"
+    }
+   ]
+  },
+  "bristol": {
+   "q": "Bristol",
+   "hotels": [
+    {
+     "name": "DoubleTree by Hilton Hotel Bristol City Centre",
+     "stars": 4,
+     "area": "Redcliffe Way",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bristol_(2022-07-31)_30.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Bristol_(2022-07-31)_30.jpg"
+     }
+    },
+    {
+     "name": "Hilton Garden Inn Bristol City Centre",
+     "stars": 4,
+     "area": "Temple Way"
+    },
+    {
+     "name": "Delta Hotels",
+     "stars": 4,
+     "area": "Lower Castle Street"
+    },
+    {
+     "name": "Hampton by Hilton Bristol City Centre",
+     "stars": 3,
+     "area": "Bond Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampton_by_Hilton_Bristol_City_Centre.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hampton_by_Hilton_Bristol_City_Centre.jpg"
+     }
+    },
+    {
+     "name": "Ibis Bristol Centre",
+     "stars": 3,
+     "area": "Explore Lane"
+    },
+    {
+     "name": "Bristol Marriott Royal Hotel",
+     "area": "College Green",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Swallow_Hotel_And_Attached_Front_Entrance_Balustrades.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Swallow_Hotel_And_Attached_Front_Entrance_Balustrades.jpg"
+     }
+    }
+   ]
+  },
+  "newcastle upon tyne": {
+   "q": "Newcastle upon Tyne",
+   "hotels": [
+    {
+     "name": "Maldron Hotel Newcastle",
+     "stars": 4,
+     "area": "Newgate Street"
+    },
+    {
+     "name": "Hampton by Hilton Newcastle",
+     "stars": 3.5,
+     "area": "Neville Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampton_by_Hilton_Newcastle.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hampton_by_Hilton_Newcastle.jpg"
+     }
+    },
+    {
+     "name": "Royal Station Hotel",
+     "stars": 3,
+     "area": "Neville Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Station_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Royal_Station_Hotel.jpg"
+     }
+    },
+    {
+     "name": "Grey Street Hotel",
+     "area": "Grey Street"
+    },
+    {
+     "name": "Hotel Indigo",
+     "area": "Fenkle Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel_Indigo%2C_Fenkle_Street%2C_NE1_(2)_-_geograph.org.uk_-_4958378.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hotel_Indigo%2C_Fenkle_Street%2C_NE1_(2)_-_geograph.org.uk_-_4958378.jpg"
+     }
+    },
+    {
+     "name": "The County Hotel",
+     "area": "Neville Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel_County_Newcastle_Tyne_3.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_County_Newcastle_Tyne_3.jpg"
+     }
+    }
+   ]
+  },
+  "oxford": {
+   "q": "Oxford",
+   "hotels": [
+    {
+     "name": "The Randolph Hotel",
+     "stars": 5,
+     "area": "Beaumont Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_randolph_hotel_oxford.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_randolph_hotel_oxford.jpg"
+     }
+    },
+    {
+     "name": "Old Parsonage Hotel",
+     "stars": 4,
+     "area": "Banbury Road"
+    },
+    {
+     "name": "Linton Lodge",
+     "stars": 3,
+     "area": "Linton Road"
+    },
+    {
+     "name": "River Hotel",
+     "stars": 2,
+     "area": "Botley Road"
+    },
+    {
+     "name": "The Jericho Hotel",
+     "stars": 1,
+     "area": "Walton Crescent"
+    },
+    {
+     "name": "Mercure Oxford Eastgate Hotel",
+     "area": "High Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Eastgate_Hotel%2C_High_Street%2C_Oxford_-_geograph.org.uk_-_2873530.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Eastgate_Hotel%2C_High_Street%2C_Oxford_-_geograph.org.uk_-_2873530.jpg"
+     }
+    }
+   ]
+  },
+  "cambridge": {
+   "q": "Cambridge",
+   "hotels": [
+    {
+     "name": "Hilton Cambridge City Centre",
+     "stars": 4,
+     "area": "Downing Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Hilton%2C_Downing_Street_-_geograph.org.uk_-_5366135.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Hilton%2C_Downing_Street_-_geograph.org.uk_-_5366135.jpg"
+     }
+    },
+    {
+     "name": "Graduate by Hilton Cambridge",
+     "stars": 4,
+     "area": "Granta Place",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Doubletree_by_Hilton_Cambridge_Hotel_-_geograph.org.uk_-_1824425.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Doubletree_by_Hilton_Cambridge_Hotel_-_geograph.org.uk_-_1824425.jpg"
+     }
+    },
+    {
+     "name": "Travelodge Cambridge Central",
+     "stars": 2,
+     "area": "Clifton Way"
+    },
+    {
+     "name": "University Arms",
+     "area": "Regent Street"
+    },
+    {
+     "name": "The Lensfield Hotel",
+     "area": "Lensfield Road"
+    },
+    {
+     "name": "The Fellows House Cambridge, Curio Collection by Hilton",
+     "area": "Milton Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/New_aparthotel_on_Milton_Road_-_geograph.org.uk_-_6700934.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:New_aparthotel_on_Milton_Road_-_geograph.org.uk_-_6700934.jpg"
+     }
+    }
+   ]
+  },
+  "canterbury": {
+   "q": "Canterbury",
+   "hotels": [
+    {
+     "name": "Hampton by Hilton Canterbury",
+     "stars": 3,
+     "area": "St. Margaret's Street"
+    },
+    {
+     "name": "Abbots Barton Hotel",
+     "stars": 3,
+     "area": "New Dover Road"
+    },
+    {
+     "name": "Cathedral Gate Hotel",
+     "area": "Burgate",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Canterbury_buildings_(344)_(geograph_7116004).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Canterbury_buildings_(344)_(geograph_7116004).jpg"
+     }
+    },
+    {
+     "name": "The Thomas Ingoldsby",
+     "area": "Burgate",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Thomas_Ingoldby_-_geograph.org.uk_-_983730.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Sir_Thomas_Ingoldby_-_geograph.org.uk_-_983730.jpg"
+     }
+    },
+    {
+     "name": "Falstaff Hotel",
+     "area": "St. Dunstan's Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Falstaff_Hotel_-_geograph.org.uk_-_5180627.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Falstaff_Hotel_-_geograph.org.uk_-_5180627.jpg"
+     }
+    },
+    {
+     "name": "Castle House Hotel",
+     "area": "Castle Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Canterbury_buildings_(175)_(geograph_7102381).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Canterbury_buildings_(175)_(geograph_7102381).jpg"
+     }
+    }
+   ]
+  },
+  "windsor": {
+   "q": "Windsor",
+   "hotels": [
+    {
+     "name": "Macdonald Windsor Hotel",
+     "stars": 4,
+     "area": "High Street"
+    },
+    {
+     "name": "The Castle Hotel",
+     "stars": 4,
+     "area": "High Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castle_Hotel%2C_High_St%2C_Windsor.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Castle_Hotel%2C_High_St%2C_Windsor.jpg"
+     }
+    },
+    {
+     "name": "Holiday Inn Express Windsor",
+     "stars": 3,
+     "area": "Alma Road"
+    },
+    {
+     "name": "Sir Christopher Wren Hotel",
+     "area": "Thames Street"
+    },
+    {
+     "name": "Royal Adelaide Hotel",
+     "area": "Kings Road"
+    },
+    {
+     "name": "The Harte And Garter",
+     "area": "High Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Harte_%26_Garter%2C_High_St%2C_Windsor.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Harte_%26_Garter%2C_High_St%2C_Windsor.jpg"
+     }
+    }
+   ]
+  },
+  "stratford upon avon": {
+   "q": "Stratford-upon-Avon",
+   "hotels": [
+    {
+     "name": "The Welcombe",
+     "stars": 4,
+     "area": "Warwick Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Welcombe_Hotel_-_geograph.org.uk_-_1690323.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Welcombe_Hotel_-_geograph.org.uk_-_1690323.jpg"
+     }
+    },
+    {
+     "name": "DoubleTree by Hilton",
+     "stars": 4,
+     "area": "Arden Street"
+    },
+    {
+     "name": "Victoria Spa Lodge",
+     "stars": 4,
+     "area": "Bishopton Lane"
+    },
+    {
+     "name": "The Shakespeare",
+     "area": "Chapel Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercure_Stratford-upon-Avon_Shakespeare_Hotel_-_DSC09005.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Mercure_Stratford-upon-Avon_Shakespeare_Hotel_-_DSC09005.JPG"
+     }
+    },
+    {
+     "name": "Hotel Indigo",
+     "area": "Chapel Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stratford-upon-Avon%2C_Falcon_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Stratford-upon-Avon%2C_Falcon_Hotel.jpg"
+     }
+    },
+    {
+     "name": "The Townhouse",
+     "area": "Church Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Townhouse%2C_Church_Street_(geograph_6981075).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Townhouse%2C_Church_Street_(geograph_6981075).jpg"
+     }
+    }
+   ]
+  },
+  "cardiff bay": {
+   "q": "Cardiff Bay",
+   "hotels": [
+    {
+     "name": "Marriott",
+     "stars": 4,
+     "area": "Mill Lane",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cardiff_Marriott_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Cardiff_Marriott_Hotel.jpg"
+     }
+    },
+    {
+     "name": "The Exchange Hotel",
+     "area": "Mount Stuart Square",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Exchange_Hotel%2C_Cardiff.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Exchange_Hotel%2C_Cardiff.jpg"
+     }
+    },
+    {
+     "name": "St. David's Hotel",
+     "area": "Havannah Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Principal_St_David's_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Principal_St_David's_Hotel.jpg"
+     }
+    },
+    {
+     "name": "Clayton Hotel",
+     "area": "Saint Mary Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maldron_Hotel%2C_Cardiff_(June_2014).JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Maldron_Hotel%2C_Cardiff_(June_2014).JPG"
+     }
+    },
+    {
+     "name": "The Royal Hotel",
+     "area": "Saint Mary Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Hotel%2C_Cardiff.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Royal_Hotel%2C_Cardiff.jpg"
+     }
+    },
+    {
+     "name": "Sandringham Hotel",
+     "area": "Saint Mary Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandringham_Hotel%2C_St_Mary_Street%2C_Cardiff.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Sandringham_Hotel%2C_St_Mary_Street%2C_Cardiff.jpg"
+     }
+    }
+   ]
+  },
+  "leicester": {
+   "q": "Leicester",
+   "hotels": [
+    {
+     "name": "Holiday Inn Express",
+     "stars": 3,
+     "area": "Filbert Way"
+    },
+    {
+     "name": "Winstanley House",
+     "area": "Hinckley Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Winstanley_House.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Winstanley_House.jpg"
+     }
+    },
+    {
+     "name": "The Grand Hotel",
+     "area": "Granby Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Hotel_w_Leicester.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Grand_Hotel_w_Leicester.jpg"
+     }
+    },
+    {
+     "name": "St Martins Lodge",
+     "area": "Peacock Lane"
+    },
+    {
+     "name": "Ramada Encore Leicester",
+     "area": "Charles Street"
+    },
+    {
+     "name": "Travelodge Leicester Central North",
+     "area": "Bedford Street North"
+    }
+   ]
+  },
+  "nottingham": {
+   "q": "Nottingham",
+   "hotels": [
+    {
+     "name": "Hilton Nottingham",
+     "stars": 4,
+     "area": "Milton Street"
+    },
+    {
+     "name": "Lace Market Hotel",
+     "stars": 4,
+     "area": "High Pavement"
+    },
+    {
+     "name": "Bentinck Hotel",
+     "area": "Station Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Bentinck_Hotel_-_geograph.org.uk_-_4161783.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Bentinck_Hotel_-_geograph.org.uk_-_4161783.jpg"
+     }
+    },
+    {
+     "name": "The Walton Hotel",
+     "area": "North Road"
+    },
+    {
+     "name": "Travelodge Nottingham Central",
+     "area": "Maid Marian Way"
+    },
+    {
+     "name": "Four Points Flex by Sheraton",
+     "area": "Rutland Street"
+    }
+   ]
+  },
+  "leeds": {
+   "q": "Leeds",
+   "hotels": [
+    {
+     "name": "Hyatt Place Leeds",
+     "stars": 4,
+     "area": "Sovereign Square"
+    },
+    {
+     "name": "Hyatt House Leeds",
+     "stars": 4,
+     "area": "Sovereign Square"
+    },
+    {
+     "name": "Hilton Leeds City",
+     "stars": 4,
+     "area": "Neville Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hilton_Leeds_City.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hilton_Leeds_City.jpg"
+     }
+    },
+    {
+     "name": "42 The Calls",
+     "stars": 4,
+     "area": "The Calls",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/42_The_Calls_-_Front.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:42_The_Calls_-_Front.JPG"
+     }
+    },
+    {
+     "name": "DoubleTree by Hilton Leeds City Centre",
+     "stars": 4,
+     "area": "Wharf Approach",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Mint%2C_Granary_Wharf%2C_Leeds_(5385775582).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Mint%2C_Granary_Wharf%2C_Leeds_(5385775582).jpg"
+     }
+    },
+    {
+     "name": "Hampton by Hilton Leeds City Centre",
+     "stars": 3,
+     "area": "Gower Street"
+    }
+   ]
+  },
+  "sheffield": {
+   "q": "Sheffield",
+   "hotels": [
+    {
+     "name": "Hotel Mercure Sheffield Kenwood Hall & Spa",
+     "stars": 5,
+     "area": "Kenwood Road"
+    },
+    {
+     "name": "Hampton by Hilton",
+     "stars": 3,
+     "area": "West Bar Green"
+    },
+    {
+     "name": "Best Western Sheffield City",
+     "area": "Blonk Street"
+    },
+    {
+     "name": "DoubleTree by Hilton Sheffield City",
+     "area": "Bramall Lane"
+    },
+    {
+     "name": "Miller & Carter Sheffield by Innkeeper's Collection",
+     "area": "Surrey Street"
+    },
+    {
+     "name": "Leopold Hotel",
+     "area": "Leopold Street"
+    }
+   ]
+  },
+  "bradford": {
+   "q": "Bradford",
+   "hotels": [
+    {
+     "name": "The Midland Hotel",
+     "area": "Cheapside",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Midland_Hotel%2C_Bradford.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Midland_Hotel%2C_Bradford.jpg"
+     }
+    },
+    {
+     "name": "Great Victoria Hotel",
+     "area": "Bridge Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Victoria_Hotel_-_geograph.org.uk_-_1606142.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Great_Victoria_Hotel_-_geograph.org.uk_-_1606142.jpg"
+     }
+    },
+    {
+     "name": "The Bradford Hotel",
+     "area": "Hall Ings"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Vicar Lane"
+    },
+    {
+     "name": "Ibis Budget Manchester Centre",
+     "area": "Pollard Street"
+    },
+    {
+     "name": "Residence Inn Manchester Piccadilly",
+     "area": "Laystall Street"
+    }
+   ]
+  },
+  "hull": {
+   "q": "Hull",
+   "hotels": [
+    {
+     "name": "DoubleTree by Hilton Hull",
+     "stars": 4,
+     "area": "Ferensway"
+    },
+    {
+     "name": "The Carmichael Hotel",
+     "area": "George Street"
+    },
+    {
+     "name": "The Royal Hotel",
+     "area": "Ferensway"
+    },
+    {
+     "name": "Travelodge Hull Central",
+     "area": "Pryme Street"
+    },
+    {
+     "name": "Cornmill Hotel",
+     "area": "Abbey Street"
+    },
+    {
+     "name": "Old Grey Mare",
+     "area": "Cottingham Road"
+    }
+   ]
+  },
+  "sunderland": {
+   "q": "Sunderland",
+   "hotels": [
+    {
+     "name": "Hilton Garden Inn Sunderland",
+     "stars": 3,
+     "area": "Vaux Brewery Way"
+    },
+    {
+     "name": "Armathwaite Hall",
+     "area": "B5291",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Armathwaite_Hall_-_geograph.org.uk_-_230139.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Armathwaite_Hall_-_geograph.org.uk_-_230139.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Hind Street"
+    },
+    {
+     "name": "Queen Victoria Hotel",
+     "area": "Harbour View"
+    },
+    {
+     "name": "Roker Hotel",
+     "area": "Roker Terrace"
+    },
+    {
+     "name": "Embleton Spa Hotel",
+     "area": "A66"
+    }
+   ]
+  },
+  "durham": {
+   "q": "Durham",
+   "hotels": [
+    {
+     "name": "Radisson Blu",
+     "area": "Framwelgate Waterside",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Radisson_Blu_Hotel%2C_Durham_-_geograph.org.uk_-_2166460.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Radisson_Blu_Hotel%2C_Durham_-_geograph.org.uk_-_2166460.jpg"
+     }
+    },
+    {
+     "name": "Hotel Indigo Durham",
+     "area": "Old Elvet"
+    },
+    {
+     "name": "Thomas Wright House Hotel",
+     "area": "High Street"
+    },
+    {
+     "name": "The Morritt Hotel & Garage Spa",
+     "area": "The Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Morritt_Arms_Hotel_%2C_Greta_Bridge_-_geograph.org.uk_-_251064.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Morritt_Arms_Hotel_%2C_Greta_Bridge_-_geograph.org.uk_-_251064.jpg"
+     }
+    },
+    {
+     "name": "The Old Mill Hotel",
+     "area": "Thinford Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Old_Mill%2C_near_Tursdale_-_geograph.org.uk_-_7377528.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Old_Mill%2C_near_Tursdale_-_geograph.org.uk_-_7377528.jpg"
+     }
+    },
+    {
+     "name": "Durham Marriott Hotel Royal County",
+     "area": "Old Elvet"
+    }
+   ]
+  },
+  "harrogate": {
+   "q": "Harrogate",
+   "hotels": [
+    {
+     "name": "DoubleTree by Hilton Harrogate Majestic Hotel & Spa",
+     "stars": 4,
+     "area": "Ripon Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Majestic_Hotel_-_geograph.org.uk_-_654966.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Majestic_Hotel_-_geograph.org.uk_-_654966.jpg"
+     }
+    },
+    {
+     "name": "The Yorkshire",
+     "area": "John Street"
+    },
+    {
+     "name": "The Cedar Court Hotel",
+     "area": "Park Parade",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cedar_Court_Hotel_-_geograph.org.uk_-_652720.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Cedar_Court_Hotel_-_geograph.org.uk_-_652720.jpg"
+     }
+    },
+    {
+     "name": "White Hart Hotel",
+     "area": "Back Royal Parade",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Hart_Hotel%2C_Harrogate_(25th_February_2013).JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:White_Hart_Hotel%2C_Harrogate_(25th_February_2013).JPG"
+     }
+    },
+    {
+     "name": "The Crown Hotel",
+     "area": "Crescent Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Crown_Hotel%2C_Harrogate_-_geograph.org.uk_-_3053543.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Crown_Hotel%2C_Harrogate_-_geograph.org.uk_-_3053543.jpg"
+     }
+    },
+    {
+     "name": "The Old Swan",
+     "area": "Swan Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/OldSwanHotelHarrogate20080807_0183.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:OldSwanHotelHarrogate20080807_0183.JPG"
+     }
+    }
+   ]
+  },
+  "scarborough": {
+   "q": "Scarborough",
+   "hotels": [
+    {
+     "name": "Grand Hotel",
+     "area": "Saint Nicholas Cliff",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Grand_Hotel_-_geograph.org.uk_-_1398434.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Grand_Hotel_-_geograph.org.uk_-_1398434.jpg"
+     }
+    },
+    {
+     "name": "Crown Spa Hotel",
+     "area": "Esplanade",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Crown_Spa_Hotel%2C_Scarborough_-_geograph.org.uk_-_7702264.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Crown_Spa_Hotel%2C_Scarborough_-_geograph.org.uk_-_7702264.jpg"
+     }
+    },
+    {
+     "name": "The Clifton",
+     "area": "Queen's Parade",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Clifton_Hotel_Scarborough_Queens_Parade_North_Bay_Promenade_Scarborough_YO12_7HX.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Clifton_Hotel_Scarborough_Queens_Parade_North_Bay_Promenade_Scarborough_YO12_7HX.jpg"
+     }
+    },
+    {
+     "name": "The Esplanade Hotel",
+     "area": "Belmont Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Esplanade_Hotel%2C_Scarborough_-_geograph.org.uk_-_4839539.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Esplanade_Hotel%2C_Scarborough_-_geograph.org.uk_-_4839539.jpg"
+     }
+    },
+    {
+     "name": "The Helaina",
+     "area": "Queen's Parade"
+    },
+    {
+     "name": "Riviera Town House",
+     "area": "Saint Nicholas Cliff"
+    }
+   ]
+  },
+  "blackpool": {
+   "q": "Blackpool",
+   "hotels": [
+    {
+     "name": "The Melville",
+     "area": "Adelaide Street"
+    },
+    {
+     "name": "The Orbiston",
+     "area": "Adelaide Street"
+    },
+    {
+     "name": "New Osterley",
+     "area": "Adelaide Street"
+    },
+    {
+     "name": "Arncliffe Hotel",
+     "area": "Adelaide Street"
+    },
+    {
+     "name": "Backpackers Blackpool",
+     "area": "Adelaide Street"
+    },
+    {
+     "name": "Adelaide House Hotel",
+     "area": "Adelaide Street"
+    }
+   ]
+  },
+  "chester": {
+   "q": "Chester",
+   "hotels": [
+    {
+     "name": "Queen Hotel",
+     "stars": 4,
+     "area": "City Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Queen_Hotel%2C_Chester_-_DSC08237.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Queen_Hotel%2C_Chester_-_DSC08237.JPG"
+     }
+    },
+    {
+     "name": "DoubleTree by Hilton Hotel & Spa Chester",
+     "stars": 4,
+     "area": "Warrington Road"
+    },
+    {
+     "name": "Coach House",
+     "stars": 4,
+     "area": "Northgate Street"
+    },
+    {
+     "name": "Mill Hotel & Spa",
+     "stars": 3,
+     "area": "Milton Street"
+    },
+    {
+     "name": "Bawn Lodge",
+     "stars": 3,
+     "area": "Hoole Road"
+    },
+    {
+     "name": "The Limes",
+     "stars": 3,
+     "area": "Hoole Road"
+    }
+   ]
+  },
+  "lancaster": {
+   "q": "Lancaster",
+   "hotels": [
+    {
+     "name": "The Golden Ball",
+     "area": "Lancaster Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Golden_Ball%2C_Snatchems_-_geograph.org.uk_-_1940165.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Golden_Ball%2C_Snatchems_-_geograph.org.uk_-_1940165.jpg"
+     }
+    },
+    {
+     "name": "Hipping Hall",
+     "area": "A65",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hipping_Hall_2.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hipping_Hall_2.jpg"
+     }
+    },
+    {
+     "name": "Scarthwaite Country House Hotel",
+     "area": "Caton Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Scarthwaite_Hotel_-_geograph.org.uk_-_632933.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Scarthwaite_Hotel_-_geograph.org.uk_-_632933.jpg"
+     }
+    },
+    {
+     "name": "Thurnham Hall",
+     "area": "Lancaster Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thurnham_Hall_-_geograph.org.uk_-_1675790.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Thurnham_Hall_-_geograph.org.uk_-_1675790.jpg"
+     }
+    },
+    {
+     "name": "Crows Hotel",
+     "area": "King Street"
+    },
+    {
+     "name": "Go2 Lancaster Centre Hotel",
+     "area": "Spring Garden Street"
+    }
+   ]
+  },
+  "preston": {
+   "q": "Preston",
+   "hotels": [
+    {
+     "name": "Wembley International Hotel",
+     "stars": 5,
+     "area": "Empire Way"
+    },
+    {
+     "name": "Hilton London Wembley",
+     "stars": 4,
+     "area": "Lakeside Way"
+    },
+    {
+     "name": "Novotel London Wembley",
+     "stars": 4,
+     "area": "Olympic Way"
+    },
+    {
+     "name": "Premier Inn Preston Central",
+     "area": "Fox Street"
+    },
+    {
+     "name": "No.10 Preston",
+     "area": "Theatre Street"
+    },
+    {
+     "name": "Travelodge Preston Central",
+     "area": "New Hall Lane"
+    }
+   ]
+  },
+  "stoke on trent": {
+   "q": "Stoke-on-Trent",
+   "hotels": [
+    {
+     "name": "Hilton Garden Inn Stoke on Trent",
+     "stars": 4,
+     "area": "Potteries Way"
+    },
+    {
+     "name": "DoubleTree by Hilton Stoke on Trent",
+     "stars": 4,
+     "area": "Festival Way"
+    },
+    {
+     "name": "North Stafford Hotel",
+     "stars": 3,
+     "area": "Station Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/North_Stafford_Hotel%2C_Stoke-on-Trent.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:North_Stafford_Hotel%2C_Stoke-on-Trent.JPG"
+     }
+    },
+    {
+     "name": "Premier Inn Stoke-on-Trent (Hanley)",
+     "area": "Etruria Road"
+    },
+    {
+     "name": "Best Western Stoke-on-Trent City Centre Hotel",
+     "area": "Trinity Street"
+    },
+    {
+     "name": "Holiday Inn Express",
+     "area": "Tony Waddington Place"
+    }
+   ]
+  },
+  "derby": {
+   "q": "Derby",
+   "hotels": [
+    {
+     "name": "Georgian House Hotel",
+     "area": "Ashbourne Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Georgian_House_Hotel_-_Ashbourne_Road%2C_Derby_-_geograph.org.uk_-_606661.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Georgian_House_Hotel_-_Ashbourne_Road%2C_Derby_-_geograph.org.uk_-_606661.jpg"
+     }
+    },
+    {
+     "name": "New Bath Hotel",
+     "area": "New Bath Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/New_Bath_Hotel_-_Matlock_Bath_-_geograph.org.uk_-_539836.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:New_Bath_Hotel_-_Matlock_Bath_-_geograph.org.uk_-_539836.jpg"
+     }
+    },
+    {
+     "name": "High Tor Hotel",
+     "area": "Dale Road"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Full Street"
+    },
+    {
+     "name": "Cathedral Quarter Hotel",
+     "area": "Saint Mary's Gate"
+    },
+    {
+     "name": "Leonardo Hotel Derby",
+     "area": "King Street"
+    }
+   ]
+  },
+  "coventry": {
+   "q": "Coventry",
+   "hotels": [
+    {
+     "name": "Ramada Hotel & Suites Coventry",
+     "stars": 4,
+     "area": "Butts",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramada_Hotel_-_Coventry_13f08.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Ramada_Hotel_-_Coventry_13f08.JPG"
+     }
+    },
+    {
+     "name": "DoubleTree by Hilton Coventry Building Society Arena",
+     "stars": 4,
+     "area": "Judds Lane"
+    },
+    {
+     "name": "Telegraph Hotel",
+     "area": "Corporation Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Telegraph_Hotel_-_Coventry.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Telegraph_Hotel_-_Coventry.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Upper Well Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Belgrade_Plaza.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Belgrade_Plaza.jpg"
+     }
+    },
+    {
+     "name": "Hotel Indigo",
+     "area": "Friargate Boulevard"
+    },
+    {
+     "name": "Hylands Hotel",
+     "area": "Warwick Road"
+    }
+   ]
+  },
+  "wolverhampton": {
+   "q": "Wolverhampton",
+   "hotels": [
+    {
+     "name": "Ramada by Wyndham Park Hall",
+     "area": "Park Drive",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Park_Hall_View_-_geograph.org.uk_-_2086357.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Park_Hall_View_-_geograph.org.uk_-_2086357.jpg"
+     }
+    },
+    {
+     "name": "Mount Hotel",
+     "area": "Mount Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Mount_Hotel_-_geograph.org.uk_-_7837939.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Mount_Hotel_-_geograph.org.uk_-_7837939.jpg"
+     }
+    },
+    {
+     "name": "Britannia Hotel",
+     "area": "Lichfield Street"
+    },
+    {
+     "name": "Premier Inn Wolverhampton City Centre Hotel",
+     "area": "Broad Gauge Way"
+    },
+    {
+     "name": "Queen Victoria Hotel",
+     "area": "Albert Road"
+    },
+    {
+     "name": "The York Hotel",
+     "area": "Tettenhall Road"
+    }
+   ]
+  },
+  "worcester": {
+   "q": "Worcester",
+   "hotels": [
+    {
+     "name": "Stanbrook Abbey",
+     "area": "Jennet Tree Lane",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanbrook_Abbey_Exterior.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Stanbrook_Abbey_Exterior.jpg"
+     }
+    },
+    {
+     "name": "Fownes Hotel",
+     "area": "Clare Street"
+    },
+    {
+     "name": "Diglis House Hotel",
+     "area": "Severn Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diglis_Hotel%2C_Worcester_-_geograph.org.uk_-_1744211.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Diglis_Hotel%2C_Worcester_-_geograph.org.uk_-_1744211.jpg"
+     }
+    },
+    {
+     "name": "Severn View Hotel",
+     "area": "Newport Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Severn_View_Hotel%2C_Worcester_-_geograph.org.uk_-_1024402.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Severn_View_Hotel%2C_Worcester_-_geograph.org.uk_-_1024402.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Bridgwater Road"
+    },
+    {
+     "name": "The Crown Hotel",
+     "area": "Broad Street"
+    }
+   ]
+  },
+  "cheltenham": {
+   "q": "Cheltenham",
+   "hotels": [
+    {
+     "name": "DoubleTree by Hilton Cheltenham-Cotswolds",
+     "stars": 4,
+     "area": "Cirencester Road"
+    },
+    {
+     "name": "Malmaison Cheltenham",
+     "stars": 4,
+     "area": "Bayshill Road"
+    },
+    {
+     "name": "Premier Inn",
+     "stars": 3,
+     "area": "High Street"
+    },
+    {
+     "name": "Charlton Kings Hotel",
+     "stars": 3,
+     "area": "London Road"
+    },
+    {
+     "name": "George Hotel",
+     "stars": 3,
+     "area": "Saint Georges Road"
+    },
+    {
+     "name": "Central Hotel",
+     "area": "Portland Street"
+    }
+   ]
+  },
+  "gloucester": {
+   "q": "Gloucester",
+   "hotels": [
+    {
+     "name": "Hatton Court Hotel",
+     "area": "Stockley Way"
+    },
+    {
+     "name": "Hatherley Manor Hotel",
+     "area": "Down Hatherley Lane"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Saint Ann Way"
+    },
+    {
+     "name": "SULA Lightship",
+     "area": "Llanthony Road"
+    },
+    {
+     "name": "Premier Inn Gloucester (Longford)",
+     "area": "Tewkesbury Road"
+    },
+    {
+     "name": "Gloucester Robinswood Hotel",
+     "area": "Marlstone Close"
+    }
+   ]
+  },
+  "exeter": {
+   "q": "Exeter",
+   "hotels": [
+    {
+     "name": "The Queens Court Hotel",
+     "stars": 3,
+     "area": "Bystock Terrace"
+    },
+    {
+     "name": "Southernhay House",
+     "area": "Southernhay East",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Southernhay_House.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Southernhay_House.jpg"
+     }
+    },
+    {
+     "name": "Leonardo Hotel Exeter",
+     "area": "Western Way",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jury's_Inn_Hotel_Exeter_-_geograph.org.uk_-_1872877.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Jury's_Inn_Hotel_Exeter_-_geograph.org.uk_-_1872877.jpg"
+     }
+    },
+    {
+     "name": "The White Hart Hotel",
+     "area": "South Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Hart_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:White_Hart_Hotel.jpg"
+     }
+    },
+    {
+     "name": "The City Gate",
+     "area": "Iron Bridge",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/City_Gate_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:City_Gate_Hotel.jpg"
+     }
+    },
+    {
+     "name": "The Seven Stars Hotel",
+     "area": "Alphington Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Seven_Stars_Inn.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Seven_Stars_Inn.jpg"
+     }
+    }
+   ]
+  },
+  "plymouth": {
+   "q": "Plymouth",
+   "hotels": [
+    {
+     "name": "Boringdon Hall",
+     "stars": 5,
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/BoringdonHallDevonSouthFront.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:BoringdonHallDevonSouthFront.jpg"
+     }
+    },
+    {
+     "name": "Moxy Hotel",
+     "stars": 3,
+     "area": "Millbay Road"
+    },
+    {
+     "name": "Plymouth Central",
+     "area": "New George Street"
+    },
+    {
+     "name": "The New Continental",
+     "area": "Millbay Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plymouth_%2C_The_New_Continental_Hotel_-_geograph.org.uk_-_1185259.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Plymouth_%2C_The_New_Continental_Hotel_-_geograph.org.uk_-_1185259.jpg"
+     }
+    },
+    {
+     "name": "Duke of Cornwall",
+     "area": "Millbay Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Duke_of_Cornwall_Hotel_3a.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Duke_of_Cornwall_Hotel_3a.jpg"
+     }
+    },
+    {
+     "name": "Invicta",
+     "area": "Citadel Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plymouth_(2021-11-19)_33.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Plymouth_(2021-11-19)_33.jpg"
+     }
+    }
+   ]
+  },
+  "torquay": {
+   "q": "Torquay",
+   "hotels": [
+    {
+     "name": "Headland Hotel and Spa",
+     "area": "Daddyhole Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Headland_Hotel_and_Spa_Torquay.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Headland_Hotel_and_Spa_Torquay.jpg"
+     }
+    },
+    {
+     "name": "Devonshire Hotel",
+     "area": "Daddyhole Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torquay_(2021-06-12)_13.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Torquay_(2021-06-12)_13.jpg"
+     }
+    },
+    {
+     "name": "Heritage Hotel",
+     "area": "Shedden Hill Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Appleby's_Bar%2C_Torquay_(geograph_4065986).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Appleby's_Bar%2C_Torquay_(geograph_4065986).jpg"
+     }
+    },
+    {
+     "name": "Torcroft Hotel",
+     "area": "Croft Road"
+    },
+    {
+     "name": "Howden Court Hotel",
+     "area": "Croft Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Howden_Court_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Howden_Court_Hotel.jpg"
+     }
+    },
+    {
+     "name": "Robin Hill Guest House",
+     "area": "Braddons Hill Road East"
+    }
+   ]
+  },
+  "bournemouth": {
+   "q": "Bournemouth",
+   "hotels": [
+    {
+     "name": "Hilton Bournemouth",
+     "stars": 4,
+     "area": "Terrace Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bournemouth_(2021-11-12)_04.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Bournemouth_(2021-11-12)_04.jpg"
+     }
+    },
+    {
+     "name": "Hampton by Hilton Bournemouth",
+     "stars": 3,
+     "area": "Upper Terrace Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bournemouth_(2021-11-12)_02.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Bournemouth_(2021-11-12)_02.jpg"
+     }
+    },
+    {
+     "name": "The Norfolk Royale Hotel",
+     "area": "Richmond Hill",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bournemouth%2C_Norfolk_Royale_Hotel_-_geograph.org.uk_-_644344.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Bournemouth%2C_Norfolk_Royale_Hotel_-_geograph.org.uk_-_644344.jpg"
+     }
+    },
+    {
+     "name": "Royal Exeter Hotel",
+     "area": "Exeter Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Exeter_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Royal_Exeter_Hotel.jpg"
+     }
+    },
+    {
+     "name": "The Trouville Hotel",
+     "area": "Priory Road"
+    },
+    {
+     "name": "Dolphins Hotel",
+     "area": "Tregonwell Road"
+    }
+   ]
+  },
+  "southampton": {
+   "q": "Southampton",
+   "hotels": [
+    {
+     "name": "Leonardo Royal Hotel",
+     "stars": 4,
+     "area": "West Quay Road"
+    },
+    {
+     "name": "Elizabeth House Hotel",
+     "stars": 3,
+     "area": "The Avenue"
+    },
+    {
+     "name": "Novotel",
+     "area": "West Quay Road"
+    },
+    {
+     "name": "The Star Hotel",
+     "area": "High Street"
+    },
+    {
+     "name": "Premier Inn - West Quay",
+     "area": "Harbour Parade"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "New Road"
+    }
+   ]
+  },
+  "portsmouth": {
+   "q": "Portsmouth",
+   "hotels": [
+    {
+     "name": "The Queens Hotel",
+     "area": "Clarence Parade",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Southsea_Queens_Hotel.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Southsea_Queens_Hotel.JPG"
+     }
+    },
+    {
+     "name": "Travelodge Portsmouth City Centre",
+     "area": "Stanhope Road"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Isambard Brunel Road"
+    },
+    {
+     "name": "ibis Portsmouth Centre",
+     "area": "Winston Churchill Avenue"
+    },
+    {
+     "name": "The Royal Maritime Club",
+     "area": "Queen Street"
+    },
+    {
+     "name": "Holiday Inn Express",
+     "area": "Portsea"
+    }
+   ]
+  },
+  "winchester": {
+   "q": "Winchester",
+   "hotels": [
+    {
+     "name": "Winchester Royal Hotel",
+     "area": "St Peter Street"
+    },
+    {
+     "name": "The Winchester Hotel",
+     "area": "Worthy Lane"
+    },
+    {
+     "name": "The Swan Hotel",
+     "area": "West Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Swan_Hotel_2.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Swan_Hotel_2.jpg"
+     }
+    },
+    {
+     "name": "New Place",
+     "area": "High Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%22New_Place%22%2C_Shedfield_-_geograph.org.uk_-_1094285.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:%22New_Place%22%2C_Shedfield_-_geograph.org.uk_-_1094285.jpg"
+     }
+    },
+    {
+     "name": "Lainston House Hotel",
+     "area": "Woodman Lane",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lainston_House_eastern_aspect.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Lainston_House_eastern_aspect.JPG"
+     }
+    },
+    {
+     "name": "The Old Vine",
+     "area": "Great Minster Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Old_Vine%2C_Winchester_-_geograph.org.uk_-_1324670.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Old_Vine%2C_Winchester_-_geograph.org.uk_-_1324670.jpg"
+     }
+    }
+   ]
+  },
+  "salisbury": {
+   "q": "Salisbury",
+   "hotels": [
+    {
+     "name": "Mercure Salisbury White Hart",
+     "stars": 4,
+     "area": "St John's Street"
+    },
+    {
+     "name": "The Red Lion Hotel",
+     "area": "Milford Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Salisbury_-_Red_Lion_Hotel_-_geograph.org.uk_-_1715764.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Salisbury_-_Red_Lion_Hotel_-_geograph.org.uk_-_1715764.jpg"
+     }
+    },
+    {
+     "name": "The Cathedral Hotel",
+     "area": "Milford Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_Hotel_(geograph_7393124).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Cathedral_Hotel_(geograph_7393124).jpg"
+     }
+    },
+    {
+     "name": "The Merchant's House Hotel",
+     "area": "Milford Street"
+    },
+    {
+     "name": "Riverside Hotel",
+     "area": "Harnham Road"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "New Petersfinger Road"
+    }
+   ]
+  },
+  "reading": {
+   "q": "Reading",
+   "hotels": [
+    {
+     "name": "Hilton Reading",
+     "stars": 4,
+     "area": "Drake Way"
+    },
+    {
+     "name": "Travelodge Reading",
+     "area": "Oxford Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Travelodge%2C_Reading_-_geograph.org.uk_-_3668644.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Travelodge%2C_Reading_-_geograph.org.uk_-_3668644.jpg"
+     }
+    },
+    {
+     "name": "Pentahotel Reading",
+     "area": "Oxford Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Penta_Hotel_(Geograph-3668627-by-N-Chadwick).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Penta_Hotel_(Geograph-3668627-by-N-Chadwick).jpg"
+     }
+    },
+    {
+     "name": "The George Hotel",
+     "area": "King Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_George_Hotel_2.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_George_Hotel_2.jpg"
+     }
+    },
+    {
+     "name": "Forbury Hotel",
+     "area": "Forbury Square",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Forbury_Hotel%2C_The_Forbury%2C_Reading_-_geograph.org.uk_-_1769480.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Forbury_Hotel%2C_The_Forbury%2C_Reading_-_geograph.org.uk_-_1769480.jpg"
+     }
+    },
+    {
+     "name": "The Village Hotel",
+     "area": "Richfield Avenue"
+    }
+   ]
+  },
+  "milton keynes": {
+   "q": "Milton Keynes",
+   "hotels": [
+    {
+     "name": "Mercure Parkside House",
+     "stars": 4,
+     "area": "Newport Road"
+    },
+    {
+     "name": "DoubleTree by Hilton Milton Keynes",
+     "stars": 4,
+     "area": "V6 Grafton Street"
+    },
+    {
+     "name": "The Swan Revived",
+     "area": "High Street"
+    },
+    {
+     "name": "Travelodge Milton Keynes at The Hub",
+     "area": "Midsummer Boulevard"
+    },
+    {
+     "name": "Premier Inn Milton Keynes Central",
+     "area": "Secklow Gate West"
+    },
+    {
+     "name": "Premier Inn Milton Keynes Central (Avebury Boulevard)",
+     "area": "Avebury Boulevard"
+    }
+   ]
+  },
+  "norwich": {
+   "q": "Norwich",
+   "hotels": [
+    {
+     "name": "Holiday Inn Norwich",
+     "stars": 4,
+     "area": "Ipswich Road"
+    },
+    {
+     "name": "Mercure Norwich Hotel",
+     "stars": 4,
+     "area": "Boundary Road"
+    },
+    {
+     "name": "Annesley House Hotel",
+     "stars": 3,
+     "area": "Newmarket Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Annesley_House_Hotel%2C_Norwich_-_geograph.org.uk_-_5416517.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Annesley_House_Hotel%2C_Norwich_-_geograph.org.uk_-_5416517.jpg"
+     }
+    },
+    {
+     "name": "The George Hotel",
+     "stars": 3,
+     "area": "Arlington Lane",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Frontage_of_the_George_Hotel_Arlington_Lane_-_geograph.org.uk_-_7974012.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Frontage_of_the_George_Hotel_Arlington_Lane_-_geograph.org.uk_-_7974012.jpg"
+     }
+    },
+    {
+     "name": "Norwich Hotel",
+     "stars": 2,
+     "area": "Thorpe Road"
+    },
+    {
+     "name": "Maids Head Hotel",
+     "area": "Tombland",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maid's_Head_Hotel_-_geograph.org.uk_-_1398280.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Maid's_Head_Hotel_-_geograph.org.uk_-_1398280.jpg"
+     }
+    }
+   ]
+  },
+  "ipswich": {
+   "q": "Ipswich",
+   "hotels": [
+    {
+     "name": "Belstead Brook Hotel",
+     "area": "Belstead Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Belstead_Brook_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Belstead_Brook_Hotel.jpg"
+     }
+    },
+    {
+     "name": "The Salthouse Harbour Hotel",
+     "area": "Neptune Quay"
+    },
+    {
+     "name": "Premier Inn (Quayside)",
+     "area": "Key Street"
+    },
+    {
+     "name": "The Station Hotel",
+     "area": "Burrell Road"
+    },
+    {
+     "name": "B&B Hotel Ipswich",
+     "area": "Ranelagh Road"
+    },
+    {
+     "name": "Marstons Inns",
+     "area": "Yarmouth Road"
+    }
+   ]
+  },
+  "colchester": {
+   "q": "Colchester",
+   "hotels": [
+    {
+     "name": "Greyfriars",
+     "stars": 5,
+     "area": "High Street"
+    },
+    {
+     "name": "Premier Inn (Castle)",
+     "stars": 2,
+     "area": "St. Peters Street"
+    },
+    {
+     "name": "The Sun Inn",
+     "area": "High Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Inn%2C_Dedham%2C_Essex%2C_Geograph-2942820-by-JThomas.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Sun_Inn%2C_Dedham%2C_Essex%2C_Geograph-2942820-by-JThomas.jpg"
+     }
+    },
+    {
+     "name": "Red Lion Hotel",
+     "area": "High Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Lion_Hotel%2C_Colchester.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Red_Lion_Hotel%2C_Colchester.JPG"
+     }
+    },
+    {
+     "name": "The George",
+     "area": "High Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/George_Hotel%2C_Colchester.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:George_Hotel%2C_Colchester.JPG"
+     }
+    },
+    {
+     "name": "St Nicholas Hotel",
+     "area": "High Street"
+    }
+   ]
+  },
+  "southend on sea": {
+   "q": "Southend-on-Sea",
+   "hotels": [
+    {
+     "name": "The Last Post",
+     "area": "Weston Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Last_Post%2C_Weston_Street_-_geograph.org.uk_-_3958102.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Last_Post%2C_Weston_Street_-_geograph.org.uk_-_3958102.jpg"
+     }
+    },
+    {
+     "name": "The Hope Hotel",
+     "area": "Marine Parade"
+    },
+    {
+     "name": "Roslin Beach Hotel",
+     "area": "Thorpe Esplanade"
+    },
+    {
+     "name": "Palace Hotel",
+     "area": "Church Road"
+    },
+    {
+     "name": "Clifton Lodge",
+     "area": "Balmoral Road"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Eastern Esplanade"
+    }
+   ]
+  },
+  "margate": {
+   "q": "Margate",
+   "hotels": [
+    {
+     "name": "Nayland Rock Hotel",
+     "area": "Royal Crescent",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nayland_Rock_Hotel%2C_Royal_Crescent%2C_Margate%2C_Kent_-_geograph.org.uk_-_683587.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Nayland_Rock_Hotel%2C_Royal_Crescent%2C_Margate%2C_Kent_-_geograph.org.uk_-_683587.jpg"
+     }
+    },
+    {
+     "name": "No. 42 by Guesthouse",
+     "area": "High Street"
+    },
+    {
+     "name": "Fort Road Hotel",
+     "area": "Fort Road"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Station Approach"
+    },
+    {
+     "name": "Selina Margate & Cowork",
+     "area": "Eastern Esplanade"
+    },
+    {
+     "name": "Hussar Hotel",
+     "area": "Canterbury Road"
+    }
+   ]
+  },
+  "dover": {
+   "q": "Dover",
+   "hotels": [
+    {
+     "name": "Dover Marina Hotel & Spa, Tapestry Collection by Hilton",
+     "stars": 4,
+     "area": "Waterloo Crescent"
+    },
+    {
+     "name": "The Royal Hotel",
+     "area": "Beach Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Deal_buildings_(11)_(geograph_7067955).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Deal_buildings_(11)_(geograph_7067955).jpg"
+     }
+    },
+    {
+     "name": "Waterfront Hotel",
+     "area": "Primrose Alley",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Beachbrow_Hotel_-_geograph.org.uk_-_3855445.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Beachbrow_Hotel_-_geograph.org.uk_-_3855445.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Marine Parade"
+    },
+    {
+     "name": "Travelodge Sandwich",
+     "area": "Spitfire Way"
+    },
+    {
+     "name": "The Rose Hotel",
+     "area": "High Street"
+    }
+   ]
+  },
+  "eastbourne": {
+   "q": "Eastbourne",
+   "hotels": [
+    {
+     "name": "The Grand Hotel",
+     "area": "King Edward's Parade"
+    },
+    {
+     "name": "The Halcyon",
+     "area": "South Cliff"
+    },
+    {
+     "name": "The Hydro Hotel",
+     "area": "Mount Road"
+    },
+    {
+     "name": "Oban Hotel",
+     "area": "King Edward's Parade"
+    },
+    {
+     "name": "Alexandra Hotel",
+     "area": "King Edward's Parade"
+    },
+    {
+     "name": "West Rocks Townhouse Hotel",
+     "area": "Grand Parade"
+    }
+   ]
+  },
+  "hastings": {
+   "q": "Hastings",
+   "hotels": [
+    {
+     "name": "Minstrel's Rest",
+     "stars": 4,
+     "area": "Greville Road"
+    },
+    {
+     "name": "Northrise Retreat",
+     "stars": 4,
+     "area": "Beacon Road"
+    },
+    {
+     "name": "The Highlands Inn",
+     "stars": 3,
+     "area": "Boscobel Road"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Cornwallis Street"
+    },
+    {
+     "name": "Astral Lodge",
+     "area": "Carlisle Parade"
+    },
+    {
+     "name": "White Rock Hotel",
+     "area": "White Rock"
+    }
+   ]
+  },
+  "chichester": {
+   "q": "Chichester",
+   "hotels": [
+    {
+     "name": "The Goodwood Hotel",
+     "stars": 4,
+     "area": "Westhampnett"
+    },
+    {
+     "name": "The Ship Hotel",
+     "area": "North Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ship_Hotel%2C_North_Street_(geograph_4526441).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Ship_Hotel%2C_North_Street_(geograph_4526441).jpg"
+     }
+    },
+    {
+     "name": "Spread Eagle Hotel",
+     "area": "South Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Spread_Eagle_Hotel%2C_Midhurst.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Spread_Eagle_Hotel%2C_Midhurst.jpg"
+     }
+    },
+    {
+     "name": "The Angel Inn",
+     "area": "Angel Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Angel_Inn%2C_Petworth.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Angel_Inn%2C_Petworth.jpg"
+     }
+    },
+    {
+     "name": "Woodstock House Hotel",
+     "area": "Charlton Road"
+    },
+    {
+     "name": "Park House Hotel",
+     "area": "Bepton Road"
+    }
+   ]
+  },
+  "lincoln": {
+   "q": "Lincoln",
+   "hotels": [
+    {
+     "name": "DoubleTree by Hilton Lincoln",
+     "stars": 4,
+     "area": "Brayford Wharf North"
+    },
+    {
+     "name": "The Old Palace Lodge",
+     "area": "Christ's Hospital Terrace",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Church_of_St.Michael_on_the_Mount_-_geograph.org.uk_-_191443.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Church_of_St.Michael_on_the_Mount_-_geograph.org.uk_-_191443.jpg"
+     }
+    },
+    {
+     "name": "Bail House Hotel",
+     "area": "Bailgate"
+    },
+    {
+     "name": "The Rest",
+     "area": "Steep Hill"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Broadgate"
+    },
+    {
+     "name": "White Hart Hotel",
+     "area": "Bailgate"
+    }
+   ]
+  },
+  "peterborough": {
+   "q": "Peterborough",
+   "hotels": [
+    {
+     "name": "Park Inn",
+     "stars": 3,
+     "area": "Wentworth Street"
+    },
+    {
+     "name": "The Bull Hotel",
+     "area": "Westgate",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Westgate_-_The_Bull_Hotel_-_geograph.org.uk_-_672588.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Westgate_-_The_Bull_Hotel_-_geograph.org.uk_-_672588.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn Peterborough City Centre",
+     "area": "Rivergate"
+    },
+    {
+     "name": "Travelodge Peterborough Central",
+     "area": "New Road"
+    },
+    {
+     "name": "Queensgate Hotel",
+     "area": "Fletton Avenue"
+    },
+    {
+     "name": "Premier Inn (Hampton)",
+     "area": "The Serpentine"
+    }
+   ]
+  },
+  "northampton": {
+   "q": "Northampton",
+   "hotels": [
+    {
+     "name": "Ibis",
+     "stars": 2,
+     "area": "Marefair"
+    },
+    {
+     "name": "Travelodge Northampton Central",
+     "area": "Gold Street"
+    },
+    {
+     "name": "Premier Inn Northampton Town Centre",
+     "area": "Swan Street"
+    },
+    {
+     "name": "Langham Hotel",
+     "area": "Barrack Road"
+    },
+    {
+     "name": "Travelodge Northampton Round Spinney",
+     "area": "Talavera Way"
+    },
+    {
+     "name": "The Quays",
+     "area": "Crow Lane"
+    }
+   ]
+  },
+  "luton": {
+   "q": "Luton",
+   "hotels": [
+    {
+     "name": "Luton Hoo",
+     "stars": 5,
+     "area": "The Luton Drive",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Luton_Hoo%2C_Bedfordshire%2C_England%2C_19_Sept._2010_-_Flickr_-_PhillipC_(2).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Luton_Hoo%2C_Bedfordshire%2C_England%2C_19_Sept._2010_-_Flickr_-_PhillipC_(2).jpg"
+     }
+    },
+    {
+     "name": "Holiday Inn London Luton North",
+     "stars": 4,
+     "area": "Hitchin Road"
+    },
+    {
+     "name": "Spark by Hilton Luton",
+     "stars": 4,
+     "area": "Mill Street"
+    },
+    {
+     "name": "Hampton by Hilton London Luton Airport",
+     "stars": 3,
+     "area": "Kimpton Road"
+    },
+    {
+     "name": "The Red Lion hotel",
+     "area": "Castle Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%22The_Red_Lion_Hotel%22%2C_Luton_-_geograph.org.uk_-_4394367.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:%22The_Red_Lion_Hotel%22%2C_Luton_-_geograph.org.uk_-_4394367.jpg"
+     }
+    },
+    {
+     "name": "Citi Hotel Luton",
+     "area": "Guildford Street"
+    }
+   ]
+  },
+  "watford": {
+   "q": "Watford",
+   "hotels": [
+    {
+     "name": "Hilton London Watford",
+     "stars": 4,
+     "area": "North Western Avenue"
+    },
+    {
+     "name": "The Grove",
+     "area": "Musical Trail",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Grove_and_golf_course%2C_Watford_-_geograph.org.uk_-_131616.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Grove_and_golf_course%2C_Watford_-_geograph.org.uk_-_131616.jpg"
+     }
+    },
+    {
+     "name": "Hunton Park Hotel",
+     "area": "Essex Lane",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hazelwood%2C_King's_Langley.png?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hazelwood%2C_King's_Langley.png"
+     }
+    },
+    {
+     "name": "Grim's Dyke Hotel",
+     "area": "Old Redding",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grims-dyke-main.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Grims-dyke-main.jpg"
+     }
+    },
+    {
+     "name": "Holiday Inn",
+     "area": "Clarendon Road"
+    },
+    {
+     "name": "Leonardo Hotel London Watford",
+     "area": "Clarendon Road"
+    }
+   ]
+  },
+  "st albans": {
+   "q": "St Albans",
+   "hotels": [
+    {
+     "name": "Ardmore House Hotel",
+     "stars": 3,
+     "area": "Lemsford Road"
+    },
+    {
+     "name": "The White Hart Hotel",
+     "area": "Holywell Hill",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/White-Hart-20031026-005.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:White-Hart-20031026-005.jpg"
+     }
+    },
+    {
+     "name": "Aubrey Park Hotel",
+     "area": "Aubrey Lane"
+    },
+    {
+     "name": "St Michael's Manor",
+     "area": "Fishpool Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/St_Michael's_Manor_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:St_Michael's_Manor_Hotel.jpg"
+     }
+    },
+    {
+     "name": "Sopwell House",
+     "area": "Cottonmill Lane",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sopwell_House_(geograph_3431360).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Sopwell_House_(geograph_3431360).jpg"
+     }
+    },
+    {
+     "name": "Travelodge St Albans",
+     "area": "St Peter's Street"
+    }
+   ]
+  },
+  "swansea": {
+   "q": "Swansea",
+   "hotels": [
+    {
+     "name": "Swansea Marriott Hotel",
+     "stars": 4,
+     "area": "Trawler Road"
+    },
+    {
+     "name": "Morgans Hotel",
+     "area": "Somerset Place",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwesty_Morgans%2C_Abertawe.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Gwesty_Morgans%2C_Abertawe.JPG"
+     }
+    },
+    {
+     "name": "The King Arthur Hotel",
+     "area": "Robins Lane"
+    },
+    {
+     "name": "Grand Hotel",
+     "area": "Ivey Place",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Hotel%2C_Swansea_-_geograph.org.uk_-_5511490.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Grand_Hotel%2C_Swansea_-_geograph.org.uk_-_5511490.jpg"
+     }
+    },
+    {
+     "name": "Mercure Swansea",
+     "area": "Phoenix Way"
+    },
+    {
+     "name": "The Mumbles (Carlton) Hotel",
+     "area": "Mumbles Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mumbles_Carlton_Hotel%2C_Mumbles.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Mumbles_Carlton_Hotel%2C_Mumbles.jpg"
+     }
+    }
+   ]
+  },
+  "newport": {
+   "q": "Newport",
+   "hotels": [
+    {
+     "name": "Mercure Hotel",
+     "stars": 4,
+     "area": "Upper Dock Street"
+    },
+    {
+     "name": "Parkway Hotel",
+     "stars": 4,
+     "area": "Cwmbran Drive"
+    },
+    {
+     "name": "Crossways House",
+     "stars": 4,
+     "area": "Crossways Road"
+    },
+    {
+     "name": "The Priory Hotel",
+     "stars": 3,
+     "area": "High Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_priory_hotel%2C_Caerleon.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_priory_hotel%2C_Caerleon.jpg"
+     }
+    },
+    {
+     "name": "The Celtic Manor Resort",
+     "area": "Caerleon",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Resort_Hotel%2C_Celtic_Manor_Resort.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Resort_Hotel%2C_Celtic_Manor_Resort.jpg"
+     }
+    },
+    {
+     "name": "The Wheatsheaf Inn",
+     "area": "St Thomas' Square",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Wheatsheaf_Hotel%2C_Newport_-_geograph.org.uk_-_395333.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Wheatsheaf_Hotel%2C_Newport_-_geograph.org.uk_-_395333.jpg"
+     }
+    }
+   ]
+  },
+  "llandudno": {
+   "q": "Llandudno",
+   "hotels": [
+    {
+     "name": "St George's Hotel",
+     "stars": 4,
+     "area": "St George's Place",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/St_George's_Hotel%2C_Llandudno.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:St_George's_Hotel%2C_Llandudno.jpg"
+     }
+    },
+    {
+     "name": "Imperial Hotel",
+     "area": "Vaughan Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Hotel%2C_Gloddaeth_Crescent.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Imperial_Hotel%2C_Gloddaeth_Crescent.jpg"
+     }
+    },
+    {
+     "name": "Tynedale Hotel",
+     "area": "Gloddaeth Crescent"
+    },
+    {
+     "name": "St Kilda Hotel",
+     "area": "Gloddaeth Crescent",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/St_Kilda_Hotel%2C_Llandudno.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:St_Kilda_Hotel%2C_Llandudno.jpg"
+     }
+    },
+    {
+     "name": "Chatsworth House Hotel",
+     "area": "Gloddaeth Crescent",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chatsworth_House_Hotel%2C_Llandudno.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Chatsworth_House_Hotel%2C_Llandudno.jpg"
+     }
+    },
+    {
+     "name": "Karden House",
+     "area": "Charlton Street"
+    }
+   ]
+  },
+  "tenby": {
+   "q": "Tenby",
+   "hotels": [
+    {
+     "name": "The Royal Lion Hotel",
+     "area": "High Street"
+    },
+    {
+     "name": "Billycan",
+     "area": "Lower Frog Street"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "White Lion Street"
+    },
+    {
+     "name": "Strathmore Hotel",
+     "area": "Victoria Street"
+    },
+    {
+     "name": "Cliffe Norton Hotel",
+     "area": "The Norton"
+    },
+    {
+     "name": "Gumfreston Guest House",
+     "area": "Culver Park"
+    }
+   ]
+  },
+  "aberdeen": {
+   "q": "Aberdeen",
+   "hotels": [
+    {
+     "name": "Skene House Apartments Holburn",
+     "stars": 4,
+     "area": "Union Grove"
+    },
+    {
+     "name": "Residence Inn",
+     "stars": 3,
+     "area": "Guestrow"
+    },
+    {
+     "name": "The Mariner",
+     "stars": 3,
+     "area": "Great Western Road"
+    },
+    {
+     "name": "Premier Inn (Aberdeen City Centre)",
+     "area": "West North Street"
+    },
+    {
+     "name": "Aberdeen Douglas Hotel",
+     "area": "Market Street"
+    },
+    {
+     "name": "Rox Hotel",
+     "area": "Market Street"
+    }
+   ]
+  },
+  "dundee": {
+   "q": "Dundee",
+   "hotels": [
+    {
+     "name": "Dundee Carlton Hotel",
+     "stars": 3,
+     "area": "Dalgleish Road"
+    },
+    {
+     "name": "Four Points Flex by Sheraton",
+     "area": "South Union Street"
+    },
+    {
+     "name": "Hampton by Hilton Dundee City Centre",
+     "area": "Argyllgait"
+    },
+    {
+     "name": "Holiday Inn Express",
+     "area": "Dock Street"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Riverside Drive"
+    },
+    {
+     "name": "The Queens Hotel",
+     "area": "Nethergate"
+    }
+   ]
+  },
+  "inverness": {
+   "q": "Inverness",
+   "hotels": [
+    {
+     "name": "Rocpool Reserve",
+     "stars": 5,
+     "area": "Culduthel Road"
+    },
+    {
+     "name": "Glenmoriston Town House Hotel",
+     "stars": 4,
+     "area": "Ness Bank"
+    },
+    {
+     "name": "Kingsmills Hotel",
+     "stars": 4,
+     "area": "Culcabock Road"
+    },
+    {
+     "name": "Glen Mhor Hotel",
+     "stars": 3,
+     "area": "Ness Bank"
+    },
+    {
+     "name": "Craigmonie Hotel",
+     "stars": 3,
+     "area": "Annfield Road"
+    },
+    {
+     "name": "Mercure Inverness",
+     "stars": 3,
+     "area": "Church Street"
+    }
+   ]
+  },
+  "stirling": {
+   "q": "Stirling",
+   "hotels": [
+    {
+     "name": "Callander Meadows",
+     "stars": 4,
+     "area": "Main Street"
+    },
+    {
+     "name": "Stirling Court Hotel",
+     "stars": 3,
+     "area": "East Link Road"
+    },
+    {
+     "name": "Poppies",
+     "stars": 3,
+     "area": "Leny Road"
+    },
+    {
+     "name": "Gartmore House",
+     "area": "Park Avenue",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gartmore_House_2.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Gartmore_House_2.jpg"
+     }
+    },
+    {
+     "name": "Golden Lion",
+     "area": "King Street"
+    },
+    {
+     "name": "Munro Guest House",
+     "area": "Princes Street"
+    }
+   ]
+  },
+  "st andrews": {
+   "q": "St Andrews",
+   "hotels": [
+    {
+     "name": "Seaton House",
+     "stars": 5,
+     "area": "The Scores"
+    },
+    {
+     "name": "Marine & Lawn Rusacks",
+     "stars": 5,
+     "area": "Links Crescent"
+    },
+    {
+     "name": "Hôtel du Vin & Bistro",
+     "stars": 4,
+     "area": "The Scores"
+    },
+    {
+     "name": "Hazelbank Hotel",
+     "stars": 3,
+     "area": "The Scores"
+    },
+    {
+     "name": "Hamilton Grand",
+     "area": "Golf Place",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamilton_Grand.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hamilton_Grand.jpg"
+     }
+    },
+    {
+     "name": "Old Course Hotel",
+     "area": "Old Station Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_Course_Hotel-St_Andrews-Geograph-6167264-by-Richard-Sutcliffe_(cropped).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Old_Course_Hotel-St_Andrews-Geograph-6167264-by-Richard-Sutcliffe_(cropped).jpg"
+     }
+    }
+   ]
+  },
+  "fort william": {
+   "q": "Fort William",
+   "hotels": [
+    {
+     "name": "Clan MacDuff Hotel",
+     "stars": 3,
+     "area": "A82"
+    },
+    {
+     "name": "Best Western Imperial Hotel",
+     "stars": 3,
+     "area": "Fraser Square"
+    },
+    {
+     "name": "Nevis Bank Inn",
+     "area": "Belford Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nevis_Bank_Inn_-_Browns_Restaurant_-_geograph.org.uk_-_3414305.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Nevis_Bank_Inn_-_Browns_Restaurant_-_geograph.org.uk_-_3414305.jpg"
+     }
+    },
+    {
+     "name": "Ossians",
+     "area": "High Street"
+    },
+    {
+     "name": "Alexandra Hotel",
+     "area": "Middle Street"
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Great Glen Way"
+    }
+   ]
+  },
+  "perth": {
+   "q": "Perth",
+   "hotels": [
+    {
+     "name": "Radisson Blu Hotel",
+     "area": "Leonard Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/5._Perth_Station_copy.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:5._Perth_Station_copy.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Mill Street"
+    },
+    {
+     "name": "Salutation Hotel",
+     "area": "South Street"
+    },
+    {
+     "name": "Queens Hotel",
+     "area": "Leonard Street"
+    },
+    {
+     "name": "The Lovat Hotel",
+     "area": "Glasgow Road"
+    },
+    {
+     "name": "Scone Arms",
+     "area": "Cross Street"
+    }
+   ]
+  },
+  "londonderry": {
+   "q": "Londonderry",
+   "hotels": [
+    {
+     "name": "Maldron Hotel Derry",
+     "stars": 4,
+     "area": "Butcher Street"
+    },
+    {
+     "name": "City Hotel",
+     "stars": 4,
+     "area": "Queen's Quay"
+    },
+    {
+     "name": "Travelodge Derry",
+     "stars": 3,
+     "area": "Strand Road"
+    },
+    {
+     "name": "Da Vinci's",
+     "area": "Culmore Road"
+    },
+    {
+     "name": "Shipquay Hotel",
+     "area": "Shipquay Street"
+    },
+    {
+     "name": "Everglades Hotel",
+     "area": "Prehen Road"
+    }
+   ]
+  },
+  "portrush": {
+   "q": "Portrush",
+   "hotels": [
+    {
+     "name": "The Marcus Portrush, Tapestry Collection by Hilton",
+     "area": "Main Street"
+    },
+    {
+     "name": "The Marcus Portrush",
+     "area": "Main Street"
+    },
+    {
+     "name": "Marine & Lawn Portrush",
+     "area": "Main Street"
+    },
+    {
+     "name": "Portrush Atlantic Hotel",
+     "area": "Main Street"
+    },
+    {
+     "name": "Elephant Rock Hotel",
+     "area": "Lansdowne Crescent"
+    },
+    {
+     "name": "Magherabuoy House Hotel",
+     "area": "Magheraboy Road"
+    }
+   ]
+  },
+  "keswick": {
+   "q": "Keswick",
+   "hotels": [
+    {
+     "name": "Holiday Inn Norwich",
+     "stars": 4,
+     "area": "Ipswich Road"
+    },
+    {
+     "name": "The George Hotel",
+     "stars": 3,
+     "area": "Arlington Lane",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Frontage_of_the_George_Hotel_Arlington_Lane_-_geograph.org.uk_-_7974012.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Frontage_of_the_George_Hotel_Arlington_Lane_-_geograph.org.uk_-_7974012.jpg"
+     }
+    },
+    {
+     "name": "Annesley House Hotel",
+     "stars": 3,
+     "area": "Newmarket Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Annesley_House_Hotel%2C_Norwich_-_geograph.org.uk_-_5416517.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Annesley_House_Hotel%2C_Norwich_-_geograph.org.uk_-_5416517.jpg"
+     }
+    },
+    {
+     "name": "Kings Arms Hotel",
+     "area": "Main Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kings_Arms%2C_Keswick.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Kings_Arms%2C_Keswick.jpg"
+     }
+    },
+    {
+     "name": "The Skiddaw Hotel",
+     "area": "Main Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Skiddaw_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Skiddaw_Hotel.jpg"
+     }
+    },
+    {
+     "name": "Keswick Country House Hotel",
+     "area": "Station Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Keswick_Hotel_-_geograph.org.uk_-_5977007.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Keswick_Hotel_-_geograph.org.uk_-_5977007.jpg"
+     }
+    }
+   ]
+  },
+  "windermere": {
+   "q": "Windermere",
+   "hotels": [
+    {
+     "name": "Applegarth Villa",
+     "stars": 5,
+     "area": "College Road"
+    },
+    {
+     "name": "The Old England",
+     "stars": 4,
+     "area": "Church Street"
+    },
+    {
+     "name": "Windermere Hotel",
+     "area": "Kendal Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Windermere_Hotel_-_geograph.org.uk_-_1573883.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Windermere_Hotel_-_geograph.org.uk_-_1573883.jpg"
+     }
+    },
+    {
+     "name": "The Belsfield",
+     "area": "Kendal Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Belsfield.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Belsfield.jpg"
+     }
+    },
+    {
+     "name": "The Ryebeck",
+     "area": "Kendal Road"
+    },
+    {
+     "name": "Storrs Hall Hotel",
+     "area": "A592",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Storrs_Hall_Hotel.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Storrs_Hall_Hotel.JPG"
+     }
+    }
+   ]
+  },
+  "ambleside": {
+   "q": "Ambleside",
+   "hotels": [
+    {
+     "name": "Rothay Manor Hotel",
+     "area": "Borrans Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ambleside_buildings_(25)_(geograph_6231846).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Ambleside_buildings_(25)_(geograph_6231846).jpg"
+     }
+    },
+    {
+     "name": "Wateredge Inn",
+     "area": "Borrans Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lakes_-_Wateredge_Hotel_-_.jpeg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Lakes_-_Wateredge_Hotel_-_.jpeg"
+     }
+    },
+    {
+     "name": "Glen Rothay Hotel",
+     "area": "A591",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Glen_Rothay_Hotel.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Glen_Rothay_Hotel.jpg"
+     }
+    },
+    {
+     "name": "Langdale Chase Hotel",
+     "area": "A591",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lakes_-_Langdale_Chase_Hotel_(geograph_6327527).jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Lakes_-_Langdale_Chase_Hotel_(geograph_6327527).jpg"
+     }
+    },
+    {
+     "name": "Rydal Hall",
+     "area": "Woodland Sculture Trail",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rydal_Hall.JPG?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Rydal_Hall.JPG"
+     }
+    },
+    {
+     "name": "White Moss House",
+     "area": "A591",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Moss_House_hotel_-_near_Rydal_Water_-_geograph.org.uk_-_1169785.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:White_Moss_House_hotel_-_near_Rydal_Water_-_geograph.org.uk_-_1169785.jpg"
+     }
+    }
+   ]
+  },
+  "newquay": {
+   "q": "Newquay",
+   "hotels": [
+    {
+     "name": "Atlantic Hotel",
+     "area": "Dane Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Atlantic-Hotel-Newquay.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Atlantic-Hotel-Newquay.jpg"
+     }
+    },
+    {
+     "name": "Headland Hotel",
+     "area": "Headland Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Headland_Hotel_-_geograph.org.uk_-_1096186.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Headland_Hotel_-_geograph.org.uk_-_1096186.jpg"
+     }
+    },
+    {
+     "name": "Glendorgal Hotel",
+     "area": "Lusty Glaze Road"
+    },
+    {
+     "name": "Hotel Sunnyside",
+     "area": "The Crescent"
+    },
+    {
+     "name": "Travelodge Newquay Seafront",
+     "area": "Cliff Road"
+    },
+    {
+     "name": "Longbeach Hotel",
+     "area": "Trevose Avenue"
+    }
+   ]
+  },
+  "falmouth": {
+   "q": "Falmouth",
+   "hotels": [
+    {
+     "name": "St Michael's Hotel & Spa",
+     "stars": 4,
+     "area": "Stracey Road"
+    },
+    {
+     "name": "Royal Duchy Hotel",
+     "area": "Cliff Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Duchy_Hotel_-_geograph.org.uk_-_1482830.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Royal_Duchy_Hotel_-_geograph.org.uk_-_1482830.jpg"
+     }
+    },
+    {
+     "name": "Falmouth Hotel",
+     "area": "Cliff Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Falmouth_Hotel_-_geograph.org.uk_-_182313.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Falmouth_Hotel_-_geograph.org.uk_-_182313.jpg"
+     }
+    },
+    {
+     "name": "Chelsea House",
+     "area": "Emslie Road"
+    },
+    {
+     "name": "Greenbank Hotel",
+     "area": "Stratton Place"
+    },
+    {
+     "name": "Membly Hall",
+     "area": "Cliff Road"
+    }
+   ]
+  },
+  "penzance": {
+   "q": "Penzance",
+   "hotels": [
+    {
+     "name": "The Abbey Hotel",
+     "area": "New Street"
+    },
+    {
+     "name": "Chapel House",
+     "area": "Chapel Street",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Penzance_(2022-07-17)_127.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Penzance_(2022-07-17)_127.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn",
+     "area": "Market Jew Street"
+    },
+    {
+     "name": "The Longboat Inn",
+     "area": "Market Jew Street"
+    },
+    {
+     "name": "Hotel Penzance",
+     "area": "Britons Hill"
+    },
+    {
+     "name": "The Lugger Inn",
+     "area": "Marine Terrace"
+    }
+   ]
+  },
+  "weymouth": {
+   "q": "Weymouth",
+   "hotels": [
+    {
+     "name": "Royal Hotel",
+     "area": "The Esplanade",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Royal_Hotel%2C_Weymouth_-_geograph.org.uk_-_893803.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Royal_Hotel%2C_Weymouth_-_geograph.org.uk_-_893803.jpg"
+     }
+    },
+    {
+     "name": "Crown Hotel",
+     "area": "St Thomas Street"
+    },
+    {
+     "name": "The Leam Hotel",
+     "area": "The Esplanade"
+    },
+    {
+     "name": "Clifton Hotel",
+     "area": "Queen Street"
+    },
+    {
+     "name": "Russell Hotel",
+     "area": "The Esplanade"
+    },
+    {
+     "name": "Hotel Prince Regent",
+     "area": "The Esplanade"
+    }
+   ]
+  },
+  "gatwick airport": {
+   "q": "Gatwick Airport",
+   "hotels": [
+    {
+     "name": "Hilton London Gatwick Airport",
+     "stars": 4,
+     "area": "Eastway"
+    },
+    {
+     "name": "Sofitel Gatwick",
+     "stars": 4,
+     "area": "Northway",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sofitel%2C_Gatwick_North_Terminal_-_geograph.org.uk_-_2902036.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Sofitel%2C_Gatwick_North_Terminal_-_geograph.org.uk_-_2902036.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn Gatwick North Terminal",
+     "area": "Crossway",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sofitel_and_Premier_Inn_-_geograph.org.uk_-_4750878.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Sofitel_and_Premier_Inn_-_geograph.org.uk_-_4750878.jpg"
+     }
+    },
+    {
+     "name": "Premier Inn London Gatwick Airport (A23)",
+     "area": "London Road"
+    },
+    {
+     "name": "Hampton by Hilton London Gatwick Airport",
+     "area": "Longbridge Gate",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampton_by_Hilton_-_London_Gatwick_Airport_North_Terminal_-_geograph.org.uk_-_4994261.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Hampton_by_Hilton_-_London_Gatwick_Airport_North_Terminal_-_geograph.org.uk_-_4994261.jpg"
+     }
+    },
+    {
+     "name": "Cambridge",
+     "area": "Bonehurst Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Cambridge_Hotel_-_geograph.org.uk_-_2918396.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Cambridge_Hotel_-_geograph.org.uk_-_2918396.jpg"
+     }
+    }
+   ]
+  },
+  "manchester airport": {
+   "q": "Manchester Airport",
+   "hotels": [
+    {
+     "name": "DoubleTree",
+     "stars": 4,
+     "area": "Outwood Road"
+    },
+    {
+     "name": "Clayton Hotel",
+     "area": "Outwood Road",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Clayton_Hotel_Manchester_Airport.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Clayton_Hotel_Manchester_Airport.jpg"
+     }
+    },
+    {
+     "name": "Dakota Hotel",
+     "area": "Enterprise Way",
+     "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dakota-Hotel-WEB.jpg?width=640",
+      "page": "https://commons.wikimedia.org/wiki/File:Dakota-Hotel-WEB.jpg"
+     }
+    },
+    {
+     "name": "Ibis Budget Manchester Airport",
+     "area": "Palma Avenue"
+    },
+    {
+     "name": "Holiday Inn Manchester Airport",
+     "area": "Palma Avenue"
+    },
+    {
+     "name": "Etrop Grange Hotel",
+     "area": "Bailey Lane"
+    }
+   ]
+  },
+  "stansted airport": {
+   "q": "Stansted Airport",
+   "hotels": [
+    {
+     "name": "Hampton by Hilton London Stansted Airport",
+     "stars": 3,
+     "area": "Bassingbourn Road"
+    },
+    {
+     "name": "DeSalis Hotel",
+     "stars": 3,
+     "area": "Elsenham Road"
+    },
+    {
+     "name": "Bury Lodge Hotel",
+     "area": "Bury Lodge Lane"
+    },
+    {
+     "name": "Radisson Blu",
+     "area": "Gorefield Road"
+    },
+    {
+     "name": "Premier Inn London Stansted Airport",
+     "area": "Thremhall Avenue"
+    },
+    {
+     "name": "The Green Man",
+     "area": "Dunmow Road"
+    }
+   ]
+  }
+ },
+ "updated": "2026-10-15",
+ "source": "OpenStreetMap contributors (ODbL) and Wikidata/Wikimedia Commons"
+}
