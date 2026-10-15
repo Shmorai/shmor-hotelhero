@@ -50,6 +50,36 @@ const LINKS = site.links || {};
 const PEOPLE = site.people || {};
 const EDITORIAL = seo.editorialPage || '';
 
+/* ---------- Words: English by default, French when seo.locale starts with "fr"; seo.strings overrides any key ---------- */
+const WORDS = {
+  en: { home: 'Home', searchPlaceholder: 'What are you looking for?', search: 'Search', searchSite: 'Search {name}', readMore: 'Read more →',
+    latestPosts: 'Latest posts', latestFrom: 'Latest from the {blog}', moreFrom: 'More from the {blog}', blog: 'blog', seeAllPosts: 'See all posts →',
+    sources: 'Sources and official links', by: 'By', writtenBy: 'Written by', team: 'the {name} editorial team', teamOrg: '{name} editorial team',
+    reviewedBy: 'Reviewed by', updated: 'Updated', minRead: '{n} min read', editorial: 'Editorial standards', checkReg: 'Check registration',
+    seePlans: 'See {title} plans', readGuide: 'Read the guide', explore: 'Explore', all: 'All', partnersTitle: 'Compare deals from our partners',
+    viewDeal: 'View deal →', comparePrices: 'Compare prices at {merchant}', visit: 'Visit {merchant} →',
+    affNote: 'We may earn a commission if you book through these links, at no extra cost to you.', moneyLink: 'How we make money',
+    onThisPage: 'On this page', lastUpdated: 'Last updated: {date}', faqTitle: 'Frequently asked questions', keepExploring: 'Keep exploring',
+    notFoundTitle: 'Page not found', notFoundNav: 'Not found', notFoundDesc: 'This page could not be found on {name}.',
+    notFoundH1: "We couldn't find that page", notFoundText: 'Try a search, or head back to the {home}.', homepage: '{name} homepage',
+    photo: 'Photo: {who}', photoOn: '{who} on {site}', breadcrumb: 'Breadcrumb', resultsFor: 'Results for “{q}”',
+    noResults: 'No pages matched. Try a broader search, or browse the guides below.', searchError: 'Search is unavailable right now.', dateLocale: 'en-GB' },
+  fr: { home: 'Accueil', searchPlaceholder: 'Que recherchez-vous ?', search: 'Rechercher', searchSite: 'Rechercher sur {name}', readMore: 'Lire la suite →',
+    latestPosts: 'Derniers articles', latestFrom: 'Les derniers articles du {blog}', moreFrom: 'À lire aussi', blog: 'blog', seeAllPosts: 'Voir tous les articles →',
+    sources: 'Sources et liens officiels', by: 'Par', writtenBy: 'Rédigé par', team: 'la rédaction de {name}', teamOrg: 'Rédaction de {name}',
+    reviewedBy: 'Relu par', updated: 'Mis à jour le', minRead: '{n} min de lecture', editorial: 'Charte éditoriale', checkReg: 'Vérifier l’inscription',
+    seePlans: 'Voir les offres {title}', readGuide: 'Lire le guide', explore: 'Découvrir', all: 'Tout', partnersTitle: 'Nos partenaires',
+    viewDeal: 'Voir l’offre →', comparePrices: 'Comparer chez {merchant}', visit: 'Aller sur {merchant} →',
+    affNote: 'Nous pouvons percevoir une commission lorsque vous passez par ces liens, sans aucun surcoût pour vous.', moneyLink: 'Comment nous sommes rémunérés',
+    onThisPage: 'Sur cette page', lastUpdated: 'Dernière mise à jour : {date}', faqTitle: 'Questions fréquentes', keepExploring: 'À découvrir aussi',
+    notFoundTitle: 'Page introuvable', notFoundNav: 'Page introuvable', notFoundDesc: 'Cette page n’existe pas ou plus sur {name}.',
+    notFoundH1: 'Nous n’avons pas trouvé cette page', notFoundText: 'Lancez une recherche ou revenez à l’{home}.', homepage: 'accueil de {name}',
+    photo: 'Photo : {who}', photoOn: '{who} sur {site}', breadcrumb: 'Fil d’Ariane', resultsFor: 'Résultats pour « {q} »',
+    noResults: 'Aucune page ne correspond. Essayez une recherche plus large ou parcourez les guides ci-dessous.', searchError: 'La recherche est indisponible pour le moment.', dateLocale: 'fr-FR' },
+};
+const W = { ...WORDS.en, ...(/^fr/i.test(seo.locale || '') ? WORDS.fr : {}), ...(seo.strings || {}) };
+const t = (k, v = {}) => String(W[k] ?? k).replace(/{(\w+)}/g, (m, x) => (x in v ? v[x] : m));
+
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const strip = s => String(s ?? '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const slugify = s => strip(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -98,7 +128,7 @@ if (CHECK) { console.log(`✓ ${pages.length} pages valid.`); process.exit(0); }
 /* ---------- Helpers ---------- */
 const posts = pages.filter(p => p.type === 'post' && !p.noindex).sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title));
 const blogIndex = pages.find(p => p.type === 'blog');
-const fmtDate = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const fmtDate = d => new Date(d + 'T12:00:00Z').toLocaleDateString(W.dateLocale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 const readMins = p => Math.max(1, Math.round(strip([p.intro, ...(p.sections || []).map(s => s.html), ...(p.faqs || []).map(f => f.a)].join(' ')).split(' ').length / 220));
 const pageUrl = p => `${BASE}/${p.slug ? p.slug + '/' : ''}`;
 const pagePath = p => `/${p.slug ? p.slug + '/' : ''}`;
@@ -112,8 +142,8 @@ const person = id => { const x = PEOPLE[id]; const url = EDITORIAL ? `${BASE}/${
   return { '@type': 'Person', name: x.name, ...(x.role ? { jobTitle: x.role } : {}), ...(x.credentials ? { description: x.credentials } : {}),
     ...(url ? { url } : {}), ...((x.sameAs || []).length ? { sameAs: x.sameAs } : {}) }; };
 const personLink = id => personHref(id) ? `<a href="${esc(personHref(id))}">${esc(PEOPLE[id].name)}</a>` : esc(PEOPLE[id].name);
-const byWho = p => p.writtenBy ? personLink(p.writtenBy) : `the ${esc(NAME)} editorial team`;
-const reviewedHtml = p => `Reviewed by ${personLink(p.reviewedBy)}${PEOPLE[p.reviewedBy].credentials ? `, ${esc(PEOPLE[p.reviewedBy].credentials)}` : ''}, <time datetime="${p.reviewed}">${fmtDate(p.reviewed)}</time>`;
+const byWho = p => p.writtenBy ? personLink(p.writtenBy) : t('team', { name: esc(NAME) });
+const reviewedHtml = p => `${t('reviewedBy')} ${personLink(p.reviewedBy)}${PEOPLE[p.reviewedBy].credentials ? `, ${esc(PEOPLE[p.reviewedBy].credentials)}` : ''}, <time datetime="${p.reviewed}">${fmtDate(p.reviewed)}</time>`;
 
 // Photos. A page's "image" is a path ("/assets/img/x.jpg") or { "src", "alt", "credit", "creditUrl" }.
 // Unsplash URLs (images.unsplash.com) are resized and cropped by their CDN; other files are used as they are.
@@ -123,12 +153,12 @@ const imgSrc = (i, w, h) => isUnsplash(i) ? `${i.src.split('?')[0]}?w=${w}${h ? 
 const imgSet = (i, widths, ratio) => isUnsplash(i) ? ` srcset="${widths.map(w => `${esc(imgSrc(i, w, ratio && Math.round(w * ratio)))} ${w}w`).join(', ')}"` : '';
 const absUrl = s => /^https?:/.test(s) ? s : BASE + s;
 const UTM = 'utm_source=shmor&utm_medium=referral';
-const credit = i => !i?.credit ? '' : `<p class="photo-credit">Photo: ${i.creditUrl ? `<a href="${esc(i.creditUrl)}?${UTM}" rel="nofollow noopener" target="_blank">${esc(i.credit)}</a>` : esc(i.credit)}${isUnsplash(i) ? ` on <a href="https://unsplash.com/?${UTM}" rel="nofollow noopener" target="_blank">Unsplash</a>` : ''}</p>`;
+const credit = i => !i?.credit ? '' : `<p class="photo-credit">${t('photo', { who: ((who) => isUnsplash(i) ? t('photoOn', { who, site: `<a href="https://unsplash.com/?${UTM}" rel="nofollow noopener" target="_blank">Unsplash</a>` }) : who)(i.creditUrl ? `<a href="${esc(i.creditUrl)}?${UTM}" rel="nofollow noopener" target="_blank">${esc(i.credit)}</a>` : esc(i.credit)) })}</p>`;
 const cardImg = r => { const i = imgOf(r.image); return i ? `<img class="card-img" src="${esc(imgSrc(i, 600, 360))}"${imgSet(i, [400, 600, 900], .6)} sizes="(max-width: 640px) 100vw, 380px" width="600" height="360" alt="${esc(i.alt || '')}" loading="lazy" decoding="async">` : ''; };
 
 function crumbs(p) {
   if (!p.slug) return [];
-  const out = [{ name: 'Home', url: `${BASE}/`, path: '/' }];
+  const out = [{ name: t('home'), url: `${BASE}/`, path: '/' }];
   const parts = p.slug.split('/');
   for (let i = 1; i < parts.length; i++) {
     const parent = bySlug.get(parts.slice(0, i).join('/'));
@@ -160,7 +190,7 @@ function head(p, { noindex = false, canonical = true } = {}) {
   if (p.type === 'post') graph.push({ '@type': 'BlogPosting', '@id': `${url}#post`, mainEntityOfPage: { '@id': `${url}#page` },
     headline: p.h1, description: p.description, datePublished: p.date, dateModified: p.updated || p.date, inLanguage: seo.locale || 'en',
     ...(img ? { image: img } : {}), ...(p.keywords?.length ? { keywords: p.keywords.join(', ') } : {}),
-    author: p.writtenBy ? person(p.writtenBy) : { '@type': 'Organization', name: `${NAME} editorial team`, url: `${BASE}/` },
+    author: p.writtenBy ? person(p.writtenBy) : { '@type': 'Organization', name: t('teamOrg', { name: NAME }), url: `${BASE}/` },
     publisher: { '@type': 'Organization', name: NAME, url: `${BASE}/`, ...(seo.logo ? { logo: { '@type': 'ImageObject', url: `${BASE}${seo.logo}` } } : {}) } });
   if (p.type === 'blog') graph.push({ '@type': 'Blog', '@id': `${url}#blog`, url, name: p.h1, description: p.description,
     blogPost: posts.slice(0, 20).map(x => ({ '@type': 'BlogPosting', headline: x.h1, url: pageUrl(x), datePublished: x.date })) });
@@ -197,8 +227,8 @@ function head(p, { noindex = false, canonical = true } = {}) {
 /* ---------- Page sections ---------- */
 const searchForm = (placeholder, cls = '') => `<form class="search ${cls}" action="/search/" role="search">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-  <input name="q" type="search" placeholder="${esc(placeholder || seo.searchPlaceholder || 'What are you looking for?')}" aria-label="Search ${esc(NAME)}">
-  <button type="submit">Search</button>
+  <input name="q" type="search" placeholder="${esc(placeholder || seo.searchPlaceholder || t('searchPlaceholder'))}" aria-label="${esc(t('searchSite', { name: NAME }))}">
+  <button type="submit">${esc(t('search'))}</button>
 </form>`;
 
 function hero(p) {
@@ -208,33 +238,33 @@ function hero(p) {
   ${p.eyebrow ? `<p class="eyebrow">${esc(p.eyebrow)}</p>` : ''}
   <h1>${p.h1Html || esc(p.h1)}</h1>
   ${p.intro ? `<p class="lede">${p.intro}</p>` : ''}${p.heroHtml || ''}
-  ${p.type === 'post' ? `<p class="post-byline">By ${byWho(p)}${p.reviewedBy ? ` · ${reviewedHtml(p)}` : ''} · <time datetime="${p.date}">${fmtDate(p.date)}</time>${p.updated && p.updated !== p.date ? ` · Updated <time datetime="${p.updated}">${fmtDate(p.updated)}</time>` : ''} · ${readMins(p)} min read</p>` : ''}
+  ${p.type === 'post' ? `<p class="post-byline">${t('by')} ${byWho(p)}${p.reviewedBy ? ` · ${reviewedHtml(p)}` : ''} · <time datetime="${p.date}">${fmtDate(p.date)}</time>${p.updated && p.updated !== p.date ? ` · ${t('updated')} <time datetime="${p.updated}">${fmtDate(p.updated)}</time>` : ''} · ${t('minRead', { n: readMins(p) })}</p>` : ''}
   ${p.search === false || (p.type === 'post' && p.search !== true) ? '' : searchForm(p.searchPlaceholder)}
   ${p.chips?.length ? `<div class="chips">${p.chips.map(c => `<a href="${c.slug !== undefined ? pagePath(bySlug.get(c.slug) || { slug: c.slug }) : `/search/?q=${encodeURIComponent(c.q)}`}">${esc(c.label)}</a>`).join('')}</div>` : ''}
 </div>${p.slug ? '' : '<div class="hero-art" aria-hidden="true"></div>'}${credit(i)}</section>`;
 }
 
 function postCard(x) {
-  return `<a class="card post-card${x.image ? ' has-img' : ''}" href="${pagePath(x)}">${cardImg(x)}<span class="post-meta"><time datetime="${x.date}">${fmtDate(x.date)}</time> · ${readMins(x)} min read</span><h3>${esc(x.h1)}</h3><p>${esc(x.cardText || x.description)}</p><span class="cta">Read more →</span></a>`;
+  return `<a class="card post-card${x.image ? ' has-img' : ''}" href="${pagePath(x)}">${cardImg(x)}<span class="post-meta"><time datetime="${x.date}">${fmtDate(x.date)}</time> · ${t('minRead', { n: readMins(x) })}</span><h3>${esc(x.h1)}</h3><p>${esc(x.cardText || x.description)}</p><span class="cta">${t('readMore')}</span></a>`;
 }
 function postList(p) {
   const n = p.type === 'blog' ? posts.length : p.latestPosts || 0;
   const list = posts.filter(x => x.slug !== p.slug).slice(0, n);
   if (!list.length) return '';
-  const title = p.type === 'blog' ? (p.listTitle || 'Latest posts') : (p.latestTitle || `Latest from the ${blogIndex ? label(blogIndex).toLowerCase() : 'blog'}`);
-  const more = p.type !== 'blog' && blogIndex && posts.length > list.length ? `<p class="more-link"><a href="${pagePath(blogIndex)}">See all posts →</a></p>` : '';
+  const title = p.type === 'blog' ? (p.listTitle || t('latestPosts')) : (p.latestTitle || t('latestFrom', { blog: blogIndex ? label(blogIndex).toLowerCase() : t('blog') }));
+  const more = p.type !== 'blog' && blogIndex && posts.length > list.length ? `<p class="more-link"><a href="${pagePath(blogIndex)}">${t('seeAllPosts')}</a></p>` : '';
   return `<section class="related posts"><div class="wrap"><h2>${esc(title)}</h2><div class="grid">${list.map(postCard).join('')}</div>${more}</div></section>`;
 }
 function sources(p) {
   if (!p.sources?.length) return '';
-  return `<section class="sources"><div class="wrap"><h2>${esc(p.sourcesTitle || 'Sources and official links')}</h2><ul>${p.sources.map(s =>
+  return `<section class="sources"><div class="wrap"><h2>${esc(p.sourcesTitle || t('sources'))}</h2><ul>${p.sources.map(s =>
     `<li><a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title)}</a></li>`).join('')}</ul></div></section>`;
 }
 
 function breadcrumbHtml(p) {
   const bc = crumbs(p);
   if (!bc.length) return '';
-  return `<nav class="crumbs wrap" aria-label="Breadcrumb"><ol>${bc.map((c, i) =>
+  return `<nav class="crumbs wrap" aria-label="${esc(t('breadcrumb'))}"><ol>${bc.map((c, i) =>
     i === bc.length - 1 ? `<li aria-current="page">${esc(c.name)}</li>` : `<li><a href="${c.path}">${esc(c.name)}</a></li>`).join('')}</ol></nav>`;
 }
 
@@ -316,11 +346,11 @@ const itemHref = it => it.href || (it.slug !== undefined ? pagePath(bySlug.get(i
 // Guide byline bar (seo.bylines): who wrote it, legal review or fact-check note, date, editorial standards link
 function byline(p) {
   if (!seo.bylines || !p.slug || p.type === 'post' || p.type === 'blog' || p.byline === false || p.slug === EDITORIAL) return '';
-  const parts = [`Written by ${byWho(p)}`];
+  const parts = [`${t('writtenBy')} ${byWho(p)}`];
   if (p.reviewedBy) parts.push(reviewedHtml(p));
   else if (seo.checkedText) parts.push(esc(seo.checkedText));
-  if (p.updated) parts.push(`Updated <time datetime="${p.updated}">${fmtDate(p.updated)}</time>`);
-  if (EDITORIAL && bySlug.has(EDITORIAL)) parts.push(`<a href="/${EDITORIAL}/">${esc(seo.editorialLinkText || 'Editorial standards')}</a>`);
+  if (p.updated) parts.push(`${t('updated')} <time datetime="${p.updated}">${fmtDate(p.updated)}</time>`);
+  if (EDITORIAL && bySlug.has(EDITORIAL)) parts.push(`<a href="/${EDITORIAL}/">${esc(seo.editorialLinkText || t('editorial'))}</a>`);
   return `\n<div class="byline${p.reviewedBy ? ' is-reviewed' : ''}"><div class="wrap">${icon(p.reviewedBy ? 'check' : 'file')}<p>${parts.join(' <span class="sep" aria-hidden="true">·</span> ')}</p></div></div>`;
 }
 
@@ -330,14 +360,14 @@ function peopleBlock(b) {
   const head = b.title ? `<div class="block-head"><h2>${esc(b.title)}</h2>${b.intro ? `<p>${b.intro}</p>` : ''}</div>` : '';
   return `<section class="blocks blocks-people"><div class="wrap">${head}<div class="grid people">${ids.map(i => {
     const x = PEOPLE[i], im = imgOf(x.image);
-    return `<article class="person" id="person-${esc(i)}">${im ? `<img class="person-img" src="${esc(imgSrc(im, 240, 240))}" width="120" height="120" alt="${esc(im.alt || x.name)}" loading="lazy">` : ''}<h3>${esc(x.name)}</h3>${x.role ? `<p class="person-role">${esc(x.role)}</p>` : ''}${x.credentials ? `<p class="person-cred">${esc(x.credentials)}</p>` : ''}${x.bio ? `<p class="person-bio">${x.bio}</p>` : ''}${x.registry?.url ? `<p class="person-reg"><a href="${esc(x.registry.url)}" rel="noopener" target="_blank">${esc(x.registry.label || 'Check registration')}</a></p>` : ''}${(x.sameAs || []).length ? `<p class="person-links">${x.sameAs.map(u => `<a href="${esc(u)}" rel="noopener me" target="_blank">${esc(new URL(u).hostname.replace(/^www\./, ''))}</a>`).join(' · ')}</p>` : ''}</article>`;
+    return `<article class="person" id="person-${esc(i)}">${im ? `<img class="person-img" src="${esc(imgSrc(im, 240, 240))}" width="120" height="120" alt="${esc(im.alt || x.name)}" loading="lazy">` : ''}<h3>${esc(x.name)}</h3>${x.role ? `<p class="person-role">${esc(x.role)}</p>` : ''}${x.credentials ? `<p class="person-cred">${esc(x.credentials)}</p>` : ''}${x.bio ? `<p class="person-bio">${x.bio}</p>` : ''}${x.registry?.url ? `<p class="person-reg"><a href="${esc(x.registry.url)}" rel="noopener" target="_blank">${esc(x.registry.label || t('checkReg'))}</a></p>` : ''}${(x.sameAs || []).length ? `<p class="person-links">${x.sameAs.map(u => `<a href="${esc(u)}" rel="noopener me" target="_blank">${esc(new URL(u).hostname.replace(/^www\./, ''))}</a>`).join(' · ')}</p>` : ''}</article>`;
   }).join('')}</div></div></section>`;
 }
 
 function specCard(it, src) {
   const host = it.url ? new URL(it.url).hostname.replace(/^www\./, '') : '';
-  const foot = [it.link && LINKS[it.link] ? `<a class="spec-go" href="${goHref(it.link, src)}" ${AFF}>${esc(it.cta || `See ${it.title} plans`)} →</a>` : '',
-    it.href ? `<a class="spec-more" href="${esc(it.href)}">${esc(it.more || 'Read the guide')} →</a>` : '',
+  const foot = [it.link && LINKS[it.link] ? `<a class="spec-go" href="${goHref(it.link, src)}" ${AFF}>${esc(it.cta || t('seePlans', { title: it.title }))} →</a>` : '',
+    it.href ? `<a class="spec-more" href="${esc(it.href)}">${esc(it.more || t('readGuide'))} →</a>` : '',
     host ? `<a class="spec-site" href="${esc(it.url)}" rel="nofollow noopener" target="_blank">${esc(host)} ↗</a>` : ''].filter(Boolean).join('');
   return `<article class="spec"${it.tag ? ` data-tag="${esc(it.tag)}"` : ''}>
   <div class="spec-head"><span class="spec-chip" aria-hidden="true">${esc(it.mono || it.title.slice(0, 2))}</span><div class="spec-id">${it.kind ? `<p class="spec-kind">${esc(it.kind)}</p>` : ''}<h3>${esc(it.title)}</h3></div>${it.badge ? `<span class="spec-badge">${esc(it.badge)}</span>` : ''}</div>
@@ -362,13 +392,13 @@ function block(b, p = {}) {
   else if (b.type === 'tiles') body = `<div class="tiles">${items.map((it, n) => tag(it, `tile-photo${n === 0 && b.feature !== false ? ' tile-feature' : ''}`,
     `${cardImg({ image: it.image || (it.page && it.page.image) })}<span class="tile-shade"></span><span class="tile-body">${it.badge ? `<span class="tile-badge">${esc(it.badge)}</span>` : ''}<h3>${esc(it.title)}</h3>${it.text ? `<p>${esc(it.text)}</p>` : ''}</span>`)).join('')}</div>`;
   else if (b.type === 'html') body = b.html || '';
-  else if (b.type === 'specs') body = `${b.tabs?.length ? `<div class="spec-tabs" data-tabs hidden>${[{ id: 'all', label: b.allLabel || 'All' }, ...b.tabs].map((t, n) =>
+  else if (b.type === 'specs') body = `${b.tabs?.length ? `<div class="spec-tabs" data-tabs hidden>${[{ id: 'all', label: b.allLabel || t('all') }, ...b.tabs].map((t, n) =>
     `<button type="button" data-tab="${esc(t.id)}" aria-pressed="${n === 0}">${esc(t.label)}</button>`).join('')}</div>` : ''}<div class="spec-grid">${items.map(it => specCard(it, p.slug)).join('')}</div>`;
   else if (b.type === 'meters') body = `<div class="meters">${items.map(it => tag(it, 'meter',
     `<span class="meter-head">${it.icon ? icon(it.icon) : ''}<h3>${esc(it.title)}</h3>${it.valueLabel ? `<span class="meter-val">${esc(it.valueLabel)}</span>` : ''}</span><span class="meter-track" aria-hidden="true"><span style="width:${Math.max(0, Math.min(100, +it.value || 0))}%"></span></span>${it.text ? `<p>${it.text}</p>` : ''}${it.badge ? `<span class="meter-badge">${esc(it.badge)}</span>` : ''}`)).join('')}</div>`;
   else if (b.type === 'steps') body = `<ol class="steps">${items.map(it => `<li>${it.icon ? icon(it.icon) : ''}<h3>${esc(it.title)}</h3><p>${it.text}</p></li>`).join('')}</ol>`;
   else body = `<div class="grid deal-grid">${items.map(it => tag(it, 'deal',
-    `<span class="deal-top">${icon(it.icon || 'tag')}${it.badge ? `<span class="deal-badge">${esc(it.badge)}</span>` : ''}</span><h3>${esc(it.title)}</h3><p>${esc(it.text)}</p>${it.href ? `<span class="cta">${esc(it.cta || 'Explore')} →</span>` : ''}`)).join('')}</div>`;
+    `<span class="deal-top">${icon(it.icon || 'tag')}${it.badge ? `<span class="deal-badge">${esc(it.badge)}</span>` : ''}</span><h3>${esc(it.title)}</h3><p>${esc(it.text)}</p>${it.href ? `<span class="cta">${esc(it.cta || t('explore'))} →</span>` : ''}`)).join('')}</div>`;
   const head = b.title ? `<div class="block-head"><h2>${esc(b.title)}</h2>${b.intro ? `<p>${b.intro}</p>` : ''}${b.more ? `<a class="block-more" href="${esc(itemHref(b.more))}">${esc(b.more.title)} →</a>` : ''}</div>` : '';
   return `<section class="blocks blocks-${esc(b.type || 'deals')}${b.class ? ` ${esc(b.class)}` : ''}"><div class="wrap">${head}${body}</div></section>`;
 }
@@ -380,50 +410,50 @@ function partnerBlock(p) {
   const partners = (p.partners || []).map(slug => ({ slug, ...LINKS[slug] }));
   if (!offers.length && !partners.length) return '';
   return `<section class="partners"><div class="wrap">
-  <h2>${esc(p.partnersTitle || 'Compare deals from our partners')}</h2>
+  <h2>${esc(p.partnersTitle || t('partnersTitle'))}</h2>
   <div class="grid">
     ${offers.map(o => `<a class="offer" href="${goHref(o.link, src)}" ${AFF}>
       ${o.badge ? `<span class="badge">${esc(o.badge)}</span>` : ''}
       <span class="merchant">${esc(o.merchant || LINKS[o.link].merchant)}</span>
       <h3>${esc(o.title)}</h3>
       ${o.terms ? `<small>${esc(o.terms)}</small>` : ''}
-      <span class="cta">View deal →</span></a>`).join('')}
+      <span class="cta">${esc(t('viewDeal'))}</span></a>`).join('')}
     ${partners.map(l => `<a class="offer" href="${goHref(l.slug, src)}" ${AFF}>
       <span class="merchant">${esc(l.merchant)}</span>
-      <h3>${esc(l.blurb || `Compare prices at ${l.merchant}`)}</h3>
-      <span class="cta">Visit ${esc(l.merchant)} →</span></a>`).join('')}
+      <h3>${esc(l.blurb || t('comparePrices', { merchant: l.merchant }))}</h3>
+      <span class="cta">${esc(t('visit', { merchant: l.merchant }))}</span></a>`).join('')}
   </div>
-  <p class="aff-note">We may earn a commission if you book through these links, at no extra cost to you. <a href="${MASTER}/affiliate-disclosure/">How we make money</a>.</p>
+  <p class="aff-note">${esc(t('affNote'))} <a href="${MASTER}/affiliate-disclosure/">${esc(t('moneyLink'))}</a>.</p>
 </div></section>`;
 }
 
 function sections(p) {
   if (!p.sections?.length) return '';
-  const toc = p.sections.length >= 4 ? `<nav class="toc" aria-label="On this page"><p>On this page</p><ol>${p.sections.map(s => `<li><a href="#${slugify(s.h2)}">${esc(s.h2)}</a></li>`).join('')}</ol></nav>` : '';
+  const toc = p.sections.length >= 4 ? `<nav class="toc" aria-label="${esc(t('onThisPage'))}"><p>${esc(t('onThisPage'))}</p><ol>${p.sections.map(s => `<li><a href="#${slugify(s.h2)}">${esc(s.h2)}</a></li>`).join('')}</ol></nav>` : '';
   return `<section class="content"><div class="wrap content-grid">${toc}<article class="prose">${p.sections.map(s => `
     <h2 id="${slugify(s.h2)}">${esc(s.h2)}</h2>
     ${s.html}`).join('')}
-    ${p.updated ? `<p class="updated">Last updated: ${new Date(p.updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>` : ''}
+    ${p.updated ? `<p class="updated">${t('lastUpdated', { date: new Date(p.updated).toLocaleDateString(W.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' }) })}</p>` : ''}
   </article></div></section>`;
 }
 
 function faqs(p) {
   if (!p.faqs?.length) return '';
-  return `<section class="faq"><div class="wrap"><h2>${esc(p.faqTitle || 'Frequently asked questions')}</h2>${p.faqs.map(f => `
+  return `<section class="faq"><div class="wrap"><h2>${esc(p.faqTitle || t('faqTitle'))}</h2>${p.faqs.map(f => `
     <details><summary>${esc(f.q)}</summary><div>${f.a}</div></details>`).join('')}</div></section>`;
 }
 
 function related(p) {
-  if (p.type === 'post' && !p.related) return postList({ ...p, latestPosts: 3, latestTitle: p.relatedTitle || `More from the ${blogIndex ? label(blogIndex).toLowerCase() : 'blog'}` });
+  if (p.type === 'post' && !p.related) return postList({ ...p, latestPosts: 3, latestTitle: p.relatedTitle || t('moreFrom', { blog: blogIndex ? label(blogIndex).toLowerCase() : t('blog') }) });
   const list = (p.related || []).map(s => bySlug.get(s)).filter(Boolean);
   if (!list.length) return '';
-  return `<section class="related"><div class="wrap"><h2>${esc(p.relatedTitle || 'Keep exploring')}</h2><div class="grid">${list.map(r => `
-    <a class="card${r.image ? ' has-img' : ''}" href="${pagePath(r)}">${cardImg(r)}<h3>${esc(label(r))}</h3><p>${esc(r.cardText || r.description)}</p><span class="cta">Explore →</span></a>`).join('')}</div></div></section>`;
+  return `<section class="related"><div class="wrap"><h2>${esc(p.relatedTitle || t('keepExploring'))}</h2><div class="grid">${list.map(r => `
+    <a class="card${r.image ? ' has-img' : ''}" href="${pagePath(r)}">${cardImg(r)}<h3>${esc(label(r))}</h3><p>${esc(r.cardText || r.description)}</p><span class="cta">${esc(t('explore'))} →</span></a>`).join('')}</div></div></section>`;
 }
 
 function bottomCta(p) {
   if (p.ctaSearch === false) return '';
-  return `<section class="cta-band"><div class="wrap"><h2>${esc(p.ctaTitle || seo.ctaTitle || `Search ${NAME}`)}</h2>${searchForm(p.searchPlaceholder, 'search-lg')}</div></section>`;
+  return `<section class="cta-band"><div class="wrap"><h2>${esc(p.ctaTitle || seo.ctaTitle || t('searchSite', { name: NAME }))}</h2>${searchForm(p.searchPlaceholder, 'search-lg')}</div></section>`;
 }
 
 /* ---------- Layout ---------- */
@@ -457,16 +487,16 @@ for (const p of pages) {
 }
 
 // Search (noindex) + index of pages
-const searchPage = { slug: 'search', title: `Search | ${NAME}`, description: `Search ${NAME}.`, h1: `Search ${NAME}` };
-out('search/index.html', render(searchPage, `<section class="hero hero-page"><div class="wrap"><h1 id="search-title">Search ${esc(NAME)}</h1>${searchForm()}</div></section>
-<section class="related"><div class="wrap"><div class="grid" id="search-results" aria-live="polite"></div></div></section>`, { noindex: true, canonical: false }));
+const searchPage = { slug: 'search', title: `${t('search')} | ${NAME}`, description: `${t('searchSite', { name: NAME })}.`, h1: t('searchSite', { name: NAME }) };
+out('search/index.html', render(searchPage, `<section class="hero hero-page"><div class="wrap"><h1 id="search-title">${esc(t('searchSite', { name: NAME }))}</h1>${searchForm()}</div></section>
+<section class="related"><div class="wrap"><div class="grid" id="search-results" aria-live="polite" data-results="${esc(t('resultsFor'))}" data-empty="${esc(t('noResults'))}" data-error="${esc(t('searchError'))}" data-cta="${esc(t('explore'))} →"></div></div></section>`, { noindex: true, canonical: false }));
 out('search-index.json', JSON.stringify(pages.filter(p => !p.noindex).map(p => ({
   path: pagePath(p), title: label(p), text: p.cardText || p.description, img: p.image ? imgSrc(imgOf(p.image), 600, 360) : '', terms: [p.title, p.h1, p.description, ...(p.keywords || [])].join(' ').toLowerCase(),
 }))));
 
 // 404
-out('404.html', render({ slug: '404', title: `Page not found | ${NAME}`, description: `This page could not be found on ${NAME}.`, h1: 'Page not found', nav: 'Not found' },
-  `<section class="hero hero-page"><div class="wrap"><h1>We couldn't find that page</h1><p class="lede">Try a search, or head back to the <a href="/">${esc(NAME)} homepage</a>.</p>${searchForm()}</div></section>`,
+out('404.html', render({ slug: '404', title: `${t('notFoundTitle')} | ${NAME}`, description: t('notFoundDesc', { name: NAME }), h1: t('notFoundTitle'), nav: t('notFoundNav') },
+  `<section class="hero hero-page"><div class="wrap"><h1>${esc(t('notFoundH1'))}</h1><p class="lede">${t('notFoundText', { home: `<a href="/">${esc(t('homepage', { name: NAME }))}</a>` })}</p>${searchForm()}</div></section>`,
   { noindex: true, canonical: false }));
 
 // Sitemap + robots
