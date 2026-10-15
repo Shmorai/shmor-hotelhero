@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{head}}
+</head>
+<!-- This site's own design. tools/build.js fills each double-brace placeholder: head, nav, main, footer_nav, site_name, year, body_class. -->
+<body class="{{body_class}}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/">{{site_name}}</a>
+    <nav class="nav" data-nav aria-label="Main">{{nav}}</nav>
+    <button class="menu" data-menu aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main id="main">
+{{main}}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-cols">
+      <div><a class="brand" href="/">{{site_name}}</a><p>Part of the <a href="https://shmor.ai/">Shmor.ai</a> network. Search more. Do less.</p></div>
+      <div><h4>Guides</h4><ul>{{footer_nav}}</ul></div>
+      <div><h4>Shmor.ai</h4><ul>
+        <li><a href="https://shmor.ai/">All Shmor marketplaces</a></li>
+        <li><a href="https://shmor.ai/about/">About</a></li>
+        <li><a href="https://shmor.ai/contact/">Contact</a></li>
+      </ul></div>
+      <div><h4>Legal</h4><ul>
+        <li><a href="https://shmor.ai/privacy/">Privacy</a></li>
+        <li><a href="https://shmor.ai/cookies/">Cookies</a></li>
+        <li><a href="https://shmor.ai/terms/">Terms</a></li>
+        <li><a href="https://shmor.ai/affiliate-disclosure/">How we make money</a></li>
+      </ul></div>
+    </div>
+    <p class="disclosure">{{site_name}} is free to use. Some links are affiliate links: if you book or buy through them we may earn a commission, at no extra cost to you. Prices and availability are set by providers and can change. © {{year}} Shmor.ai</p>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
