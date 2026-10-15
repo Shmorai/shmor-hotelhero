@@ -50,7 +50,7 @@ const LINKS = site.links || {};
 const PEOPLE = site.people || {};
 const EDITORIAL = seo.editorialPage || '';
 
-/* ---------- Words: English by default, French when seo.locale starts with "fr"; seo.strings overrides any key ---------- */
+/* ---------- Words: English by default; French ("fr") or German ("de") from the first two letters of seo.locale; seo.strings overrides any key ---------- */
 const WORDS = {
   en: { home: 'Home', searchPlaceholder: 'What are you looking for?', search: 'Search', searchSite: 'Search {name}', readMore: 'Read more →',
     latestPosts: 'Latest posts', latestFrom: 'Latest from the {blog}', moreFrom: 'More from the {blog}', blog: 'blog', seeAllPosts: 'See all posts →',
@@ -76,8 +76,20 @@ const WORDS = {
     notFoundH1: 'Nous n’avons pas trouvé cette page', notFoundText: 'Lancez une recherche ou revenez à l’{home}.', homepage: 'accueil de {name}',
     photo: 'Photo : {who}', photoOn: '{who} sur {site}', breadcrumb: 'Fil d’Ariane', resultsFor: 'Résultats pour « {q} »',
     noResults: 'Aucune page ne correspond. Essayez une recherche plus large ou parcourez les guides ci-dessous.', searchError: 'La recherche est indisponible pour le moment.', dateLocale: 'fr-FR' },
+  de: { home: 'Startseite', searchPlaceholder: 'Wonach suchen Sie?', search: 'Suchen', searchSite: '{name} durchsuchen', readMore: 'Weiterlesen →',
+    latestPosts: 'Neueste Beiträge', latestFrom: 'Neu im {blog}', moreFrom: 'Mehr aus dem {blog}', blog: 'Ratgeber-Blog', seeAllPosts: 'Alle Beiträge ansehen →',
+    sources: 'Quellen und offizielle Links', by: 'Von', writtenBy: 'Verfasst von', team: 'der {name}-Redaktion', teamOrg: '{name}-Redaktion',
+    reviewedBy: 'Geprüft von', updated: 'Aktualisiert am', minRead: '{n} Min. Lesezeit', editorial: 'Redaktionelle Grundsätze', checkReg: 'Eintragung prüfen',
+    seePlans: '{title}-Angebote ansehen', readGuide: 'Ratgeber lesen', explore: 'Entdecken', all: 'Alle', partnersTitle: 'Unsere Partner',
+    viewDeal: 'Zum Angebot →', comparePrices: 'Bei {merchant} vergleichen', visit: 'Zu {merchant} →',
+    affNote: 'Wenn Sie über diese Links gehen, erhalten wir unter Umständen eine Provision. Für Sie entstehen keine Mehrkosten.', moneyLink: 'Wie wir uns finanzieren',
+    onThisPage: 'Auf dieser Seite', lastUpdated: 'Zuletzt aktualisiert: {date}', faqTitle: 'Häufige Fragen', keepExploring: 'Das könnte Sie auch interessieren',
+    notFoundTitle: 'Seite nicht gefunden', notFoundNav: 'Nicht gefunden', notFoundDesc: 'Diese Seite gibt es auf {name} nicht (mehr).',
+    notFoundH1: 'Diese Seite haben wir nicht gefunden', notFoundText: 'Starten Sie eine Suche oder kehren Sie zur {home} zurück.', homepage: '{name}-Startseite',
+    photo: 'Foto: {who}', photoOn: '{who} auf {site}', breadcrumb: 'Brotkrümelnavigation', resultsFor: 'Ergebnisse für „{q}“',
+    noResults: 'Keine passenden Seiten gefunden. Versuchen Sie einen allgemeineren Begriff oder stöbern Sie in den Ratgebern unten.', searchError: 'Die Suche ist gerade nicht verfügbar.', dateLocale: 'de-DE' },
 };
-const W = { ...WORDS.en, ...(/^fr/i.test(seo.locale || '') ? WORDS.fr : {}), ...(seo.strings || {}) };
+const W = { ...WORDS.en, ...(WORDS[String(seo.locale || '').slice(0, 2).toLowerCase()] || {}), ...(seo.strings || {}) };
 const t = (k, v = {}) => String(W[k] ?? k).replace(/{(\w+)}/g, (m, x) => (x in v ? v[x] : m));
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
