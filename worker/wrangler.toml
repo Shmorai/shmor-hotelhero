@@ -1,0 +1,12 @@
+# HotelHero price worker. Deploy only after Booking.com gives Demand API access (see README.md).
+name = "hotelhero-prices"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+ALLOWED_ORIGINS = "https://hotelhero.shmor.ai,http://localhost:4018"
+# BOOKING_BASE = "https://demandapi-sandbox.booking.com/3.1"   # use the sandbox first
+
+# Secrets (never put these in this file or in git):
+#   npx wrangler secret put BOOKING_AFFILIATE_ID
+#   npx wrangler secret put BOOKING_TOKEN

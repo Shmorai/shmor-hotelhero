@@ -156,5 +156,6 @@
       "urlNoDates": "https://www.lastminute.com/hotels",
       "home": "https://www.lastminute.com/hotels"
     }
-  ]
+  ],
+  "priceApi": ""
 }

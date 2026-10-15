@@ -55,7 +55,7 @@ function compare(b, page, kit) {
     go: p.link && kit.LINKS[p.link] ? kit.goHref(p.link, 'compare') : '', home: p.home }));
   return `<section class="blocks blocks-compare"><div class="wrap">
   <div class="hh-res-head"><h2 id="hh-res-title">${esc(b.title || 'Compare hotel prices on every site')}</h2><p id="hh-res-sub">${b.intro || 'Enter a destination and dates above, then open each site to see its live prices for the same stay.'}</p></div>
-  <ol class="hh-results" id="hh-results">${list.map((p, n) => `<li class="hh-row" style="--pc:${esc(p.color)}"><span class="hh-rank">${n + 1}</span><span class="hh-mark">${esc(p.name)}</span><span class="hh-note">${esc(p.note || '')}</span><a class="hh-open" href="${esc(provHref(p, '', kit, 'compare'))}" ${provRel(p, kit)}>Visit ${esc(p.name)} ↗</a></li>`).join('')}</ol>
+  <ol class="hh-results" id="hh-results"${kit.site.priceApi ? ` data-price-api="${esc(kit.site.priceApi)}"` : ''}>${list.map((p, n) => `<li class="hh-row" style="--pc:${esc(p.color)}"><span class="hh-rank">${n + 1}</span><span class="hh-mark">${esc(p.name)}</span><span class="hh-note">${esc(p.note || '')}</span><a class="hh-open" href="${esc(provHref(p, '', kit, 'compare'))}" ${provRel(p, kit)}>Visit ${esc(p.name)} ↗</a></li>`).join('')}</ol>
   <p class="aff-note">Prices are set by each booking site and change often. Always check the total (taxes, fees, breakfast and cancellation terms) before you book. Some links may be affiliate links, at no extra cost to you. <a href="https://shmor.ai/affiliate-disclosure/">How we make money</a>.</p>
   <script type="application/json" id="hh-providers">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>
 </div></section>`;

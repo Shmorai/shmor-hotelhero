@@ -124,8 +124,12 @@
     out.addEventListener('click', function (e) { var a = e.target.closest('[data-open]'); if (a) a.closest('.hh-row').classList.add('is-done'); });
 
     /* Top hotels: REAL hotels for this destination from assets/hotels.json (OpenStreetMap + Wikidata,
-       made by tools/fetch-hotels.js). Each gets "See price" buttons that open that hotel on each site
-       with the same dates. No prices are shown here: only the booking sites have them. */
+       made by tools/fetch-hotels.js). Each gets "Live price" buttons that open that hotel on each site
+       with the same dates.
+       LIVE PRICES (switched off until a booking site approves us): when shmor-site.json "priceApi" is set
+       (the URL of worker/, our Cloudflare Worker that calls the Booking.com / Expedia partner APIs), the
+       page asks it for real prices for these dates first and shows them in the same cards. If it's not set,
+       fails or returns nothing, the page works exactly as before. Prices are never made up here. */
     var HOTEL_SITES = ['booking', 'hotelscom', 'expedia', 'google'];
     // Free-licence Unsplash hotel photos for hotels with no photo of their own (labelled "Illustrative photo")
     var STOCK = ['photo-1611892440504-42a792e24d32', 'photo-1618773928121-c32242e63f39', 'photo-1621293954908-907159247fc8', 'photo-1566665797739-1674de7a421a',
@@ -158,10 +162,23 @@
           });
         });
     };
-    fetch('/assets/hotels.json').then(function (r) { return r.json(); }).catch(function () { return { places: {} }; }).then(function (data) {
+    var api = out.getAttribute('data-price-api') || '';
+    var livePrices = function () {
+      if (!api || !v['in']) return Promise.resolve(null); // prices need dates
+      var ctl = window.AbortController ? new AbortController() : null;
+      if (ctl) setTimeout(function () { ctl.abort(); }, 8000);
+      return fetch(api.replace(/\/$/, '') + '/prices?' + new URLSearchParams({ q: q, 'in': v['in'], out: v.out, adults: v.adults, rooms: v.rooms }), ctl ? { signal: ctl.signal } : {})
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) { return d && d.hotels && d.hotels.length ? { q: d.place || q, hotels: d.hotels.slice(0, 6), priced: true, sources: d.sources || [] } : null; })
+        .catch(function () { return null; });
+    };
+    livePrices().then(function (pp) {
+      if (pp) return pp;
+      return fetch('/assets/hotels.json').then(function (r) { return r.json(); }).catch(function () { return { places: {} }; }).then(function (data) {
       var k = norm(q), place = data.places[k];
       if (!place) Object.keys(data.places).some(function (pk) { var n = norm(pk); if (n && (k.indexOf(n) === 0 || n.indexOf(k) === 0)) { place = data.places[pk]; return true; } return false; });
       return place && place.hotels.length ? place : live(q);
+      });
     }).then(function (place) {
       if (!place || !place.hotels.length) return;
       var sites = provs.filter(function (p) { return HOTEL_SITES.indexOf(p.id) > -1 && (p.go || p.url); });
@@ -173,22 +190,30 @@
           var t = v['in'] && p.url ? p.url : p.urlNoDates || p.url;
           return t.replace(/{(q|qp|in|out|adults|rooms)}/g, function (m, x) { return x === 'q' ? encodeURIComponent(vq.q) : x === 'qp' ? encodeURIComponent(vq.q.replace(/\s+/g, '-')) : encodeURIComponent(v[x] || ''); });
         };
+        var offers = {}, best = null;
+        (h.offers || []).forEach(function (o) { if (o.price > 0 && o.url) { offers[o.site] = o; if (!best || o.price < best.price) best = o; } });
+        var money = function (o) { try { return new Intl.NumberFormat('en-GB', { style: 'currency', currency: o.currency || 'GBP', maximumFractionDigits: o.price % 1 ? 2 : 0 }).format(o.price); } catch (e) { return '£' + o.price; } };
+        var order = sites.slice().sort(function (a, b) { var x = offers[a.id], y = offers[b.id]; return x && y ? x.price - y.price : x ? -1 : y ? 1 : 0; });
         var stock = STOCK[[].reduce.call(h.name, function (t, c) { return t + c.charCodeAt(0); }, 0) % STOCK.length];
         var img = h.photo ? '<img src="' + esc(h.photo.src) + '" alt="' + esc(h.name) + '" loading="lazy" width="640" height="420">'
           : '<img src="https://images.unsplash.com/' + stock + '?w=640&h=360&fit=crop&q=70&auto=format" alt="" loading="lazy" width="640" height="360"><span class="hh-illus">Illustrative photo</span>';
-        return '<article class="hh-hotel' + (n > 2 ? ' is-more' : '') + '"><div class="hh-hotel-img">' + img + (n === 0 ? '<span class="hh-badge">Popular pick</span>' : '') +
-          (h.photo ? '<a class="hh-hotel-credit" href="' + esc(h.photo.page) + '" rel="nofollow noopener" target="_blank">Photo: Wikimedia Commons</a>' : '') + '</div>' +
+        return '<article class="hh-hotel' + (n > 2 ? ' is-more' : '') + '"><div class="hh-hotel-img">' + img + (best ? '<span class="hh-badge">From ' + esc(money(best)) + '</span>' : n === 0 ? '<span class="hh-badge">Popular pick</span>' : '') +
+          (h.photo && h.photo.page ? '<a class="hh-hotel-credit" href="' + esc(h.photo.page) + '" rel="nofollow noopener" target="_blank">Photo: ' + esc(h.photo.credit || 'Wikimedia Commons') + '</a>' : h.photo && h.photo.credit ? '<span class="hh-hotel-credit">Photo: ' + esc(h.photo.credit) + '</span>' : '') + '</div>' +
           '<div class="hh-hotel-body">' + stars(h.stars) + '<h3>' + esc(h.name) + '</h3><p class="hh-place">' + esc((h.area ? h.area + ', ' : '') + place.q) + '</p>' +
-          '<ul class="hh-hprices">' + sites.map(function (p) {
+          '<ul class="hh-hprices">' + order.map(function (p) {
+            var o = offers[p.id];
+            if (o) return '<li class="has-price' + (o === best && Object.keys(offers).length > 1 ? ' is-best' : '') + '" style="--pc:' + esc(p.color) + '"><a href="' + esc(o.url) + '" rel="sponsored nofollow noopener" target="_blank"><span class="hh-hp-name">' + esc(p.name) +
+              (o === best && Object.keys(offers).length > 1 ? '<small>Best price</small>' : '') + '</span><span class="hh-hp-price">' + esc(money(o)) + '</span><span class="hh-hp-go">View deal ↗</span></a></li>';
             return '<li style="--pc:' + esc(p.color) + '"><a href="' + esc(link(p)) + '" rel="' + (p.go ? 'sponsored ' : '') + 'nofollow noopener" target="_blank"><span class="hh-hp-name">' + esc(p.name) + '</span><span class="hh-hp-go">Live price ↗</span></a></li>';
           }).join('') + '</ul></div></article>';
       };
       var sec = document.createElement('div');
       sec.className = 'hh-top';
-      sec.innerHTML = '<div class="hh-top-head"><h3>Top hotels in ' + esc(place.q) + '</h3><p>Tap a site to see its live price for ' + (v['in'] ? 'your dates' : 'this hotel') + ' in a new tab. Sites often charge different amounts for the same room, so it pays to check two or three.</p></div>' +
+      sec.innerHTML = '<div class="hh-top-head"><h3>' + (place.priced ? 'Hotel prices in ' : 'Top hotels in ') + esc(place.q) + '</h3><p>' + (place.priced ? 'Live prices for your dates. ' : '') + 'Tap a site to see its live price for ' + (v['in'] ? 'your dates' : 'this hotel') + ' in a new tab. Sites often charge different amounts for the same room, so it pays to check two or three.</p></div>' +
         '<div class="hh-hotels">' + place.hotels.map(card).join('') + '</div>' +
         (place.hotels.length > 3 ? '<button type="button" class="hh-more">Show ' + (place.hotels.length - 3) + ' more hotels</button>' : '') +
-        '<p class="hh-src">Hotel list: <a href="https://www.openstreetmap.org/copyright" rel="nofollow noopener" target="_blank">© OpenStreetMap contributors</a>. Not a price or quality ranking. Prices are set by each booking site.</p>';
+        (place.priced ? '<p class="hh-src">Prices from ' + esc((place.sources || []).join(' and ') || 'our booking partners') + ' for your dates (' + nights + ' night' + (nights > 1 ? 's' : '') + ', ' + v.adults + ' guest' + (v.adults > 1 ? 's' : '') + '), checked when you searched. Prices can change: the final price is on the booking site.</p>'
+          : '<p class="hh-src">Hotel list: <a href="https://www.openstreetmap.org/copyright" rel="nofollow noopener" target="_blank">© OpenStreetMap contributors</a>. Not a price or quality ranking. Prices are set by each booking site. Photos: Wikimedia Commons, or illustrative photos from Unsplash.</p>');
       out.parentNode.insertBefore(sec, out);
       var more = sec.querySelector('.hh-more');
       if (more) more.addEventListener('click', function () { sec.classList.add('show-all'); more.remove(); });
