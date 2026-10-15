@@ -1,0 +1,84 @@
+{
+  "updated": "2026-10-15",
+  "slug": "hotels/brighton",
+  "nav": "Brighton",
+  "eyebrow": "Brighton, East Sussex",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1632763415573-902d1e610e65",
+    "alt": "Brighton pier and beach under a blue sky",
+    "credit": "Nick Fewings",
+    "creditUrl": "https://unsplash.com/@jannerboy62"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"Brighton\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "cardText": "Sea-view rooms on the front and quirky boutique hotels near the Lanes.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "deals",
+      "title": "Where to stay in Brighton",
+      "intro": "Popular areas for hotels in Brighton. Tap one to compare prices there on every site.",
+      "items": [
+        {
+          "title": "Seafront",
+          "text": "Classic hotels with views over the beach and pier.",
+          "badge": "Sea views",
+          "icon": "pin",
+          "href": "/compare/?q=Seafront%2C%20Brighton",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "The Lanes",
+          "text": "Boutique stays among narrow shopping streets.",
+          "badge": "Boutique",
+          "icon": "pin",
+          "href": "/compare/?q=The%20Lanes%2C%20Brighton",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Kemptown",
+          "text": "Quirky, lively and close to the beach.",
+          "badge": "Lively",
+          "icon": "pin",
+          "href": "/compare/?q=Kemptown%2C%20Brighton",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Hove",
+          "text": "Quieter seafront and Regency squares.",
+          "badge": "Quieter",
+          "icon": "pin",
+          "href": "/compare/?q=Hove%2C%20Brighton",
+          "cta": "Compare hotels here"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "related": [
+    "hotels/london",
+    "hotels/bath",
+    "seaside-hotels",
+    "dog-friendly-hotels"
+  ],
+  "ctaSearch": false,
+  "title": "Brighton Hotel Deals: Sea Views, the Lanes & Pier",
+  "description": "Compare Brighton hotel prices on every big booking site. Seafront hotels with sea views, boutique stays near the Lanes, plus tips for summer weekends.",
+  "h1": "Brighton hotel deals",
+  "intro": "Pier, pebbles and independent shops: compare Brighton hotel prices for your dates on every site.",
+  "sections": [
+    {
+      "h2": "Sea view or side street?",
+      "html": "<p>Sea-view rooms on the seafront usually cost more than rooms at the back or in the streets behind. Check the exact room type when you compare, so you know whether you’re looking at a sea view. Summer weekends and bank holidays are the busiest times.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Brighton a good day trip or weekend break from London?",
+      "a": "Both. Direct trains from London take around an hour, so it’s easy as a day trip, but staying lets you enjoy the seafront in the evening. See also our <a href=\"/seaside-hotels/\">seaside hotels</a> page."
+    }
+  ]
+}

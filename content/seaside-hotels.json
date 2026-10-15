@@ -1,0 +1,152 @@
+{
+  "updated": "2026-10-15",
+  "slug": "seaside-hotels",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1780406021233-a1d65a591fd3",
+    "alt": "Busy beach with boats, clear blue sea and coastal buildings in St Ives",
+    "credit": "BEN ELLIOTT",
+    "creditUrl": "https://unsplash.com/@benjaminelliott"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "ctaSearch": false,
+  "nav": "Seaside",
+  "navOrder": 5,
+  "title": "Seaside Hotel Deals UK: Compare Coastal Breaks",
+  "description": "Compare seaside hotel prices across every big booking site, from Cornwall and Brighton to Whitby and the Isle of Skye. Tips for sea-view rooms and busy summers.",
+  "eyebrow": "Coastal hotels & beach breaks",
+  "h1": "UK seaside hotel deals",
+  "intro": "Harbour towns, sandy bays and grand seafront hotels: compare UK seaside hotel prices on every site.",
+  "cardText": "Sea views from Cornwall to Whitby, compared on every site.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "hotels",
+      "title": "Favourite UK seaside escapes",
+      "items": [
+        {
+          "title": "St Ives hotels",
+          "place": "St Ives, Cornwall",
+          "q": "St Ives, Cornwall",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1780406021233-a1d65a591fd3",
+            "alt": "Busy beach with boats, clear blue sea and coastal buildings in St Ives",
+            "credit": "BEN ELLIOTT",
+            "creditUrl": "https://unsplash.com/@benjaminelliott"
+          },
+          "badge": "Beach break",
+          "tags": [
+            "Sandy beaches",
+            "Art galleries"
+          ]
+        },
+        {
+          "title": "Cornwall hotels",
+          "place": "Cornwall, England",
+          "q": "Cornwall",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1596449055243-11b1217518c4",
+            "alt": "Boats in a Cornish harbour",
+            "credit": "Greg Willson",
+            "creditUrl": "https://unsplash.com/@gregwillson"
+          },
+          "badge": "Coast",
+          "tags": [
+            "Harbours",
+            "Beaches",
+            "Coast path"
+          ]
+        },
+        {
+          "title": "Brighton hotels",
+          "place": "Brighton, East Sussex",
+          "q": "Brighton",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1632763415573-902d1e610e65",
+            "alt": "Brighton pier and beach under a blue sky",
+            "credit": "Nick Fewings",
+            "creditUrl": "https://unsplash.com/@jannerboy62"
+          },
+          "badge": "By the sea",
+          "tags": [
+            "Seafront",
+            "The Lanes",
+            "Pier"
+          ],
+          "text": "Sea-view rooms on the front and quirky boutique hotels near the Lanes."
+        },
+        {
+          "title": "Whitby hotels",
+          "place": "North Yorkshire, England",
+          "q": "Whitby",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1650982038101-27503046984c",
+            "alt": "Whitby harbour town beside the sea",
+            "credit": "Marco Angelo",
+            "creditUrl": "https://unsplash.com/@marcoangelo"
+          },
+          "badge": "Seaside",
+          "tags": [
+            "Harbour",
+            "Abbey",
+            "Fish & chips"
+          ]
+        },
+        {
+          "title": "Isle of Skye hotels",
+          "place": "Isle of Skye, Scotland",
+          "q": "Isle of Skye",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1546706872-9c90b8d0c94f",
+            "alt": "The Old Man of Storr above a green valley on the Isle of Skye",
+            "credit": "Reuben Teo",
+            "creditUrl": "https://unsplash.com/@reubenteo"
+          },
+          "badge": "Book early",
+          "tags": [
+            "Island",
+            "Hiking",
+            "Wildlife"
+          ]
+        },
+        {
+          "title": "Cardiff Bay hotels",
+          "place": "Cardiff, Wales",
+          "q": "Cardiff Bay",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1631125315683-b50db62a94ff",
+            "alt": "Cardiff Bay waterfront buildings",
+            "credit": "Taylor Floyd Mews",
+            "creditUrl": "https://unsplash.com/@tfloydmews"
+          },
+          "badge": "Waterfront",
+          "tags": [
+            "Bay views",
+            "Restaurants"
+          ]
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "sections": [
+    {
+      "h2": "Booking a seaside hotel",
+      "html": "<ul><li><strong>Sea view or not?</strong> Check the room type: sea-view rooms usually cost more.</li>\n<li><strong>Summer books up early.</strong> School holidays and bank holidays are the busiest times on the coast.</li>\n<li><strong>Try shoulder season.</strong> Spring and autumn can bring lower prices and quieter beaches.</li>\n<li><strong>Parking.</strong> Small harbour towns often have limited parking, so check what the hotel offers.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "When is the cheapest time for a UK seaside break?",
+      "a": "Outside school holidays and bank holidays, prices are often lower, especially midweek. Compare a few different dates to see the difference."
+    }
+  ],
+  "related": [
+    "hotels/brighton",
+    "dog-friendly-hotels",
+    "family-hotels"
+  ]
+}

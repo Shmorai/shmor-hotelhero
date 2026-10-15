@@ -1,0 +1,118 @@
+{
+  "updated": "2026-10-15",
+  "slug": "hotels/london",
+  "nav": "London",
+  "eyebrow": "London, England",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be",
+    "alt": "Tower Bridge over the River Thames in London",
+    "credit": "Charles Postiaux",
+    "creditUrl": "https://unsplash.com/@charlespostiaux"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"London\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "cardText": "From the West End to the South Bank: chains, boutiques and big-name luxury.",
+  "chips": [
+    {
+      "label": "Covent Garden",
+      "q": "Covent Garden hotels"
+    },
+    {
+      "label": "Heathrow",
+      "q": "Heathrow hotels"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "deals",
+      "title": "Where to stay in London",
+      "intro": "Popular areas for hotels in London. Tap one to compare prices there on every site.",
+      "items": [
+        {
+          "title": "Covent Garden",
+          "text": "Theatreland, shops and restaurants right on the doorstep.",
+          "badge": "West End",
+          "icon": "pin",
+          "href": "/compare/?q=Covent%20Garden%2C%20London",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "South Bank",
+          "text": "Riverside walks, the London Eye and big views of Westminster.",
+          "badge": "Riverside",
+          "icon": "pin",
+          "href": "/compare/?q=South%20Bank%2C%20London",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "King’s Cross",
+          "text": "Great rail links (including Eurostar at St Pancras) and a buzzing canal-side quarter.",
+          "badge": "Transport hub",
+          "icon": "pin",
+          "href": "/compare/?q=King%E2%80%99s%20Cross%2C%20London",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Kensington",
+          "text": "Big museums, Hyde Park and elegant townhouse hotels.",
+          "badge": "Museums",
+          "icon": "pin",
+          "href": "/compare/?q=Kensington%2C%20London",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Canary Wharf",
+          "text": "Modern hotels that are often cheaper at weekends.",
+          "badge": "Value weekends",
+          "icon": "pin",
+          "href": "/compare/?q=Canary%20Wharf%2C%20London",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Paddington",
+          "text": "The Heathrow Express and the Elizabeth line on your doorstep.",
+          "badge": "Airport link",
+          "icon": "pin",
+          "href": "/compare/?q=Paddington%2C%20London",
+          "cta": "Compare hotels here"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "related": [
+    "hotels/edinburgh",
+    "hotels/manchester",
+    "hotels/bath",
+    "weekend-breaks"
+  ],
+  "ctaSearch": false,
+  "title": "London Hotel Deals: Compare Prices Across Every Site",
+  "description": "Compare London hotel prices on Booking.com, Hotels.com, Expedia, trivago, KAYAK and more. Area guide to the West End, South Bank, King’s Cross and beyond.",
+  "h1": "London hotel deals",
+  "intro": "Theatre weekends, museum days or a business trip: compare London hotel prices for your dates on every big booking site.",
+  "sections": [
+    {
+      "h2": "Finding a good-value London hotel",
+      "html": "<ul><li><strong>Zone 1 vs further out.</strong> Areas like Stratford, Canary Wharf or Hammersmith can offer more space for the money, with fast tube links into the centre.</li>\n<li><strong>Weekends can be cheaper.</strong> Hotels that rely on business travellers, such as around the City and Canary Wharf, often drop prices on Friday and Saturday nights.</li>\n<li><strong>Station hotels save time.</strong> Arriving by train? King’s Cross, Euston, Paddington and Waterloo all have plenty of hotels nearby.</li>\n<li><strong>Driving?</strong> Central London has the Congestion Charge and the ULEZ, and parking is expensive. Check before you book a hotel with parking.</li></ul>"
+    },
+    {
+      "h2": "Airport hotels in London",
+      "html": "<p>Early flight? Hotels at or near Heathrow, Gatwick, Stansted, Luton and London City let you skip a dawn journey across town. See <a href=\"/last-minute-hotels/\">last-minute hotels</a> if you need a room tonight.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What’s the best area to stay in London for first-timers?",
+      "a": "The West End (Covent Garden, Soho, Leicester Square) and the South Bank put you within walking distance of many sights and theatres. They’re popular, so compare prices across sites and consider areas a few tube stops away for better value."
+    },
+    {
+      "q": "Are London hotels cheaper at weekends?",
+      "a": "Often, especially in business districts like the City and Canary Wharf. Around the West End, weekends and school holidays can be busier, so it’s worth comparing a few different dates."
+    }
+  ]
+}

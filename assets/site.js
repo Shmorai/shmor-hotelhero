@@ -61,3 +61,78 @@
   window.addEventListener('resize', fit);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
 })();
+
+/* HotelHero: compare form (dates default to the coming weekend), /compare/ results, and a
+   "compare prices" shortcut on the /search/ page. Booking sites come from shmor-site.json
+   "providers", embedded in the /compare/ page by tools/blocks.js. */
+(function () {
+  'use strict';
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  var iso = function (d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); };
+  var parse = function (s) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || ''); return m ? new Date(+m[1], m[2] - 1, +m[3]) : null; };
+  var addDays = function (d, n) { var x = new Date(d); x.setDate(x.getDate() + n); return x; };
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var params = new URLSearchParams(location.search);
+
+  // Defaults: next Friday to Sunday (or tonight if it's already the weekend)
+  var fri = addDays(today, (5 - today.getDay() + 7) % 7);
+  var defIn = params.get('in') || iso(fri), defOut = params.get('out') || iso(addDays(parse(defIn) || fri, 2));
+
+  Array.prototype.forEach.call(document.querySelectorAll('form[data-compare]'), function (f) {
+    var din = f.elements['in'], dout = f.elements['out'], q = f.elements['q'];
+    if (params.get('q') && q && location.pathname.indexOf('/compare/') === 0) q.value = params.get('q');
+    ['adults', 'rooms'].forEach(function (k) { if (params.get(k) && f.elements[k]) f.elements[k].value = params.get(k); });
+    if (din && !din.value) din.value = defIn;
+    if (dout && !dout.value) dout.value = defOut;
+    if (din) din.min = iso(today);
+    var sync = function () {
+      var a = parse(din.value);
+      if (!a) return;
+      dout.min = iso(addDays(a, 1));
+      var b = parse(dout.value);
+      if (!b || b <= a) dout.value = iso(addDays(a, 1));
+    };
+    if (din && dout) { din.addEventListener('change', sync); sync(); }
+  });
+
+  // /compare/: one row per booking site with a deep link for the same stay
+  var out = document.getElementById('hh-results'), dataEl = document.getElementById('hh-providers');
+  var q = (params.get('q') || '').trim();
+  if (out && dataEl && q) {
+    var v = { q: q, 'in': params.get('in') || '', out: params.get('out') || '', adults: params.get('adults') || '2', rooms: params.get('rooms') || '1' };
+    if (!parse(v['in']) || !parse(v.out) || parse(v.out) <= parse(v['in'])) { v['in'] = ''; v.out = ''; }
+    var fill = function (t) {
+      return t.replace(/{(q|qp|in|out|adults|rooms)}/g, function (m, k) {
+        return k === 'q' ? encodeURIComponent(v.q) : k === 'qp' ? encodeURIComponent(v.q.replace(/\s+/g, '-')) : encodeURIComponent(v[k] || '');
+      });
+    };
+    var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+    var fmt = function (s) { return parse(s).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }); };
+    var nights = v['in'] ? Math.round((parse(v.out) - parse(v['in'])) / 864e5) : 0;
+    var provs = JSON.parse(dataEl.textContent);
+    document.getElementById('hh-res-title').textContent = 'Hotels in ' + q + ': compare ' + provs.length + ' sites';
+    document.getElementById('hh-res-sub').textContent = (v['in'] ? fmt(v['in']) + ' – ' + fmt(v.out) + ' · ' + nights + ' night' + (nights > 1 ? 's' : '') + ' · ' : '') +
+      v.adults + ' guest' + (v.adults > 1 ? 's' : '') + ', ' + v.rooms + ' room' + (v.rooms > 1 ? 's' : '') + '. Each button opens that site’s live prices for the same stay in a new tab.';
+    out.innerHTML = provs.map(function (p, n) {
+      var href = p.go || fill(v['in'] && p.url ? p.url : p.urlNoDates || p.home);
+      var rel = p.go ? 'sponsored nofollow noopener' : 'nofollow noopener';
+      return '<li class="hh-row" style="--pc:' + esc(p.color) + '"><span class="hh-rank">' + (n + 1) + '</span><span class="hh-mark">' + esc(p.name) + '</span><span class="hh-note">' + esc(p.note) +
+        '</span><a class="hh-open" href="' + esc(href) + '" rel="' + rel + '" target="_blank" data-open>Search ' + esc(p.name) + ' ↗</a></li>';
+    }).join('');
+    out.classList.add('is-live');
+    // Tick off the sites already opened, so it's easy to work down the list
+    out.addEventListener('click', function (e) { var a = e.target.closest('[data-open]'); if (a) a.closest('.hh-row').classList.add('is-done'); });
+  }
+
+  // /search/: offer a straight price comparison for the search term
+  var sr = document.getElementById('search-results'), sq = (params.get('q') || '').trim();
+  if (sr && sq) {
+    var p = document.createElement('p');
+    p.className = 'hh-search-cta';
+    var a = document.createElement('a');
+    a.href = '/compare/?q=' + encodeURIComponent(sq.replace(/\b(hotels?|deals?|cheap)\b/gi, '').replace(/\s+/g, ' ').trim() || sq);
+    a.textContent = 'Compare hotel prices for “' + sq + '” on every booking site →';
+    p.appendChild(a);
+    sr.parentNode.insertBefore(p, sr);
+  }
+})();

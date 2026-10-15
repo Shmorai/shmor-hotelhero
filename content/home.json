@@ -1,15 +1,711 @@
 {
+  "updated": "2026-10-15",
   "slug": "",
-  "title": "HotelHero: UK hotel deals compared across Booking.com, Hotel",
-  "description": "UK hotel deals compared across Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and more in one search. Free to use, part of the Shmor.ai network.",
-  "eyebrow": "Part of the Shmor.ai network",
-  "h1": "HotelHero",
-  "intro": "UK hotel deals compared across Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and more in one search.",
-  "related": [],
+  "title": "HotelHero: Compare UK Hotel Deals Across Every Site",
+  "description": "Compare UK hotel prices on Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels in one search. Free, with no booking fees.",
+  "eyebrow": "UK hotel price comparison",
+  "h1": "Find the best hotel deal. Every site, one search.",
+  "h1Html": "Find the best hotel deal.<br><span class=\"hl\">Every site, one search.</span>",
+  "intro": "Why check seven tabs? Enter your stay once and compare the same hotel dates across the UK’s biggest booking sites.",
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "chips": [
+    {
+      "label": "London",
+      "slug": "hotels/london"
+    },
+    {
+      "label": "Edinburgh",
+      "slug": "hotels/edinburgh"
+    },
+    {
+      "label": "Manchester",
+      "slug": "hotels/manchester"
+    },
+    {
+      "label": "York",
+      "slug": "hotels/york"
+    },
+    {
+      "label": "Bath",
+      "slug": "hotels/bath"
+    },
+    {
+      "label": "Spa breaks",
+      "slug": "spa-breaks"
+    },
+    {
+      "label": "Tonight",
+      "slug": "last-minute-hotels"
+    },
+    {
+      "label": "Dog-friendly",
+      "slug": "dog-friendly-hotels"
+    }
+  ],
+  "image": {
+    "src": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+    "alt": "Hotel bedroom with a wooden bed, teal pillows and a garden view",
+    "credit": "visualsofdana",
+    "creditUrl": "https://unsplash.com/@visualsofdana"
+  },
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "strip",
+      "position": "top",
+      "items": [
+        {
+          "icon": "search",
+          "title": "7 booking sites",
+          "text": "in one search"
+        },
+        {
+          "icon": "wallet",
+          "title": "Free to use,",
+          "text": "no booking fees"
+        },
+        {
+          "icon": "shield",
+          "title": "Book direct",
+          "text": "with the site you pick"
+        },
+        {
+          "icon": "pin",
+          "title": "All of the UK:",
+          "text": "cities, coast & country"
+        }
+      ]
+    },
+    {
+      "type": "hotels",
+      "title": "Top UK city hotel deals to compare",
+      "intro": "The UK’s most-booked city breaks. Tap a city to compare prices on every site for your dates.",
+      "more": {
+        "title": "All UK cities",
+        "slug": "hotels"
+      },
+      "items": [
+        {
+          "title": "London hotels",
+          "place": "London, England",
+          "q": "London",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be",
+            "alt": "Tower Bridge over the River Thames in London",
+            "credit": "Charles Postiaux",
+            "creditUrl": "https://unsplash.com/@charlespostiaux"
+          },
+          "badge": "Most searched",
+          "tags": [
+            "Theatre breaks",
+            "Museums",
+            "Tube links"
+          ],
+          "text": "From the West End to the South Bank: chains, boutiques and big-name luxury.",
+          "slug": "hotels/london"
+        },
+        {
+          "title": "Edinburgh hotels",
+          "place": "Edinburgh, Scotland",
+          "q": "Edinburgh",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc",
+            "alt": "The Balmoral clock tower and Scott Monument in Edinburgh at golden hour",
+            "credit": "Adam Wilson",
+            "creditUrl": "https://unsplash.com/@fourcolourblack"
+          },
+          "badge": "City break",
+          "tags": [
+            "Old Town",
+            "Festivals",
+            "Castle views"
+          ],
+          "text": "Old Town character or New Town elegance, a short walk from the castle.",
+          "slug": "hotels/edinburgh"
+        },
+        {
+          "title": "Manchester hotels",
+          "place": "Manchester, England",
+          "q": "Manchester",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1515586838455-8f8f940d6853",
+            "alt": "Aerial view of Manchester city centre buildings",
+            "credit": "William McCue",
+            "creditUrl": "https://unsplash.com/@mrwilliamo"
+          },
+          "badge": "Weekend pick",
+          "tags": [
+            "Gigs & football",
+            "Food scene",
+            "Trams"
+          ],
+          "text": "Northern Quarter cool, Spinningfields style and handy hotels for match days.",
+          "slug": "hotels/manchester"
+        },
+        {
+          "title": "York hotels",
+          "place": "York, England",
+          "q": "York",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1736257977287-5c9a87c57713",
+            "alt": "Narrow old street lined with tall buildings in York",
+            "credit": "Ioana",
+            "creditUrl": "https://unsplash.com/@yogne"
+          },
+          "badge": "Historic",
+          "tags": [
+            "Walled city",
+            "Minster",
+            "Shopping"
+          ],
+          "text": "Stay inside the medieval walls, steps from the Shambles and York Minster.",
+          "slug": "hotels/york"
+        },
+        {
+          "title": "Bath hotels",
+          "place": "Bath, Somerset",
+          "q": "Bath",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1653231905678-1371a378f3f3",
+            "alt": "Curved Georgian terrace in Bath",
+            "credit": "Lāsma Artmane",
+            "creditUrl": "https://unsplash.com/@lasmaa"
+          },
+          "badge": "Spa city",
+          "tags": [
+            "Thermal spa",
+            "Georgian",
+            "Romantic"
+          ],
+          "text": "Georgian townhouses, spa hotels and easy walks to the Roman Baths.",
+          "slug": "hotels/bath"
+        },
+        {
+          "title": "Liverpool hotels",
+          "place": "Liverpool, England",
+          "q": "Liverpool",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1624292341544-ae115df82e9d",
+            "alt": "Historic waterfront building in Liverpool",
+            "credit": "Wayne Yao",
+            "creditUrl": "https://unsplash.com/@wayneyao"
+          },
+          "badge": "Waterfront",
+          "tags": [
+            "Royal Albert Dock",
+            "Music",
+            "Football"
+          ],
+          "text": "Waterfront stays by the Royal Albert Dock and lively city-centre hotels.",
+          "slug": "hotels/liverpool"
+        },
+        {
+          "title": "Brighton hotels",
+          "place": "Brighton, East Sussex",
+          "q": "Brighton",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1632763415573-902d1e610e65",
+            "alt": "Brighton pier and beach under a blue sky",
+            "credit": "Nick Fewings",
+            "creditUrl": "https://unsplash.com/@jannerboy62"
+          },
+          "badge": "By the sea",
+          "tags": [
+            "Seafront",
+            "The Lanes",
+            "Pier"
+          ],
+          "text": "Sea-view rooms on the front and quirky boutique hotels near the Lanes.",
+          "slug": "hotels/brighton"
+        },
+        {
+          "title": "Glasgow hotels",
+          "place": "Glasgow, Scotland",
+          "q": "Glasgow",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1571494146906-86de15d3817b",
+            "alt": "River Clyde and modern buildings in Glasgow",
+            "credit": "Adam Marikar",
+            "creditUrl": "https://unsplash.com/@adammarikar"
+          },
+          "badge": "Great value",
+          "tags": [
+            "Live music",
+            "West End",
+            "Architecture"
+          ],
+          "text": "Merchant City, the West End or the riverside, with big-venue gigs on the doorstep.",
+          "slug": "hotels/glasgow"
+        }
+      ],
+      "position": "top"
+    },
+    {
+      "type": "tiles",
+      "class": "alt-band",
+      "title": "Hotel deals by type of stay",
+      "items": [
+        {
+          "slug": "spa-breaks",
+          "badge": "Relax",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1773924093206-9a433a14bb44",
+            "alt": "Relaxing lounge chairs in a sunlit spa room",
+            "credit": "Virginia Marinova",
+            "creditUrl": "https://unsplash.com/@virginiaphotostories"
+          },
+          "text": "Pools, treatments and late checkouts"
+        },
+        {
+          "slug": "last-minute-hotels",
+          "badge": "Tonight",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+            "alt": "Bedside lamp beside a white hotel pillow",
+            "credit": "Rhema Kallianpur",
+            "creditUrl": "https://unsplash.com/@rhemakallianpur"
+          },
+          "text": "Same-day and next-day rooms"
+        },
+        {
+          "slug": "seaside-hotels",
+          "badge": "Coast",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1780406021233-a1d65a591fd3",
+            "alt": "Busy beach with boats, clear blue sea and coastal buildings in St Ives",
+            "credit": "BEN ELLIOTT",
+            "creditUrl": "https://unsplash.com/@benjaminelliott"
+          },
+          "text": "Sea views from Cornwall to Whitby"
+        },
+        {
+          "slug": "dog-friendly-hotels",
+          "badge": "Pets welcome",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1556290325-47f7815046b1",
+            "alt": "White and brown dog looking up at the camera",
+            "credit": "Stephen Noble",
+            "creditUrl": "https://unsplash.com/@stephenoble"
+          },
+          "text": "Bring the dog along"
+        },
+        {
+          "slug": "family-hotels",
+          "badge": "Kids",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1758530273449-71ee84763100",
+            "alt": "Family relaxing by a swimming pool on a sunny day",
+            "credit": "Aiper Pool Cleaner",
+            "creditUrl": "https://unsplash.com/@aiper_official"
+          },
+          "text": "Family rooms and pools"
+        },
+        {
+          "slug": "weekend-breaks",
+          "badge": "2 nights",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39",
+            "alt": "Neatly made hotel bed with white linen and throw pillows",
+            "credit": "Vojtech Bruzek",
+            "creditUrl": "https://unsplash.com/@vojtechbruzek"
+          },
+          "text": "Friday-to-Sunday city escapes"
+        },
+        {
+          "slug": "compare",
+          "badge": "Free tool",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1621293954908-907159247fc8",
+            "alt": "Modern hotel lobby with designer furniture and wood walls",
+            "credit": "Frames For Your Heart",
+            "creditUrl": "https://unsplash.com/@framesforyourheart"
+          },
+          "title": "Compare any hotel",
+          "text": "Every site side by side"
+        },
+        {
+          "title": "Airport hotels",
+          "href": "/compare/?q=Heathrow%20Airport",
+          "badge": "Early flight",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d",
+            "alt": "Traveller resting feet on luggage while looking at a plane",
+            "credit": "JESHOOTS.COM",
+            "creditUrl": "https://unsplash.com/@jeshoots"
+          },
+          "text": "Sleep near the terminal"
+        },
+        {
+          "slug": "hotels",
+          "title": "Hotels by UK city",
+          "badge": "All cities",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad",
+            "alt": "Aerial view of the London skyline by day",
+            "credit": "Benjamin Davies",
+            "creditUrl": "https://unsplash.com/@bendavisual"
+          },
+          "text": "London, Edinburgh, York and more"
+        }
+      ],
+      "position": "top"
+    },
+    {
+      "type": "hotels",
+      "title": "Coast & countryside escapes",
+      "intro": "Harbours, lochs, lakes and stone villages: compare hotels, inns and B&Bs in Britain’s favourite getaway spots.",
+      "items": [
+        {
+          "title": "Cornwall hotels",
+          "place": "Cornwall, England",
+          "q": "Cornwall",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1596449055243-11b1217518c4",
+            "alt": "Boats in a Cornish harbour",
+            "credit": "Greg Willson",
+            "creditUrl": "https://unsplash.com/@gregwillson"
+          },
+          "badge": "Coast",
+          "tags": [
+            "Harbours",
+            "Beaches",
+            "Coast path"
+          ]
+        },
+        {
+          "title": "St Ives hotels",
+          "place": "St Ives, Cornwall",
+          "q": "St Ives, Cornwall",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1780406021233-a1d65a591fd3",
+            "alt": "Busy beach with boats, clear blue sea and coastal buildings in St Ives",
+            "credit": "BEN ELLIOTT",
+            "creditUrl": "https://unsplash.com/@benjaminelliott"
+          },
+          "badge": "Beach break",
+          "tags": [
+            "Sandy beaches",
+            "Art galleries"
+          ]
+        },
+        {
+          "title": "Lake District hotels",
+          "place": "Cumbria, England",
+          "q": "Lake District",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1615393911241-32add28288a5",
+            "alt": "Mountains beside a lake in the Lake District",
+            "credit": "James Armes",
+            "creditUrl": "https://unsplash.com/@norfolkboy14"
+          },
+          "badge": "Countryside",
+          "tags": [
+            "Lakes",
+            "Walking",
+            "Country inns"
+          ]
+        },
+        {
+          "title": "Cotswolds hotels",
+          "place": "Cotswolds, England",
+          "q": "Cotswolds",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1670620800615-4225fe6ecb75",
+            "alt": "Cotswold stone cottages along a village street",
+            "credit": "George Ciobra",
+            "creditUrl": "https://unsplash.com/@george_ciobra"
+          },
+          "badge": "Cosy",
+          "tags": [
+            "Stone villages",
+            "Pubs",
+            "Manor houses"
+          ]
+        },
+        {
+          "title": "Scottish Highlands hotels",
+          "place": "Highlands, Scotland",
+          "q": "Scottish Highlands",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1589489873423-d1745278a8f4",
+            "alt": "Kilchurn Castle reflected in Loch Awe in the Scottish Highlands",
+            "credit": "Connor Mollison",
+            "creditUrl": "https://unsplash.com/@connormollison"
+          },
+          "badge": "Road trip",
+          "tags": [
+            "Lochs",
+            "Castles",
+            "Scenery"
+          ]
+        },
+        {
+          "title": "Isle of Skye hotels",
+          "place": "Isle of Skye, Scotland",
+          "q": "Isle of Skye",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1546706872-9c90b8d0c94f",
+            "alt": "The Old Man of Storr above a green valley on the Isle of Skye",
+            "credit": "Reuben Teo",
+            "creditUrl": "https://unsplash.com/@reubenteo"
+          },
+          "badge": "Book early",
+          "tags": [
+            "Island",
+            "Hiking",
+            "Wildlife"
+          ]
+        },
+        {
+          "title": "Eryri (Snowdonia) hotels",
+          "place": "North Wales",
+          "q": "Snowdonia",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1576413209841-efe9c2cd11aa",
+            "alt": "Lake beside a mountain in Eryri (Snowdonia)",
+            "credit": "Josh Kirk",
+            "creditUrl": "https://unsplash.com/@this_josh"
+          },
+          "badge": "Adventure",
+          "tags": [
+            "Mountains",
+            "Lakes",
+            "Walking"
+          ]
+        },
+        {
+          "title": "Whitby hotels",
+          "place": "North Yorkshire, England",
+          "q": "Whitby",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1650982038101-27503046984c",
+            "alt": "Whitby harbour town beside the sea",
+            "credit": "Marco Angelo",
+            "creditUrl": "https://unsplash.com/@marcoangelo"
+          },
+          "badge": "Seaside",
+          "tags": [
+            "Harbour",
+            "Abbey",
+            "Fish & chips"
+          ]
+        }
+      ],
+      "position": "top"
+    },
+    {
+      "type": "hotels",
+      "class": "compact",
+      "title": "More UK cities and towns",
+      "intro": "Quick comparisons for more great UK bases.",
+      "items": [
+        {
+          "title": "Cardiff",
+          "place": "Wales",
+          "q": "Cardiff",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1631125315683-b50db62a94ff",
+            "alt": "Cardiff Bay waterfront buildings",
+            "credit": "Taylor Floyd Mews",
+            "creditUrl": "https://unsplash.com/@tfloydmews"
+          },
+          "badge": "Capital"
+        },
+        {
+          "title": "Belfast",
+          "place": "Northern Ireland",
+          "q": "Belfast",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1787224696406-dbcebc3b7d33",
+            "alt": "Belfast City Hall illuminated at night",
+            "credit": "Barna Bozsanyi",
+            "creditUrl": "https://unsplash.com/@barni_87"
+          },
+          "badge": "City break"
+        },
+        {
+          "title": "Birmingham",
+          "place": "West Midlands",
+          "q": "Birmingham",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1548860258-be5cfff4f165",
+            "alt": "Disc-covered Selfridges building in Birmingham",
+            "credit": "Sarah Doffman",
+            "creditUrl": "https://unsplash.com/@sarahdoffman"
+          },
+          "badge": "Events"
+        },
+        {
+          "title": "Bristol",
+          "place": "South West England",
+          "q": "Bristol",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1667017898252-10a7894b428e",
+            "alt": "Clifton Suspension Bridge above the Avon Gorge in Bristol",
+            "credit": "Korng Sok",
+            "creditUrl": "https://unsplash.com/@korng_sok"
+          },
+          "badge": "Harbourside"
+        },
+        {
+          "title": "Newcastle",
+          "place": "North East England",
+          "q": "Newcastle upon Tyne",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1598964356161-754cc07fcd36",
+            "alt": "Bridge over the River Tyne in Newcastle",
+            "credit": "Ryan Booth",
+            "creditUrl": "https://unsplash.com/@boothryan_"
+          },
+          "badge": "Quayside"
+        },
+        {
+          "title": "Oxford",
+          "place": "Oxfordshire",
+          "q": "Oxford",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1612563958093-2c3bcfbd8760",
+            "alt": "The Radcliffe Camera surrounded by Oxford colleges",
+            "credit": "Ben Seymour",
+            "creditUrl": "https://unsplash.com/@benseymour"
+          },
+          "badge": "Day trip+"
+        },
+        {
+          "title": "Cambridge",
+          "place": "Cambridgeshire",
+          "q": "Cambridge",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1652951033443-565abe61fd75",
+            "alt": "People beside the river and a bridge in Cambridge",
+            "credit": "Chris Boland",
+            "creditUrl": "https://unsplash.com/@londonweddingphotographer"
+          },
+          "badge": "Punting"
+        },
+        {
+          "title": "Canterbury",
+          "place": "Kent",
+          "q": "Canterbury",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1768341396100-61b0aeee235b",
+            "alt": "Canterbury street with old inns and a church tower",
+            "credit": "Abishanth Ahilan",
+            "creditUrl": "https://unsplash.com/@flywrk"
+          },
+          "badge": "Historic"
+        },
+        {
+          "title": "Windsor",
+          "place": "Berkshire",
+          "q": "Windsor",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1758612102561-7ad1a84d9142",
+            "alt": "Windsor Castle behind green trees under a blue sky",
+            "credit": "Just Jus",
+            "creditUrl": "https://unsplash.com/@onejus"
+          },
+          "badge": "Royal"
+        },
+        {
+          "title": "Stratford-upon-Avon",
+          "place": "Warwickshire",
+          "q": "Stratford-upon-Avon",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1781359212476-2a4548fc5ebe",
+            "alt": "River with a stone bridge and moored boats in Stratford-upon-Avon",
+            "credit": "John-Mark Strange",
+            "creditUrl": "https://unsplash.com/@j0hnmark"
+          },
+          "badge": "Theatre"
+        }
+      ],
+      "position": "top"
+    },
+    {
+      "type": "steps",
+      "title": "How HotelHero finds you the best hotel deal",
+      "items": [
+        {
+          "icon": "pin",
+          "title": "Tell us where and when",
+          "text": "Pick a city, town or area, your dates and how many guests."
+        },
+        {
+          "icon": "search",
+          "title": "We line up every big site",
+          "text": "You get one-click searches on Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels for the same stay."
+        },
+        {
+          "icon": "tag",
+          "title": "Compare the real total",
+          "text": "Open each site, check the price for the same room with taxes, breakfast and cancellation terms, and spot the cheapest."
+        },
+        {
+          "icon": "check",
+          "title": "Book direct, no fees",
+          "text": "Book with the site you choose. HotelHero never adds a fee and never takes your payment."
+        }
+      ]
+    }
+  ],
+  "highlightsTitle": "Why compare hotel prices with HotelHero?",
+  "highlights": [
+    {
+      "title": "The same room can cost different amounts",
+      "text": "Booking sites run their own promotions, member rates and packages, so the price for the same room and dates often varies. Comparing is the quickest way to find the lowest one."
+    },
+    {
+      "title": "One form instead of seven tabs",
+      "text": "Type your destination and dates once. HotelHero builds the search on every big booking site for you, ready to open in a click."
+    },
+    {
+      "title": "Independent and free",
+      "text": "We’re not a booking site and never add fees. Some links may earn us a small commission from the site, which keeps HotelHero free."
+    }
+  ],
   "sections": [
     {
-      "h2": "Why use HotelHero?",
-      "html": "<p>UK hotel deals compared across Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and more in one search.</p>"
+      "h2": "How to get the cheapest price for a UK hotel",
+      "html": "<ul><li><strong>Compare the same stay everywhere.</strong> Same hotel, same dates, same room type and same board (room only or with breakfast).</li>\n<li><strong>Look at the total, not the headline.</strong> Some sites show prices before taxes or fees, and city taxes or parking can add to the bill.</li>\n<li><strong>Check the hotel’s own website too.</strong> Hotels sometimes offer direct-booking perks such as free breakfast or flexible cancellation.</li>\n<li><strong>Be flexible with dates.</strong> City hotels are often cheaper at weekends, while countryside and seaside hotels often cost less midweek.</li>\n<li><strong>Weigh up refundable rates.</strong> A non-refundable rate is usually cheaper, but a free-cancellation rate lets you rebook if prices drop.</li>\n<li><strong>Sign in for member prices.</strong> Several booking sites show lower prices to members who are logged in. Membership is usually free.</li></ul>"
+    },
+    {
+      "h2": "Hotel deals across England, Scotland, Wales and Northern Ireland",
+      "html": "<p>HotelHero covers the whole of the UK: city breaks in <a href=\"/hotels/london/\">London</a>, <a href=\"/hotels/edinburgh/\">Edinburgh</a>, <a href=\"/hotels/manchester/\">Manchester</a> and <a href=\"/hotels/glasgow/\">Glasgow</a>, historic stays in <a href=\"/hotels/york/\">York</a> and <a href=\"/hotels/bath/\">Bath</a>, and seaside and countryside escapes from Cornwall to the Scottish Highlands. Looking for something specific? Try <a href=\"/spa-breaks/\">spa breaks</a>, <a href=\"/dog-friendly-hotels/\">dog-friendly hotels</a>, <a href=\"/family-hotels/\">family hotels</a> or <a href=\"/last-minute-hotels/\">last-minute hotels</a>.</p>"
     }
-  ]
+  ],
+  "faqs": [
+    {
+      "q": "How does HotelHero compare hotel prices?",
+      "a": "You enter a destination, dates and guests once. HotelHero then gives you the matching search on Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels, so you can open each one and see its live prices for exactly the same stay."
+    },
+    {
+      "q": "Is HotelHero a booking site?",
+      "a": "No. HotelHero is a free comparison service. You always book directly with the site or hotel you choose, under its terms, and it takes your payment, not us."
+    },
+    {
+      "q": "Does it cost anything to use?",
+      "a": "No. HotelHero is free and never adds a booking fee. Some links may be affiliate links, so a booking site may pay us a commission when you book. This never changes your price."
+    },
+    {
+      "q": "Why does the same hotel cost different amounts on different sites?",
+      "a": "Booking sites and hotels set their own promotions, member-only rates, package deals and cancellation options, and some show prices before taxes or fees. That’s why it pays to compare the full total for the same room and dates."
+    },
+    {
+      "q": "Is trivago or KAYAK not already a comparison site?",
+      "a": "Yes, both are metasearch sites that compare many providers. They don’t always show the same set of offers, though, so checking them alongside the big booking sites gives you the widest view of prices."
+    }
+  ],
+  "related": [
+    "hotels",
+    "compare",
+    "weekend-breaks",
+    "spa-breaks"
+  ],
+  "relatedTitle": "Plan your stay",
+  "ctaSearch": false
 }

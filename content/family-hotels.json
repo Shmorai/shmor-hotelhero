@@ -1,0 +1,150 @@
+{
+  "updated": "2026-10-15",
+  "slug": "family-hotels",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1758530273449-71ee84763100",
+    "alt": "Family relaxing by a swimming pool on a sunny day",
+    "credit": "Aiper Pool Cleaner",
+    "creditUrl": "https://unsplash.com/@aiper_official"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "ctaSearch": false,
+  "nav": "Family",
+  "title": "Family Hotel Deals UK: Family Rooms & Kids’ Stays",
+  "description": "Compare UK family hotel prices across every big booking site. Find family rooms, pools and kid-friendly stays, with tips for school holidays and room sizes.",
+  "eyebrow": "Family rooms & kid-friendly hotels",
+  "h1": "Family hotel deals",
+  "intro": "Family rooms, pools and space to spread out: compare family hotel prices on every site.",
+  "cardText": "Family rooms, pools and kid-friendly stays.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "hotels",
+      "title": "Family favourites around the UK",
+      "items": [
+        {
+          "title": "Family hotels in London",
+          "place": "London, England",
+          "q": "London family hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be",
+            "alt": "Tower Bridge over the River Thames in London",
+            "credit": "Charles Postiaux",
+            "creditUrl": "https://unsplash.com/@charlespostiaux"
+          },
+          "badge": "Museums",
+          "tags": [
+            "Theatre breaks",
+            "Museums",
+            "Tube links"
+          ],
+          "text": "From the West End to the South Bank: chains, boutiques and big-name luxury."
+        },
+        {
+          "title": "Family hotels in Liverpool",
+          "place": "Liverpool, England",
+          "q": "Liverpool family hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1624292341544-ae115df82e9d",
+            "alt": "Historic waterfront building in Liverpool",
+            "credit": "Wayne Yao",
+            "creditUrl": "https://unsplash.com/@wayneyao"
+          },
+          "badge": "Waterfront",
+          "tags": [
+            "Royal Albert Dock",
+            "Music",
+            "Football"
+          ],
+          "text": "Waterfront stays by the Royal Albert Dock and lively city-centre hotels."
+        },
+        {
+          "title": "Family hotels in Cornwall",
+          "place": "Cornwall, England",
+          "q": "Cornwall family hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1596449055243-11b1217518c4",
+            "alt": "Boats in a Cornish harbour",
+            "credit": "Greg Willson",
+            "creditUrl": "https://unsplash.com/@gregwillson"
+          },
+          "badge": "Beaches",
+          "tags": [
+            "Harbours",
+            "Beaches",
+            "Coast path"
+          ]
+        },
+        {
+          "title": "Family hotels in the Lakes",
+          "place": "Cumbria, England",
+          "q": "Lake District family hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1615393911241-32add28288a5",
+            "alt": "Mountains beside a lake in the Lake District",
+            "credit": "James Armes",
+            "creditUrl": "https://unsplash.com/@norfolkboy14"
+          },
+          "badge": "Outdoors",
+          "tags": [
+            "Lakes",
+            "Walking",
+            "Country inns"
+          ]
+        },
+        {
+          "title": "Family hotels in York",
+          "place": "York, England",
+          "q": "York family hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1736257977287-5c9a87c57713",
+            "alt": "Narrow old street lined with tall buildings in York",
+            "credit": "Ioana",
+            "creditUrl": "https://unsplash.com/@yogne"
+          },
+          "badge": "History",
+          "tags": [
+            "Walled city",
+            "Minster",
+            "Shopping"
+          ],
+          "text": "Stay inside the medieval walls, steps from the Shambles and York Minster."
+        },
+        {
+          "title": "Family hotels in Windsor",
+          "place": "Berkshire",
+          "q": "Windsor family hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1758612102561-7ad1a84d9142",
+            "alt": "Windsor Castle behind green trees under a blue sky",
+            "credit": "Just Jus",
+            "creditUrl": "https://unsplash.com/@onejus"
+          },
+          "badge": "Day out"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "sections": [
+    {
+      "h2": "Booking a hotel with kids",
+      "html": "<ul><li><strong>Enter every guest.</strong> Prices and room options depend on how many adults and children are staying, so add children and their ages on the booking site.</li>\n<li><strong>Check the beds.</strong> “Family room” can mean very different set-ups. Look for the bed types and whether cots are available.</li>\n<li><strong>Two rooms can beat one.</strong> Sometimes two connecting or standard rooms cost about the same as one large family room.</li>\n<li><strong>School holidays cost more.</strong> Book early, or compare dates just outside the holidays.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do kids stay free in UK hotels?",
+      "a": "Some hotels and chains let young children stay free when sharing with adults, but rules differ. Always add children to your search on the booking site to see the right price."
+    }
+  ],
+  "related": [
+    "seaside-hotels",
+    "weekend-breaks",
+    "hotels/london"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "updated": "2026-10-15",
+  "slug": "hotels/glasgow",
+  "nav": "Glasgow",
+  "eyebrow": "Glasgow, Scotland",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1571494146906-86de15d3817b",
+    "alt": "River Clyde and modern buildings in Glasgow",
+    "credit": "Adam Marikar",
+    "creditUrl": "https://unsplash.com/@adammarikar"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"Glasgow\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "cardText": "Merchant City, the West End or the riverside, with big-venue gigs on the doorstep.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "deals",
+      "title": "Where to stay in Glasgow",
+      "intro": "Popular areas for hotels in Glasgow. Tap one to compare prices there on every site.",
+      "items": [
+        {
+          "title": "Merchant City",
+          "text": "Restaurants, bars and handsome old buildings.",
+          "badge": "Central",
+          "icon": "pin",
+          "href": "/compare/?q=Merchant%20City%2C%20Glasgow",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "West End",
+          "text": "Kelvingrove, the university and leafy streets.",
+          "badge": "Leafy",
+          "icon": "pin",
+          "href": "/compare/?q=West%20End%2C%20Glasgow",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Finnieston & riverside",
+          "text": "Near the SEC and OVO Hydro, with a strong food scene.",
+          "badge": "Events",
+          "icon": "pin",
+          "href": "/compare/?q=Finnieston%20%26%20riverside%2C%20Glasgow",
+          "cta": "Compare hotels here"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "related": [
+    "hotels/edinburgh",
+    "hotels/manchester",
+    "hotels/liverpool",
+    "weekend-breaks"
+  ],
+  "ctaSearch": false,
+  "title": "Glasgow Hotel Deals: City Centre, West End & Riverside",
+  "description": "Compare Glasgow hotel prices on every big booking site. Stay in the Merchant City, the West End or by the river near the big concert venues and SEC.",
+  "h1": "Glasgow hotel deals",
+  "intro": "Live music, galleries and grand Victorian streets: compare Glasgow hotel prices for your dates on every site.",
+  "sections": [
+    {
+      "h2": "Hotels near Glasgow’s big venues",
+      "html": "<p>The SEC and the OVO Hydro by the River Clyde host big concerts and conferences, and hotels nearby fill fast on event nights. Compare early, or stay in the centre and take a short train or taxi.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Glasgow good value for a city break?",
+      "a": "Glasgow often has a wide choice of hotels across the centre, the West End and the riverside, so comparing sites can turn up good value, especially away from big event nights."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "updated": "2026-10-15",
+  "slug": "hotels/york",
+  "nav": "York",
+  "eyebrow": "York, England",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1736257977287-5c9a87c57713",
+    "alt": "Narrow old street lined with tall buildings in York",
+    "credit": "Ioana",
+    "creditUrl": "https://unsplash.com/@yogne"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"York\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "cardText": "Stay inside the medieval walls, steps from the Shambles and York Minster.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "deals",
+      "title": "Where to stay in York",
+      "intro": "Popular areas for hotels in York. Tap one to compare prices there on every site.",
+      "items": [
+        {
+          "title": "York city centre",
+          "text": "Steps from the Minster and the Shambles.",
+          "badge": "Walkable",
+          "icon": "pin",
+          "href": "/compare/?q=York%20city%20centre%2C%20York",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "York station area",
+          "text": "Handy for trains, a short walk across the river.",
+          "badge": "Transport hub",
+          "icon": "pin",
+          "href": "/compare/?q=York%20station%20area%2C%20York",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Bootham",
+          "text": "Quieter streets just outside the walls.",
+          "badge": "Quieter",
+          "icon": "pin",
+          "href": "/compare/?q=Bootham%2C%20York",
+          "cta": "Compare hotels here"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "related": [
+    "hotels/edinburgh",
+    "hotels/manchester",
+    "hotels/bath",
+    "weekend-breaks"
+  ],
+  "ctaSearch": false,
+  "title": "York Hotel Deals: Stay Inside the Historic City Walls",
+  "description": "Compare York hotel prices across every big booking site. Where to stay near York Minster, the Shambles and the station, plus tips for busy race days.",
+  "h1": "York hotel deals",
+  "intro": "Medieval streets, the Minster and cosy pubs: compare York hotel prices for your dates on every site.",
+  "sections": [
+    {
+      "h2": "Tips for booking a hotel in York",
+      "html": "<ul><li><strong>Stay central and walk.</strong> Most sights are inside or close to the city walls, so a central hotel saves taxis.</li>\n<li><strong>Watch the calendar.</strong> Race meetings at York Racecourse and the Christmas season are popular, so prices can rise. Compare a few dates if you can.</li>\n<li><strong>Driving?</strong> Central parking is limited. Check whether your hotel has parking, or use the Park &amp; Ride.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it worth staying inside York’s city walls?",
+      "a": "If you want to walk everywhere, yes. Hotels just outside the walls, or near the station, can be better value and are still only a short walk from the centre."
+    }
+  ]
+}

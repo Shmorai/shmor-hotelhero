@@ -1,0 +1,84 @@
+{
+  "updated": "2026-10-15",
+  "slug": "hotels/liverpool",
+  "nav": "Liverpool",
+  "eyebrow": "Liverpool, England",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1624292341544-ae115df82e9d",
+    "alt": "Historic waterfront building in Liverpool",
+    "credit": "Wayne Yao",
+    "creditUrl": "https://unsplash.com/@wayneyao"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"Liverpool\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "cardText": "Waterfront stays by the Royal Albert Dock and lively city-centre hotels.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "deals",
+      "title": "Where to stay in Liverpool",
+      "intro": "Popular areas for hotels in Liverpool. Tap one to compare prices there on every site.",
+      "items": [
+        {
+          "title": "Royal Albert Dock",
+          "text": "Waterfront museums, bars and river views.",
+          "badge": "Waterfront",
+          "icon": "pin",
+          "href": "/compare/?q=Royal%20Albert%20Dock%2C%20Liverpool",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Baltic Triangle",
+          "text": "Creative quarter with food halls and bars.",
+          "badge": "Trendy",
+          "icon": "pin",
+          "href": "/compare/?q=Baltic%20Triangle%2C%20Liverpool",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Lime Street",
+          "text": "Next to the main station and the shops.",
+          "badge": "Transport hub",
+          "icon": "pin",
+          "href": "/compare/?q=Lime%20Street%2C%20Liverpool",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Ropewalks",
+          "text": "Lively nightlife streets in the centre.",
+          "badge": "Nightlife",
+          "icon": "pin",
+          "href": "/compare/?q=Ropewalks%2C%20Liverpool",
+          "cta": "Compare hotels here"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "related": [
+    "hotels/manchester",
+    "hotels/london",
+    "weekend-breaks",
+    "family-hotels"
+  ],
+  "ctaSearch": false,
+  "title": "Liverpool Hotel Deals: Waterfront & City Centre Stays",
+  "description": "Compare Liverpool hotel prices on every big booking site. Stay by the Royal Albert Dock, in the Baltic Triangle or near Lime Street, with tips for match days.",
+  "h1": "Liverpool hotel deals",
+  "intro": "The waterfront, the Beatles and two big football clubs: compare Liverpool hotel prices for your dates on every site.",
+  "sections": [
+    {
+      "h2": "When Liverpool gets busy",
+      "html": "<p>Home match days at Anfield and Goodison Park, big concerts and events like the Grand National at nearby Aintree can push Liverpool hotel prices up. Compare across sites early if your dates line up with a big event.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where is best to stay in Liverpool?",
+      "a": "The waterfront around the Royal Albert Dock is great for museums and views, the Ropewalks and Baltic Triangle for bars and food, and Lime Street for trains."
+    }
+  ]
+}

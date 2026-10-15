@@ -1,0 +1,92 @@
+{
+  "updated": "2026-10-15",
+  "slug": "hotels/edinburgh",
+  "nav": "Edinburgh",
+  "eyebrow": "Edinburgh, Scotland",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc",
+    "alt": "The Balmoral clock tower and Scott Monument in Edinburgh at golden hour",
+    "credit": "Adam Wilson",
+    "creditUrl": "https://unsplash.com/@fourcolourblack"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"Edinburgh\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "cardText": "Old Town character or New Town elegance, a short walk from the castle.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "deals",
+      "title": "Where to stay in Edinburgh",
+      "intro": "Popular areas for hotels in Edinburgh. Tap one to compare prices there on every site.",
+      "items": [
+        {
+          "title": "Old Town",
+          "text": "The Royal Mile, the castle and atmospheric closes.",
+          "badge": "Historic",
+          "icon": "pin",
+          "href": "/compare/?q=Old%20Town%2C%20Edinburgh",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "New Town",
+          "text": "Georgian elegance, Princes Street and George Street.",
+          "badge": "Shopping",
+          "icon": "pin",
+          "href": "/compare/?q=New%20Town%2C%20Edinburgh",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Leith",
+          "text": "Waterfront restaurants and often better value, on the tram line.",
+          "badge": "Value",
+          "icon": "pin",
+          "href": "/compare/?q=Leith%2C%20Edinburgh",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Haymarket",
+          "text": "Next to the rail and tram station, a short walk to the West End.",
+          "badge": "Transport hub",
+          "icon": "pin",
+          "href": "/compare/?q=Haymarket%2C%20Edinburgh",
+          "cta": "Compare hotels here"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "related": [
+    "hotels/glasgow",
+    "hotels/york",
+    "hotels/london",
+    "weekend-breaks"
+  ],
+  "ctaSearch": false,
+  "title": "Edinburgh Hotel Deals: Compare Old & New Town Stays",
+  "description": "Compare Edinburgh hotel prices across every big booking site. Old Town, New Town, Leith and Haymarket guide, plus tips for festival season in August.",
+  "h1": "Edinburgh hotel deals",
+  "intro": "Castle views, cobbled closes and Georgian streets: compare Edinburgh hotel prices on every site for your dates.",
+  "sections": [
+    {
+      "h2": "Booking Edinburgh hotels in festival season",
+      "html": "<p>Every August the city hosts the Edinburgh Festival Fringe and other festivals, and hotels fill up and get much pricier. If you’re going then, book as early as you can, compare carefully, and look at areas just outside the centre such as Leith or Haymarket. Hogmanay (New Year) is another very busy time.</p>"
+    },
+    {
+      "h2": "Getting around",
+      "html": "<p>The centre is compact and walkable, though hilly. Trams run from the airport through Haymarket and Princes Street to Leith, which makes hotels along the line handy for early flights.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where should I stay in Edinburgh?",
+      "a": "The Old Town is right by the castle and the Royal Mile. The New Town has grand Georgian streets, shopping and many restaurants. Leith offers a waterfront feel and often better value, with a tram into the centre."
+    },
+    {
+      "q": "When are Edinburgh hotels most expensive?",
+      "a": "August (festival season) and Hogmanay are usually the busiest and most expensive times. Compare across sites and book early for those dates."
+    }
+  ]
+}

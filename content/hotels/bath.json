@@ -1,0 +1,76 @@
+{
+  "updated": "2026-10-15",
+  "slug": "hotels/bath",
+  "nav": "Bath",
+  "eyebrow": "Bath, Somerset",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1653231905678-1371a378f3f3",
+    "alt": "Curved Georgian terrace in Bath",
+    "credit": "Lāsma Artmane",
+    "creditUrl": "https://unsplash.com/@lasmaa"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"Bath\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "cardText": "Georgian townhouses, spa hotels and easy walks to the Roman Baths.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "deals",
+      "title": "Where to stay in Bath",
+      "intro": "Popular areas for hotels in Bath. Tap one to compare prices there on every site.",
+      "items": [
+        {
+          "title": "City centre",
+          "text": "Walk to the Roman Baths, the Abbey and the shops.",
+          "badge": "Walkable",
+          "icon": "pin",
+          "href": "/compare/?q=City%20centre%2C%20Bath",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Royal Crescent & Circus",
+          "text": "Grand Georgian streets and townhouse hotels.",
+          "badge": "Georgian",
+          "icon": "pin",
+          "href": "/compare/?q=Royal%20Crescent%20%26%20Circus%2C%20Bath",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Widcombe",
+          "text": "A short walk from the station and the canal.",
+          "badge": "Near station",
+          "icon": "pin",
+          "href": "/compare/?q=Widcombe%2C%20Bath",
+          "cta": "Compare hotels here"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "related": [
+    "hotels/london",
+    "hotels/york",
+    "spa-breaks",
+    "weekend-breaks"
+  ],
+  "ctaSearch": false,
+  "title": "Bath Hotel Deals: Spa Hotels & Georgian Townhouses",
+  "description": "Compare Bath hotel prices on every big booking site. Stay near the Roman Baths, Royal Crescent and Thermae Bath Spa, with tips for spa breaks and busy dates.",
+  "h1": "Bath hotel deals",
+  "intro": "Honey-stone terraces, the Roman Baths and rooftop thermal pools: compare Bath hotel prices for your dates on every site.",
+  "sections": [
+    {
+      "h2": "A spa break in Bath",
+      "html": "<p>Bath is the UK’s original spa town. Thermae Bath Spa uses the city’s natural thermal water, and several hotels have their own spas too. Compare packages that include treatments or spa access against room-only rates plus a separate spa booking. See <a href=\"/spa-breaks/\">spa breaks</a> for more ideas.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a car for a weekend in Bath?",
+      "a": "Not really. The centre is compact and walkable, and Bath Spa station has direct trains from London. Central parking is limited, so check what your hotel offers if you drive."
+    }
+  ]
+}

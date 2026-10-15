@@ -1,0 +1,155 @@
+{
+  "updated": "2026-10-15",
+  "slug": "dog-friendly-hotels",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1556290325-47f7815046b1",
+    "alt": "White and brown dog looking up at the camera",
+    "credit": "Stephen Noble",
+    "creditUrl": "https://unsplash.com/@stephenoble"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "ctaSearch": false,
+  "nav": "Dog-friendly",
+  "navOrder": 6,
+  "title": "Dog-Friendly Hotels UK: Compare Pet-Friendly Stays",
+  "description": "Compare dog-friendly and pet-friendly hotel prices across every big booking site. Tips on pet fees, rules and where to go with your dog in the UK.",
+  "eyebrow": "Pet-friendly hotels",
+  "h1": "Dog-friendly hotel deals",
+  "intro": "Bring the dog too. Compare pet-friendly hotel prices on every site, then use each site’s “pets allowed” filter.",
+  "cardText": "Bring the dog along: pet-friendly stays compared.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "hotels",
+      "title": "Dog-friendly favourites",
+      "intro": "Tip: once a booking site opens, switch on its “pets allowed” filter.",
+      "items": [
+        {
+          "title": "Lake District hotels",
+          "place": "Cumbria, England",
+          "q": "Lake District dog friendly hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1615393911241-32add28288a5",
+            "alt": "Mountains beside a lake in the Lake District",
+            "credit": "James Armes",
+            "creditUrl": "https://unsplash.com/@norfolkboy14"
+          },
+          "badge": "Walkies",
+          "tags": [
+            "Lakes",
+            "Walking",
+            "Country inns"
+          ]
+        },
+        {
+          "title": "Cotswolds hotels",
+          "place": "Cotswolds, England",
+          "q": "Cotswolds dog friendly hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1670620800615-4225fe6ecb75",
+            "alt": "Cotswold stone cottages along a village street",
+            "credit": "George Ciobra",
+            "creditUrl": "https://unsplash.com/@george_ciobra"
+          },
+          "badge": "Country pubs",
+          "tags": [
+            "Stone villages",
+            "Pubs",
+            "Manor houses"
+          ]
+        },
+        {
+          "title": "Cornwall hotels",
+          "place": "Cornwall, England",
+          "q": "Cornwall dog friendly hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1596449055243-11b1217518c4",
+            "alt": "Boats in a Cornish harbour",
+            "credit": "Greg Willson",
+            "creditUrl": "https://unsplash.com/@gregwillson"
+          },
+          "badge": "Dog beaches",
+          "tags": [
+            "Harbours",
+            "Beaches",
+            "Coast path"
+          ]
+        },
+        {
+          "title": "Brighton hotels",
+          "place": "Brighton, East Sussex",
+          "q": "Brighton dog friendly hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1632763415573-902d1e610e65",
+            "alt": "Brighton pier and beach under a blue sky",
+            "credit": "Nick Fewings",
+            "creditUrl": "https://unsplash.com/@jannerboy62"
+          },
+          "badge": "Seafront",
+          "tags": [
+            "Seafront",
+            "The Lanes",
+            "Pier"
+          ],
+          "text": "Sea-view rooms on the front and quirky boutique hotels near the Lanes."
+        },
+        {
+          "title": "Eryri (Snowdonia) hotels",
+          "place": "North Wales",
+          "q": "Snowdonia dog friendly hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1576413209841-efe9c2cd11aa",
+            "alt": "Lake beside a mountain in Eryri (Snowdonia)",
+            "credit": "Josh Kirk",
+            "creditUrl": "https://unsplash.com/@this_josh"
+          },
+          "badge": "Mountains",
+          "tags": [
+            "Mountains",
+            "Lakes",
+            "Walking"
+          ]
+        },
+        {
+          "title": "Scottish Highlands hotels",
+          "place": "Highlands, Scotland",
+          "q": "Scottish Highlands dog friendly hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1589489873423-d1745278a8f4",
+            "alt": "Kilchurn Castle reflected in Loch Awe in the Scottish Highlands",
+            "credit": "Connor Mollison",
+            "creditUrl": "https://unsplash.com/@connormollison"
+          },
+          "badge": "Open spaces",
+          "tags": [
+            "Lochs",
+            "Castles",
+            "Scenery"
+          ]
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "sections": [
+    {
+      "h2": "Before you book with your dog",
+      "html": "<ul><li><strong>Check the pet fee.</strong> Many hotels charge a per-night or per-stay fee for dogs.</li>\n<li><strong>Check the rules.</strong> Hotels may limit the number or size of dogs, or which rooms and areas they’re allowed in.</li>\n<li><strong>Tell the hotel.</strong> Add your dog to the booking or message the hotel so a suitable room is ready.</li>\n<li><strong>Beach rules.</strong> Some beaches restrict dogs in summer, so check local signs.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I find dog-friendly hotels on booking sites?",
+      "a": "Most big booking sites have a “pets allowed” or “pet-friendly” filter. Compare across sites with HotelHero, then switch that filter on and read each hotel’s pet policy."
+    }
+  ],
+  "related": [
+    "seaside-hotels",
+    "weekend-breaks",
+    "family-hotels"
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "updated": "2026-10-15",
+  "slug": "last-minute-hotels",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+    "alt": "Bedside lamp beside a white hotel pillow",
+    "credit": "Rhema Kallianpur",
+    "creditUrl": "https://unsplash.com/@rhemakallianpur"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "ctaSearch": false,
+  "nav": "Last minute",
+  "navOrder": 4,
+  "title": "Last Minute Hotel Deals UK: Tonight & This Weekend",
+  "description": "Need a hotel tonight or this weekend? Compare last-minute UK hotel prices on Booking.com, Hotels.com, Expedia, trivago, KAYAK and more in one quick search.",
+  "eyebrow": "Tonight · Tomorrow · This weekend",
+  "h1": "Last-minute hotel deals",
+  "intro": "Need a room tonight? Put in your destination and today’s date, and check every big booking site in seconds.",
+  "cardText": "Same-day and next-day rooms, compared in seconds.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "hotels",
+      "title": "Popular last-minute searches",
+      "items": [
+        {
+          "title": "London hotels tonight",
+          "place": "London, England",
+          "q": "London",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be",
+            "alt": "Tower Bridge over the River Thames in London",
+            "credit": "Charles Postiaux",
+            "creditUrl": "https://unsplash.com/@charlespostiaux"
+          },
+          "badge": "Tonight",
+          "tags": [
+            "Theatre breaks",
+            "Museums",
+            "Tube links"
+          ],
+          "text": "From the West End to the South Bank: chains, boutiques and big-name luxury."
+        },
+        {
+          "title": "Manchester hotels tonight",
+          "place": "Manchester, England",
+          "q": "Manchester",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1515586838455-8f8f940d6853",
+            "alt": "Aerial view of Manchester city centre buildings",
+            "credit": "William McCue",
+            "creditUrl": "https://unsplash.com/@mrwilliamo"
+          },
+          "badge": "Tonight",
+          "tags": [
+            "Gigs & football",
+            "Food scene",
+            "Trams"
+          ],
+          "text": "Northern Quarter cool, Spinningfields style and handy hotels for match days."
+        },
+        {
+          "title": "Edinburgh hotels tonight",
+          "place": "Edinburgh, Scotland",
+          "q": "Edinburgh",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc",
+            "alt": "The Balmoral clock tower and Scott Monument in Edinburgh at golden hour",
+            "credit": "Adam Wilson",
+            "creditUrl": "https://unsplash.com/@fourcolourblack"
+          },
+          "badge": "Tonight",
+          "tags": [
+            "Old Town",
+            "Festivals",
+            "Castle views"
+          ],
+          "text": "Old Town character or New Town elegance, a short walk from the castle."
+        },
+        {
+          "title": "Liverpool hotels tonight",
+          "place": "Liverpool, England",
+          "q": "Liverpool",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1624292341544-ae115df82e9d",
+            "alt": "Historic waterfront building in Liverpool",
+            "credit": "Wayne Yao",
+            "creditUrl": "https://unsplash.com/@wayneyao"
+          },
+          "badge": "Tonight",
+          "tags": [
+            "Royal Albert Dock",
+            "Music",
+            "Football"
+          ],
+          "text": "Waterfront stays by the Royal Albert Dock and lively city-centre hotels."
+        },
+        {
+          "title": "Glasgow hotels tonight",
+          "place": "Glasgow, Scotland",
+          "q": "Glasgow",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1571494146906-86de15d3817b",
+            "alt": "River Clyde and modern buildings in Glasgow",
+            "credit": "Adam Marikar",
+            "creditUrl": "https://unsplash.com/@adammarikar"
+          },
+          "badge": "Tonight",
+          "tags": [
+            "Live music",
+            "West End",
+            "Architecture"
+          ],
+          "text": "Merchant City, the West End or the riverside, with big-venue gigs on the doorstep."
+        },
+        {
+          "title": "Brighton hotels tonight",
+          "place": "Brighton, East Sussex",
+          "q": "Brighton",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1632763415573-902d1e610e65",
+            "alt": "Brighton pier and beach under a blue sky",
+            "credit": "Nick Fewings",
+            "creditUrl": "https://unsplash.com/@jannerboy62"
+          },
+          "badge": "Tonight",
+          "tags": [
+            "Seafront",
+            "The Lanes",
+            "Pier"
+          ],
+          "text": "Sea-view rooms on the front and quirky boutique hotels near the Lanes."
+        },
+        {
+          "title": "Airport hotels",
+          "place": "Heathrow, Gatwick, Manchester…",
+          "q": "Heathrow airport",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d",
+            "alt": "Traveller resting feet on luggage while looking at a plane",
+            "credit": "JESHOOTS.COM",
+            "creditUrl": "https://unsplash.com/@jeshoots"
+          },
+          "badge": "Early flight",
+          "tags": [
+            "Near terminals",
+            "Parking"
+          ]
+        },
+        {
+          "title": "Hotels near me",
+          "place": "Anywhere in the UK",
+          "q": "United Kingdom",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1566665797739-1674de7a421a",
+            "alt": "Modern hotel bedroom with a blue upholstered headboard",
+            "credit": "mark champs",
+            "creditUrl": "https://unsplash.com/@markchamps21"
+          },
+          "badge": "Any town",
+          "tags": [
+            "Type your town"
+          ]
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "sections": [
+    {
+      "h2": "Tips for booking a hotel at the last minute",
+      "html": "<ul><li><strong>Compare quickly, but compare.</strong> Last-minute prices can vary a lot between sites.</li>\n<li><strong>Check check-in times.</strong> If you’re arriving late, make sure the hotel has a 24-hour reception or a late check-in option.</li>\n<li><strong>Use the apps’ maps.</strong> Most booking sites let you search around your current location.</li>\n<li><strong>Read the cancellation terms.</strong> Same-day bookings are often non-refundable.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are last-minute hotel deals really cheaper?",
+      "a": "Sometimes. Hotels with empty rooms may lower prices close to the date, but in busy periods prices can also go up. Comparing several sites is the best way to see what’s available right now."
+    }
+  ],
+  "related": [
+    "compare",
+    "weekend-breaks",
+    "hotels"
+  ]
+}

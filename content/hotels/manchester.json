@@ -1,0 +1,84 @@
+{
+  "updated": "2026-10-15",
+  "slug": "hotels/manchester",
+  "nav": "Manchester",
+  "eyebrow": "Manchester, England",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1515586838455-8f8f940d6853",
+    "alt": "Aerial view of Manchester city centre buildings",
+    "credit": "William McCue",
+    "creditUrl": "https://unsplash.com/@mrwilliamo"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"Manchester\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "cardText": "Northern Quarter cool, Spinningfields style and handy hotels for match days.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "deals",
+      "title": "Where to stay in Manchester",
+      "intro": "Popular areas for hotels in Manchester. Tap one to compare prices there on every site.",
+      "items": [
+        {
+          "title": "Northern Quarter",
+          "text": "Independent bars, cafés and record shops.",
+          "badge": "Nightlife",
+          "icon": "pin",
+          "href": "/compare/?q=Northern%20Quarter%2C%20Manchester",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Deansgate",
+          "text": "Central, with restaurants and big-name hotels.",
+          "badge": "Central",
+          "icon": "pin",
+          "href": "/compare/?q=Deansgate%2C%20Manchester",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Spinningfields",
+          "text": "Stylish bars and riverside dining.",
+          "badge": "Stylish",
+          "icon": "pin",
+          "href": "/compare/?q=Spinningfields%2C%20Manchester",
+          "cta": "Compare hotels here"
+        },
+        {
+          "title": "Salford Quays",
+          "text": "Waterside hotels near MediaCityUK.",
+          "badge": "Waterside",
+          "icon": "pin",
+          "href": "/compare/?q=Salford%20Quays%2C%20Manchester",
+          "cta": "Compare hotels here"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "related": [
+    "hotels/liverpool",
+    "hotels/york",
+    "hotels/london",
+    "weekend-breaks"
+  ],
+  "ctaSearch": false,
+  "title": "Manchester Hotel Deals: Compare Prices on Every Site",
+  "description": "Compare Manchester hotel prices on every big booking site. Where to stay: the Northern Quarter, Deansgate, Spinningfields or Salford Quays.",
+  "h1": "Manchester hotel deals",
+  "intro": "Gigs, football, shopping or a big night out: compare Manchester hotel prices for your dates across every big booking site.",
+  "sections": [
+    {
+      "h2": "Manchester hotels on event days",
+      "html": "<p>Big concerts, football matches and conferences can fill Manchester hotels and push prices up. If your trip lines up with a big event, compare early, and consider staying a little further out along the Metrolink tram network.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which area of Manchester is best for a weekend?",
+      "a": "The Northern Quarter is known for independent bars and shops, Deansgate and Spinningfields for restaurants and smarter hotels, and Salford Quays for MediaCityUK and waterside views, linked by tram."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "updated": "2026-10-15",
+  "slug": "spa-breaks",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1773924093206-9a433a14bb44",
+    "alt": "Relaxing lounge chairs in a sunlit spa room",
+    "credit": "Virginia Marinova",
+    "creditUrl": "https://unsplash.com/@virginiaphotostories"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "ctaSearch": false,
+  "nav": "Spa breaks",
+  "navOrder": 3,
+  "title": "Spa Break Deals UK: Compare Spa Hotel Prices",
+  "description": "Compare UK spa hotel and spa break prices across every big booking site. Ideas from Bath to the Lake District, plus tips on packages, treatments and extras.",
+  "eyebrow": "Spa hotels & spa breaks",
+  "h1": "UK spa break deals",
+  "intro": "Pools, thermal suites and treatments: compare spa hotel prices for your dates on every site.",
+  "cardText": "Pools, treatments and late checkouts across the UK.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "hotels",
+      "title": "Great places for a UK spa break",
+      "items": [
+        {
+          "title": "Spa hotels in Bath",
+          "place": "Bath, Somerset",
+          "q": "Bath spa hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1653231905678-1371a378f3f3",
+            "alt": "Curved Georgian terrace in Bath",
+            "credit": "Lāsma Artmane",
+            "creditUrl": "https://unsplash.com/@lasmaa"
+          },
+          "badge": "Thermal water",
+          "tags": [
+            "Thermal spa",
+            "Georgian",
+            "Romantic"
+          ],
+          "text": "Georgian townhouses, spa hotels and easy walks to the Roman Baths."
+        },
+        {
+          "title": "Lake District spa hotels",
+          "place": "Cumbria, England",
+          "q": "Lake District spa hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1615393911241-32add28288a5",
+            "alt": "Mountains beside a lake in the Lake District",
+            "credit": "James Armes",
+            "creditUrl": "https://unsplash.com/@norfolkboy14"
+          },
+          "badge": "Lakes & spa",
+          "tags": [
+            "Lakes",
+            "Walking",
+            "Country inns"
+          ]
+        },
+        {
+          "title": "Cotswolds spa hotels",
+          "place": "Cotswolds, England",
+          "q": "Cotswolds spa hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1670620800615-4225fe6ecb75",
+            "alt": "Cotswold stone cottages along a village street",
+            "credit": "George Ciobra",
+            "creditUrl": "https://unsplash.com/@george_ciobra"
+          },
+          "badge": "Country spa",
+          "tags": [
+            "Stone villages",
+            "Pubs",
+            "Manor houses"
+          ]
+        },
+        {
+          "title": "Edinburgh spa hotels",
+          "place": "Edinburgh, Scotland",
+          "q": "Edinburgh spa hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc",
+            "alt": "The Balmoral clock tower and Scott Monument in Edinburgh at golden hour",
+            "credit": "Adam Wilson",
+            "creditUrl": "https://unsplash.com/@fourcolourblack"
+          },
+          "badge": "City spa",
+          "tags": [
+            "Old Town",
+            "Festivals",
+            "Castle views"
+          ],
+          "text": "Old Town character or New Town elegance, a short walk from the castle."
+        },
+        {
+          "title": "London spa hotels",
+          "place": "London, England",
+          "q": "London spa hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be",
+            "alt": "Tower Bridge over the River Thames in London",
+            "credit": "Charles Postiaux",
+            "creditUrl": "https://unsplash.com/@charlespostiaux"
+          },
+          "badge": "City spa",
+          "tags": [
+            "Theatre breaks",
+            "Museums",
+            "Tube links"
+          ],
+          "text": "From the West End to the South Bank: chains, boutiques and big-name luxury."
+        },
+        {
+          "title": "Highland spa hotels",
+          "place": "Highlands, Scotland",
+          "q": "Scottish Highlands spa hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1589489873423-d1745278a8f4",
+            "alt": "Kilchurn Castle reflected in Loch Awe in the Scottish Highlands",
+            "credit": "Connor Mollison",
+            "creditUrl": "https://unsplash.com/@connormollison"
+          },
+          "badge": "Loch views",
+          "tags": [
+            "Lochs",
+            "Castles",
+            "Scenery"
+          ]
+        },
+        {
+          "title": "Cornwall spa hotels",
+          "place": "Cornwall, England",
+          "q": "Cornwall spa hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1596449055243-11b1217518c4",
+            "alt": "Boats in a Cornish harbour",
+            "credit": "Greg Willson",
+            "creditUrl": "https://unsplash.com/@gregwillson"
+          },
+          "badge": "Sea & spa",
+          "tags": [
+            "Harbours",
+            "Beaches",
+            "Coast path"
+          ]
+        },
+        {
+          "title": "Manchester spa hotels",
+          "place": "Manchester, England",
+          "q": "Manchester spa hotel",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1515586838455-8f8f940d6853",
+            "alt": "Aerial view of Manchester city centre buildings",
+            "credit": "William McCue",
+            "creditUrl": "https://unsplash.com/@mrwilliamo"
+          },
+          "badge": "City spa",
+          "tags": [
+            "Gigs & football",
+            "Food scene",
+            "Trams"
+          ],
+          "text": "Northern Quarter cool, Spinningfields style and handy hotels for match days."
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "sections": [
+    {
+      "h2": "Getting the best spa break deal",
+      "html": "<ul><li><strong>Check what’s included.</strong> Some rates include spa access and a treatment; others are room only, with spa use charged extra.</li>\n<li><strong>Book treatments early.</strong> Popular slots go fast, especially at weekends.</li>\n<li><strong>Go midweek.</strong> Countryside spa hotels are often cheaper from Sunday to Thursday.</li>\n<li><strong>Read the age rules.</strong> Many spas are adults-only or have set times for children.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a spa package better value than booking separately?",
+      "a": "Sometimes. Compare the package price against the room-only rate plus the spa’s own prices for the treatments you want. Packages can include extras like dinner or late checkout that are worth having."
+    }
+  ],
+  "related": [
+    "hotels/bath",
+    "weekend-breaks",
+    "seaside-hotels"
+  ]
+}

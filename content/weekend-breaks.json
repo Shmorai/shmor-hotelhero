@@ -1,0 +1,188 @@
+{
+  "updated": "2026-10-15",
+  "slug": "weekend-breaks",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39",
+    "alt": "Neatly made hotel bed with white linen and throw pillows",
+    "credit": "Vojtech Bruzek",
+    "creditUrl": "https://unsplash.com/@vojtechbruzek"
+  },
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form><p class=\"hh-form-note\">One search, <b>7 booking sites</b>: Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels.</p>",
+  "search": false,
+  "ctaSearch": false,
+  "nav": "Weekend breaks",
+  "title": "UK Weekend Break Deals: Compare Hotels This Weekend",
+  "description": "Compare UK weekend break hotel prices across every big booking site. City breaks, countryside escapes and coastal weekends, plus Friday-to-Sunday tips.",
+  "eyebrow": "Friday to Sunday",
+  "h1": "UK weekend break deals",
+  "intro": "Two nights away, sorted. Your dates default to this coming weekend: just pick where.",
+  "cardText": "Friday-to-Sunday escapes, compared on every site.",
+  "blocks": [
+    {
+      "type": "providers",
+      "position": "top"
+    },
+    {
+      "type": "hotels",
+      "title": "Weekend breaks people love",
+      "items": [
+        {
+          "title": "Edinburgh hotels",
+          "place": "Edinburgh, Scotland",
+          "q": "Edinburgh",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc",
+            "alt": "The Balmoral clock tower and Scott Monument in Edinburgh at golden hour",
+            "credit": "Adam Wilson",
+            "creditUrl": "https://unsplash.com/@fourcolourblack"
+          },
+          "badge": "City break",
+          "tags": [
+            "Old Town",
+            "Festivals",
+            "Castle views"
+          ],
+          "text": "Old Town character or New Town elegance, a short walk from the castle.",
+          "slug": "hotels/edinburgh"
+        },
+        {
+          "title": "York hotels",
+          "place": "York, England",
+          "q": "York",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1736257977287-5c9a87c57713",
+            "alt": "Narrow old street lined with tall buildings in York",
+            "credit": "Ioana",
+            "creditUrl": "https://unsplash.com/@yogne"
+          },
+          "badge": "Historic",
+          "tags": [
+            "Walled city",
+            "Minster",
+            "Shopping"
+          ],
+          "text": "Stay inside the medieval walls, steps from the Shambles and York Minster.",
+          "slug": "hotels/york"
+        },
+        {
+          "title": "Bath hotels",
+          "place": "Bath, Somerset",
+          "q": "Bath",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1653231905678-1371a378f3f3",
+            "alt": "Curved Georgian terrace in Bath",
+            "credit": "Lāsma Artmane",
+            "creditUrl": "https://unsplash.com/@lasmaa"
+          },
+          "badge": "Spa city",
+          "tags": [
+            "Thermal spa",
+            "Georgian",
+            "Romantic"
+          ],
+          "text": "Georgian townhouses, spa hotels and easy walks to the Roman Baths.",
+          "slug": "hotels/bath"
+        },
+        {
+          "title": "Manchester hotels",
+          "place": "Manchester, England",
+          "q": "Manchester",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1515586838455-8f8f940d6853",
+            "alt": "Aerial view of Manchester city centre buildings",
+            "credit": "William McCue",
+            "creditUrl": "https://unsplash.com/@mrwilliamo"
+          },
+          "badge": "Weekend pick",
+          "tags": [
+            "Gigs & football",
+            "Food scene",
+            "Trams"
+          ],
+          "text": "Northern Quarter cool, Spinningfields style and handy hotels for match days.",
+          "slug": "hotels/manchester"
+        },
+        {
+          "title": "Cotswolds hotels",
+          "place": "Cotswolds, England",
+          "q": "Cotswolds",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1670620800615-4225fe6ecb75",
+            "alt": "Cotswold stone cottages along a village street",
+            "credit": "George Ciobra",
+            "creditUrl": "https://unsplash.com/@george_ciobra"
+          },
+          "badge": "Cosy",
+          "tags": [
+            "Stone villages",
+            "Pubs",
+            "Manor houses"
+          ]
+        },
+        {
+          "title": "Lake District hotels",
+          "place": "Cumbria, England",
+          "q": "Lake District",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1615393911241-32add28288a5",
+            "alt": "Mountains beside a lake in the Lake District",
+            "credit": "James Armes",
+            "creditUrl": "https://unsplash.com/@norfolkboy14"
+          },
+          "badge": "Countryside",
+          "tags": [
+            "Lakes",
+            "Walking",
+            "Country inns"
+          ]
+        },
+        {
+          "title": "St Ives hotels",
+          "place": "St Ives, Cornwall",
+          "q": "St Ives, Cornwall",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1780406021233-a1d65a591fd3",
+            "alt": "Busy beach with boats, clear blue sea and coastal buildings in St Ives",
+            "credit": "BEN ELLIOTT",
+            "creditUrl": "https://unsplash.com/@benjaminelliott"
+          },
+          "badge": "Beach break",
+          "tags": [
+            "Sandy beaches",
+            "Art galleries"
+          ]
+        },
+        {
+          "title": "Oxford",
+          "place": "Oxfordshire",
+          "q": "Oxford",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1612563958093-2c3bcfbd8760",
+            "alt": "The Radcliffe Camera surrounded by Oxford colleges",
+            "credit": "Ben Seymour",
+            "creditUrl": "https://unsplash.com/@benseymour"
+          },
+          "badge": "Day trip+"
+        }
+      ],
+      "position": "top"
+    }
+  ],
+  "sections": [
+    {
+      "h2": "Making the most of a weekend break",
+      "html": "<ul><li><strong>City hotels can be cheaper at weekends</strong>, when business travellers go home.</li>\n<li><strong>Countryside and seaside hotels often cost more at weekends</strong>, so try Sunday–Tuesday for a bargain.</li>\n<li><strong>Ask about late checkout.</strong> It makes a Sunday far more relaxed, and some sites include it on member rates.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How far ahead should I book a weekend break?",
+      "a": "For popular cities and busy dates, earlier is usually better. For quieter weekends, last-minute deals can appear. Comparing across sites shows you the best price for your dates either way."
+    }
+  ],
+  "related": [
+    "hotels",
+    "spa-breaks",
+    "last-minute-hotels"
+  ]
+}

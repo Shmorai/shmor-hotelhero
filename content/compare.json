@@ -1,0 +1,81 @@
+{
+  "updated": "2026-10-15",
+  "slug": "compare",
+  "nav": "Compare prices",
+  "navOrder": 1,
+  "title": "Compare Hotel Prices: 7 Booking Sites in One Search",
+  "description": "Compare hotel prices for the same dates on Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels. Free tool, no booking fees.",
+  "eyebrow": "Free hotel price comparison tool",
+  "h1": "Compare hotel prices on every site",
+  "intro": "Enter your stay once. Then open each booking site with the same destination, dates and guests already filled in, and pick the cheapest.",
+  "heroHtml": "<form class=\"hh-form\" action=\"/compare/\" data-compare role=\"search\">\n<label class=\"f-dest\"><span>Destination</span><input name=\"q\" required placeholder=\"City, town or area, e.g. York\" value=\"\" autocomplete=\"off\"></label>\n<label class=\"f-date\"><span>Check-in</span><input type=\"date\" name=\"in\"></label>\n<label class=\"f-date\"><span>Check-out</span><input type=\"date\" name=\"out\"></label>\n<label class=\"f-guests\"><span>Guests</span><select name=\"adults\"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>\n<label class=\"f-rooms\"><span>Rooms</span><select name=\"rooms\"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></label>\n<button type=\"submit\">Compare prices</button>\n</form>",
+  "search": false,
+  "image": {
+    "src": "https://images.unsplash.com/photo-1621293954908-907159247fc8",
+    "alt": "Modern hotel lobby with designer furniture and wood walls",
+    "credit": "Frames For Your Heart",
+    "creditUrl": "https://unsplash.com/@framesforyourheart"
+  },
+  "blocks": [
+    {
+      "type": "compare",
+      "position": "top"
+    },
+    {
+      "type": "steps",
+      "title": "How HotelHero finds you the best hotel deal",
+      "items": [
+        {
+          "icon": "pin",
+          "title": "Tell us where and when",
+          "text": "Pick a city, town or area, your dates and how many guests."
+        },
+        {
+          "icon": "search",
+          "title": "We line up every big site",
+          "text": "You get one-click searches on Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels for the same stay."
+        },
+        {
+          "icon": "tag",
+          "title": "Compare the real total",
+          "text": "Open each site, check the price for the same room with taxes, breakfast and cancellation terms, and spot the cheapest."
+        },
+        {
+          "icon": "check",
+          "title": "Book direct, no fees",
+          "text": "Book with the site you choose. HotelHero never adds a fee and never takes your payment."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "h2": "Getting a like-for-like comparison",
+      "html": "<p>When you open each site, check that you’re looking at the <strong>same hotel, room type and board</strong> (room only, breakfast included and so on), and compare the <strong>final total</strong> including taxes and fees. Then look at the cancellation terms: a refundable rate that costs a little more can be the better deal if your plans might change.</p><p>Some sites (trivago and lastminute.com) open on their own search page, where you just type your destination again.</p>"
+    },
+    {
+      "h2": "Tips that often save money",
+      "html": "<ul><li>Log in to booking sites where you have an account: several show cheaper member prices.</li>\n<li>Try shifting your dates by a day. Prices can change a lot around weekends and big events.</li>\n<li>Check the hotel’s own website for direct-booking perks.</li>\n<li>Watch out for extras such as parking, resort or city fees, and breakfast.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does HotelHero show live prices?",
+      "a": "HotelHero doesn’t store or show prices itself. It opens each booking site’s own search for your stay, so the prices you see are always live, straight from the site."
+    },
+    {
+      "q": "Which sites do you compare?",
+      "a": "Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google Hotels. We may add more over time."
+    },
+    {
+      "q": "Do you keep my search details?",
+      "a": "Your search is handled in your browser and passed to the site you open. HotelHero doesn’t need an account and doesn’t ask for personal details. See the Shmor.ai privacy policy for details."
+    }
+  ],
+  "related": [
+    "hotels",
+    "last-minute-hotels",
+    "weekend-breaks"
+  ],
+  "ctaSearch": false
+}

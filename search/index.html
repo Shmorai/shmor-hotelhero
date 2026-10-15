@@ -12,28 +12,47 @@
 <meta property="og:description" content="Search HotelHero.">
 <meta property="og:url" content="https://hotelhero.shmor.ai/search/">
 <meta property="og:locale" content="en_GB">
+<link rel="preconnect" href="https://images.unsplash.com">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#0A0C0E">
+<meta name="theme-color" content="#0F1A3C">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://hotelhero.shmor.ai/search/#page","url":"https://hotelhero.shmor.ai/search/","name":"Search | HotelHero","description":"Search HotelHero.","isPartOf":{"@id":"https://hotelhero.shmor.ai/#website"},"dateModified":"2026-10-15","inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hotelhero.shmor.ai/"},{"@type":"ListItem","position":2,"name":"Search HotelHero","item":"https://hotelhero.shmor.ai/search/"}]}]}</script>
 </head>
-<!-- This site's own design. tools/build.js fills each double-brace placeholder: head, nav, main, footer_nav, site_name, year, body_class. -->
+<!-- HotelHero design. tools/build.js fills each double-brace placeholder: head, nav, main, footer_nav, site_name, year, body_class. -->
 <body class="page page-search">
 <a class="skip" href="#main">Skip to content</a>
+<div class="hh-topbar">
+  <div class="wrap">
+    <span>Compare UK hotel prices from 7 booking sites</span>
+    <span class="hide-sm">Free to use · No booking fees</span>
+    <a href="https://shmor.ai/">Part of the Shmor.ai network</a>
+  </div>
+</div>
 <header class="site-header">
   <div class="wrap bar">
-    <a class="brand" href="/">HotelHero</a>
-    <nav class="nav" data-nav aria-label="Main"></nav>
+    <div class="brand-wrap">
+      <a class="brand" href="/" aria-label="HotelHero home">
+        <svg class="hh-mark-logo" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 2.5 35 7.8V19c0 9.3-6.2 15.6-15 18.5C11.2 34.6 5 28.3 5 19V7.8Z" fill="#FF3B5C"/>
+          <path d="M20 7.6l1.2 2.5 2.7.4-2 1.9.5 2.7-2.4-1.3-2.4 1.3.5-2.7-2-1.9 2.7-.4Z" fill="#FFC531"/>
+          <g fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18v11"/><path d="M12 21h13a3 3 0 0 1 3 3v5"/><path d="M12 26.5h16"/><path d="M15.5 21v5.5"/></g>
+        </svg>
+        <span class="hh-word">Hotel<b>Hero</b></span>
+      </a>
+      <a class="by" href="https://shmor.ai/">by Shmor.ai</a>
+    </div>
+    <nav class="nav" data-nav aria-label="Main"><a href="/compare/">Compare prices</a><a href="/hotels/">UK cities</a><a href="/spa-breaks/">Spa breaks</a><a href="/last-minute-hotels/">Last minute</a><a href="/seaside-hotels/">Seaside</a><a href="/dog-friendly-hotels/">Dog-friendly</a></nav>
+    <a class="hh-head-cta" href="/compare/">Compare prices</a>
     <button class="menu" data-menu aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 <main id="main">
 <section class="hero hero-page"><div class="wrap"><h1 id="search-title">Search HotelHero</h1><form class="search " action="/search/" role="search">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-  <input name="q" type="search" placeholder="What are you looking for?" aria-label="Search HotelHero">
+  <input name="q" type="search" placeholder="Search UK hotel guides, e.g. York or spa breaks" aria-label="Search HotelHero">
   <button type="submit">Search</button>
 </form></div></section>
 <section class="related"><div class="wrap"><div class="grid" id="search-results" aria-live="polite"></div></div></section>
@@ -41,21 +60,25 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-cols">
-      <div><a class="brand" href="/">HotelHero</a><p>Part of the <a href="https://shmor.ai/">Shmor.ai</a> network. Search more. Do less.</p></div>
-      <div><h4>Guides</h4><ul></ul></div>
+      <div>
+        <a class="brand" href="/"><span class="hh-word">Hotel<b>Hero</b></span></a>
+        <p>UK hotel prices compared across the big booking sites in one search, so you can find the best deal for the same room. Part of the <a href="https://shmor.ai/">Shmor.ai</a> network: search more, do less.</p>
+      </div>
+      <div><h4>Hotels &amp; breaks</h4><ul><li><a href="/compare/">Compare prices</a></li><li><a href="/hotels/">UK cities</a></li><li><a href="/spa-breaks/">Spa breaks</a></li><li><a href="/last-minute-hotels/">Last minute</a></li><li><a href="/seaside-hotels/">Seaside</a></li><li><a href="/dog-friendly-hotels/">Dog-friendly</a></li><li><a href="/family-hotels/">Family</a></li><li><a href="/hotels/bath/">Bath</a></li><li><a href="/hotels/brighton/">Brighton</a></li><li><a href="/hotels/edinburgh/">Edinburgh</a></li><li><a href="/hotels/glasgow/">Glasgow</a></li><li><a href="/hotels/liverpool/">Liverpool</a></li><li><a href="/hotels/london/">London</a></li><li><a href="/hotels/manchester/">Manchester</a></li><li><a href="/hotels/york/">York</a></li><li><a href="/weekend-breaks/">Weekend breaks</a></li></ul></div>
       <div><h4>Shmor.ai</h4><ul>
         <li><a href="https://shmor.ai/">All Shmor marketplaces</a></li>
-        <li><a href="https://shmor.ai/about/">About</a></li>
+        <li><a href="https://shmor.ai/about/">About Shmor</a></li>
         <li><a href="https://shmor.ai/contact/">Contact</a></li>
+        <li><a href="https://shmor.ai/partners/">Advertise with us</a></li>
       </ul></div>
       <div><h4>Legal</h4><ul>
-        <li><a href="https://shmor.ai/privacy/">Privacy</a></li>
-        <li><a href="https://shmor.ai/cookies/">Cookies</a></li>
-        <li><a href="https://shmor.ai/terms/">Terms</a></li>
+        <li><a href="https://shmor.ai/privacy/">Privacy policy</a></li>
+        <li><a href="https://shmor.ai/cookies/">Cookie policy</a></li>
+        <li><a href="https://shmor.ai/terms/">Terms of use</a></li>
         <li><a href="https://shmor.ai/affiliate-disclosure/">How we make money</a></li>
       </ul></div>
     </div>
-    <p class="disclosure">HotelHero is free to use. Some links are affiliate links: if you book or buy through them we may earn a commission, at no extra cost to you. Prices and availability are set by providers and can change. © 2026 Shmor.ai</p>
+    <p class="disclosure">HotelHero is a free comparison service, not a travel agent or booking site: you book directly with the site you choose, under its terms. Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and Google are trademarks of their owners; HotelHero is independent and not endorsed by them. Some links are affiliate links, so we may earn a commission at no extra cost to you. Prices and availability are set by providers and can change. © 2026 Shmor.ai</p>
   </div>
 </footer>
 <script src="/assets/site.js" defer></script>
