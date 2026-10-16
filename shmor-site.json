@@ -4,7 +4,7 @@
   "name": "HotelHero",
   "subdomain": "hotelhero",
   "order": 310,
-  "status": "building",
+  "status": "live",
   "icon": "bed",
   "accent": "#FF3B5C",
   "blurb": "UK hotel deals compared across Booking.com, Hotels.com, Expedia, trivago, KAYAK, lastminute.com and more in one search.",
