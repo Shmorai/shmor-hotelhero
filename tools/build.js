@@ -475,6 +475,52 @@ function related(p) {
     <a class="card${r.image ? ' has-img' : ''}" href="${pagePath(r)}">${cardImg(r)}<h3>${esc(label(r))}</h3><p>${esc(r.cardText || r.description)}</p><span class="cta">${esc(t('explore'))} →</span></a>`).join('')}</div></div></section>`;
 }
 
+/* ---------- "From across the Shmor network": related pages on OTHER Shmor sites ----------
+   Reads ../../shmor-ai/network-index.json (built by shmor-ai/tools/build-network-index.js).
+   Up to 3 links, one per site, same language, only when at least 2 topic words match.
+   Opt out per page ("networkLinks": false) or per site (seo.networkLinks: false). */
+const NET = (() => { try { return JSON.parse(fs.readFileSync(path.resolve(ROOT, '..', '..', 'shmor-ai', 'network-index.json'), 'utf8')); } catch (e) { return null; } })();
+const NET_LANG = (seo.locale || 'en').slice(0, 2);
+const NET_TITLE = { en: 'From across the Shmor network', fr: 'Ailleurs sur le réseau Shmor', de: 'Mehr aus dem Shmor-Netzwerk' };
+const NET_READ = { en: 'Read more →', fr: 'Lire la suite →', de: 'Weiterlesen →' };
+// Keep identical to shmor-ai/tools/build-network-index.js
+const NET_STOP = new Set(('your with what this that from have more best guide guides compare compared comparing deal deals 2025 2026 2027 when which free about into than them they will need know check find cheap costs cost price prices much does should what where while there their here every also just like make most other some only over such very many your yours want help using used uses works work worth tips step steps explained explainer what does how much the and for are can you our new near need' +
+  ' pour avec dans votre vous comment quel quels quelle quelles plus sont nous leur leurs cette tout tous toutes faire guide prix entre aussi depuis sans sous chez bien' +
+  ' ihre ihren sich oder nicht eine einen einem einer dass wird werden mehr alle beim sind kann auch nach uber unter diese dieser dieses haben wenn sowie zwischen kosten preis').split(/\s+/));
+const netTerms = s => [...new Set(String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .split(/[^a-z0-9]+/).filter(w => w.length > 3 && !NET_STOP.has(w)))];
+// Words too generic to make two pages "related" (places, families, money-saving, service words…)
+const NET_GENERIC = new Set(('england scotland wales ireland northern london edinburgh glasgow manchester britain british europe european america american united kingdom states kids children child family families parents choose choosing chosen book booking booked offer offers value name names brand brands last minute single drop repair repairs service services servicing machine machines save saving savings money right ways planner plain english local near nearby trusted rules rule explained options option types type cover covers year years month months week weeks today first full latest list lists ideas idea home homes people person online business businesses small company companies cross border location locations city cities town towns minimum depot deposit site sites same tool tools fee fees search rental rent rentals surcharge').split(' '));
+const netStem = w => w.replace(/ies$/, 'y').replace(/(?<!s)s$/, '');
+const netKey = terms => [...new Set(terms.filter(w => !NET_GENERIC.has(w)).map(netStem).filter(w => !NET_GENERIC.has(w)))];
+// Rarity weighting: a word used by many sites (e.g. "insurance") counts less than a distinctive one (e.g. "orlando")
+const NET_POOL = NET ? NET.items.filter(i => i.lang === NET_LANG).map(i => ({ ...i, k: netKey(i.terms) })) : [];
+const NET_IDF = (() => {
+  const bySite = new Map(), df = new Map();
+  for (const i of NET_POOL) { if (!bySite.has(i.site)) bySite.set(i.site, new Set()); i.k.forEach(w => bySite.get(i.site).add(w)); }
+  for (const ws of bySite.values()) for (const w of ws) df.set(w, (df.get(w) || 0) + 1);
+  const n = Math.max(1, bySite.size);
+  return w => Math.log(n / (df.get(w) || n));
+})();
+function networkLinks(p) {
+  if (!NET || seo.networkLinks === false || p.networkLinks === false || !p.slug || p.noindex || p.type === 'blog') return '';
+  const mine = new Set(netKey(netTerms([p.title, p.h1, p.description, ...(p.keywords || [])].join(' '))));
+  if (mine.size < 2) return '';
+  const scored = [];
+  for (const it of NET_POOL) {
+    if (it.site === site.id) continue;
+    let sc = 0, hits = 0;
+    for (const w of it.k) if (mine.has(w)) { sc += NET_IDF(w); hits++; }
+    if (hits >= 2 && sc >= 4.2) scored.push({ it, sc });
+  }
+  scored.sort((a, b) => b.sc - a.sc || String(b.it.date).localeCompare(String(a.it.date)) || a.it.url.localeCompare(b.it.url));
+  const picked = [], seen = new Set();
+  for (const { it } of scored) { if (seen.has(it.site)) continue; seen.add(it.site); picked.push(it); if (picked.length === 3) break; }
+  if (!picked.length) return '';
+  return `<section class="related network-links"><div class="wrap"><h2>${esc(NET_TITLE[NET_LANG] || NET_TITLE.en)}</h2><div class="grid">${picked.map(it => `
+    <a class="card${it.image ? ' has-img' : ''}" href="${esc(it.url)}">${it.image ? `<img class="card-img" src="${esc(it.image)}" alt="" loading="lazy" width="600" height="360">` : ''}<span class="merchant">${esc(it.siteName)}</span><h3>${esc(it.title)}</h3><p>${esc(it.text)}</p><span class="cta">${esc(NET_READ[NET_LANG] || NET_READ.en)}</span></a>`).join('')}</div></div></section>`;
+}
+
 function bottomCta(p) {
   if (p.ctaSearch === false) return '';
   return `<section class="cta-band"><div class="wrap"><h2>${esc(p.ctaTitle || seo.ctaTitle || t('searchSite', { name: NAME }))}</h2>${searchForm(p.searchPlaceholder, 'search-lg')}</div></section>`;
@@ -506,7 +552,7 @@ const out = (rel, text) => { const f = path.join(ROOT, rel); fs.mkdirSync(path.d
 
 for (const p of pages) {
   const top = blocks(p, true), mid = blocks(p, false);
-  const main = [breadcrumbHtml(p), hero(p) + byline(p) + (top && '\n' + top), postList(p), highlights(p) + (mid && '\n' + mid), partnerBlock(p), sections(p), faqs(p), sources(p), related(p), bottomCta(p)].join('\n');
+  const main = [breadcrumbHtml(p), hero(p) + byline(p) + (top && '\n' + top), postList(p), highlights(p) + (mid && '\n' + mid), partnerBlock(p), sections(p), faqs(p), sources(p), related(p), networkLinks(p), bottomCta(p)].join('\n');
   out(p.slug ? `${p.slug}/index.html` : 'index.html', render(p, main));
 }
 
