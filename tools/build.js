@@ -191,7 +191,9 @@ function head(p, { noindex = false, canonical = true } = {}) {
       publisher: { '@id': `${BASE}/#org` }, inLanguage: seo.locale || 'en',
       potentialAction: { '@type': 'SearchAction', target: `${BASE}/search/?q={search_term_string}`, 'query-input': 'required name=search_term_string' } });
     graph.push({ '@type': 'Organization', '@id': `${BASE}/#org`, name: NAME, url: `${BASE}/`,
-      ...(seo.logo ? { logo: `${BASE}${seo.logo}` } : {}),
+      ...(seo.logo ? { logo: `${BASE}${seo.logo}` } : fs.existsSync(path.join(ROOT, 'assets', 'favicon.svg')) ? { logo: `${BASE}/assets/favicon.svg` } : {}),
+      email: `${site.subdomain}@shmor.ai`,
+      contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: `${site.subdomain}@shmor.ai` },
       parentOrganization: { '@type': 'Organization', name: 'Shmor.ai', url: `${MASTER}/` } });
   }
   graph.push({ '@type': 'WebPage', '@id': `${url}#page`, url, name: p.title, description: p.description,
@@ -537,7 +539,7 @@ const footerNav = pages.filter(p => p.slug && !p.noindex && p.type !== 'post').s
 function render(p, main, opts) {
   const fill = {
     head: head(p, opts), nav: navHtml, main, footer_nav: footerNav,
-    year: String(new Date().getFullYear()), site_name: esc(NAME),
+    year: String(new Date().getFullYear()), site_name: esc(NAME), contact_email: `${site.subdomain}@shmor.ai`,
     body_class: p.slug ? `page page-${p.slug.split('/')[0]}` : 'home',
   };
   return layout.replace(/{{([a-z_]+)}}/g, (m, k) => (k in fill ? fill[k] : m));
