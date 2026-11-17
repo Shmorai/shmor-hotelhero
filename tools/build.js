@@ -478,10 +478,19 @@ function related(p) {
 }
 
 /* ---------- "From across the Shmor network": related pages on OTHER Shmor sites ----------
-   Reads ../../shmor-ai/network-index.json (built by shmor-ai/tools/build-network-index.js).
+   Reads shmor-ai/network-index.json (built by shmor-ai/tools/build-network-index.js) from
+   ../../shmor-ai (the Shmor/ folder layout) or ../shmor-ai (repos cloned side by side, e.g. in
+   the cloud), or SHMOR_NETWORK_INDEX. If none is found the build stops rather than silently
+   dropping every site's network links; pass --no-network to build without them on purpose.
    Up to 3 links, one per site, same language, only when at least 2 topic words match.
    Opt out per page ("networkLinks": false) or per site (seo.networkLinks: false). */
-const NET = (() => { try { return JSON.parse(fs.readFileSync(path.resolve(ROOT, '..', '..', 'shmor-ai', 'network-index.json'), 'utf8')); } catch (e) { return null; } })();
+const NET = (() => {
+  if (process.argv.includes('--no-network')) return null;
+  const tries = [process.env.SHMOR_NETWORK_INDEX, path.resolve(ROOT, '..', '..', 'shmor-ai', 'network-index.json'), path.resolve(ROOT, '..', 'shmor-ai', 'network-index.json')].filter(Boolean);
+  for (const f of tries) { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { /* try next */ } }
+  console.error('✗ shmor-ai/network-index.json not found (looked in ' + tries.join(', ') + '). Clone shmor-ai beside this site, set SHMOR_NETWORK_INDEX, or pass --no-network.');
+  process.exit(1);
+})();
 const NET_LANG = (seo.locale || 'en').slice(0, 2);
 const NET_TITLE = { en: 'From across the Shmor network', fr: 'Ailleurs sur le réseau Shmor', de: 'Mehr aus dem Shmor-Netzwerk' };
 const NET_READ = { en: 'Read more →', fr: 'Lire la suite →', de: 'Weiterlesen →' };
