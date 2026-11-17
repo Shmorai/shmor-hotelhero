@@ -1,0 +1,92 @@
+{
+  "updated": "2026-11-17",
+  "date": "2026-11-17",
+  "slug": "blog/hidden-hotel-fees-and-fake-discounts",
+  "type": "post",
+  "title": "Hidden Hotel Fees and Fake Discounts: How to Spot Them",
+  "description": "How to compare hotel prices fairly in the UK: spot hidden hotel fees, misleading strikethrough discounts and pressure messages before you book a room.",
+  "h1": "Hidden hotel fees and fake discounts: how to compare prices fairly",
+  "eyebrow": "Hotel tips · Price checks",
+  "intro": "“Was £180, now £120” and “only 1 room left” are designed to make you act fast. UK consumer law sets rules for how hotel prices and urgency messages can be shown. Here’s how to use them to compare hotel deals with a clear head.",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/A_bedroom_of_the_Grand_Hotel_Campo_dei_Fiori.jpg/1920px-A_bedroom_of_the_Grand_Hotel_Campo_dei_Fiori.jpg",
+    "alt": "A hotel bedroom with a made double bed, bedside tables and lamps",
+    "credit": "Julius Barclay / CC BY-SA 4.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:A_bedroom_of_the_Grand_Hotel_Campo_dei_Fiori.jpg"
+  },
+  "keywords": [
+    "hidden hotel fees",
+    "fake hotel discounts",
+    "hotel drip pricing",
+    "how to compare hotel prices",
+    "hotel total price uk",
+    "strikethrough hotel prices",
+    "only 1 room left hotel",
+    "hotel booking site rules uk",
+    "hotel price comparison tips"
+  ],
+  "cardText": "Spot hidden hotel fees, misleading discounts and pressure messages, and compare hotel prices like for like.",
+  "sections": [
+    {
+      "h2": "What UK rules say about hotel prices",
+      "html": "<p>The UK’s Competition and Markets Authority (CMA) took action on how online hotel booking sites present prices and urgency in 2019, after an investigation into several major booking sites. Its published principles for accommodation booking sites cover search rankings, reference prices, hidden charges and pressure selling. Since 6 April 2025 the unfair commercial practices rules sit in the Digital Markets, Competition and Consumers Act 2024, and the CMA has since published guidance on price transparency (updated January 2026). Together they give you a useful checklist for reading any hotel listing, whichever site you’re on.</p>"
+    },
+    {
+      "h2": "Look for the total price, not just the headline rate",
+      "html": "<p>The CMA’s principles say sites should be upfront about unavoidable fees, charges and taxes and always give the total price, and that revealing unavoidable costs towards the end of a purchase can be misleading and unfair. Its price transparency guidance also describes <strong>drip pricing</strong>, where extra amounts are added as you move through a booking, and <strong>partitioned pricing</strong>, where parts of a price are shown but not the overall amount you’ll pay.</p><p>In practice, before you compare two rooms:</p><ul><li>Open the final booking step and note the full amount for your dates and number of guests.</li><li>Check whether breakfast, parking or Wi-Fi are included or extra.</li><li>Check what must be paid now and what is payable at the hotel.</li></ul><p>Our <a href=\"/compare/\">compare page</a> opens each booking site with the same stay, so you can line up totals.</p>"
+    },
+    {
+      "h2": "“Was” prices and strikethrough discounts",
+      "html": "<p>The CMA’s principles say a site shouldn’t present something as a discount, using strikethrough prices or savings claims, unless the offer gives a real saving on a like-for-like basis. If a “was” price is shown, it should be clear what it refers to: for example, different stay dates or a different number of guests.</p><p>When you see a big saving:</p><ul><li>Check the dates and room type behind the old price.</li><li>Compare the same room, dates and cancellation terms on another site.</li><li>Ignore the percentage and compare the final amount.</li></ul>"
+    },
+    {
+      "h2": "“Only 1 room left” and “12 people are looking”",
+      "html": "<p>Messages about popularity and availability should not be false or misleading, according to the CMA’s principles. They give examples where the whole story matters: a claim such as “only X rooms left at this price on this site” should make clear it refers to that site, not the hotel as a whole; likewise “XX people have viewed this property” may include people searching for different dates.</p><p>A message like that isn’t proof a room will sell out. If you’re unsure, check another booking site for the same dates before deciding. Our <a href=\"/last-minute-hotels/\">last-minute hotel page</a> explains how to compare when you’re booking close to the date.</p>"
+    },
+    {
+      "h2": "Sponsored placement and ranking",
+      "html": "<p>The same principles say booking sites should tell you prominently when the money they earn on bookings or clicks affects the order of results, and should label paid-for listings. So the first result isn’t necessarily the cheapest or best; it may be the one that pays the site most. Sorting by price, then checking guest ratings and location, gives you a fairer view. Look at a place’s details, such as the area and policies, on <a href=\"/hotels/london/\">our city pages</a> or on the hotel’s own website.</p>"
+    },
+    {
+      "h2": "A simple like-for-like check",
+      "html": "<ol><li>Pick your dates, guests and room type, and keep them the same on every site.</li><li>Compare the final total, including taxes and charges.</li><li>Compare cancellation terms (free cancellation until when?).</li><li>Check what’s included, such as breakfast.</li><li>Take a screenshot of the price and terms you booked.</li></ol><p>HotelHero compares hotel sites for the same stay, but we don’t show prices ourselves, because prices change constantly: always confirm the total on the booking site.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is drip pricing on hotel sites?",
+      "a": "Drip pricing is when extra amounts are added as you progress through a booking, so the headline price isn’t the final one. The CMA’s price transparency guidance says businesses must be transparent about prices, including mandatory fees, taxes and charges."
+    },
+    {
+      "q": "Are strikethrough hotel prices always real discounts?",
+      "a": "No. Under the CMA’s principles, a saving should be real and like for like, and the “was” price should be clear about what it refers to. Compare the final price for the same room, dates and terms across sites."
+    },
+    {
+      "q": "Does “only 1 room left” mean the hotel is nearly full?",
+      "a": "Not necessarily. Such messages can refer to one booking site’s allocation at a given price. Check another site for the same dates before you decide."
+    }
+  ],
+  "related": [
+    "compare",
+    "last-minute-hotels",
+    "weekend-breaks"
+  ],
+  "sources": [
+    {
+      "title": "GOV.UK (CMA): Hotel booking websites: compliance principles for businesses",
+      "url": "https://www.gov.uk/government/publications/online-hotel-booking-principles-for-businesses"
+    },
+    {
+      "title": "GOV.UK (CMA): Being transparent with your customers: a short guide for online accommodation booking sites",
+      "url": "https://www.gov.uk/government/publications/online-hotel-booking-principles-for-businesses/being-transparent-with-your-customers-a-short-guide-for-online-accommodation-booking-sites"
+    },
+    {
+      "title": "GOV.UK (CMA): Price transparency",
+      "url": "https://www.gov.uk/government/publications/price-transparency-cma209"
+    },
+    {
+      "title": "GOV.UK (CMA): Unfair commercial practices",
+      "url": "https://www.gov.uk/government/publications/unfair-commercial-practices-cma207"
+    }
+  ]
+}

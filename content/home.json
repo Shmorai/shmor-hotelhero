@@ -707,5 +707,6 @@
     "spa-breaks"
   ],
   "relatedTitle": "Plan your stay",
-  "ctaSearch": false
+  "ctaSearch": false,
+  "latestPosts": 3
 }

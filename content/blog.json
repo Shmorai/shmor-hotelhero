@@ -1,0 +1,28 @@
+{
+  "updated": "2026-11-17",
+  "slug": "blog",
+  "type": "blog",
+  "title": "Hotel Blog: UK Hotel Booking Tips & Guides | HotelHero",
+  "description": "Practical UK hotel booking guides: how to compare prices fairly, spot hidden fees and fake discounts, and book smarter across Booking.com, Expedia and more.",
+  "nav": "Hotel blog",
+  "navOrder": 7,
+  "eyebrow": "Hotel tips · Guides",
+  "h1": "UK hotel booking tips and guides",
+  "intro": "Clear, practical guides to comparing UK hotel deals: what the prices really include, how to read a discount, and how to get more from your search.",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/A_bedroom_of_the_Grand_Hotel_Campo_dei_Fiori.jpg/1920px-A_bedroom_of_the_Grand_Hotel_Campo_dei_Fiori.jpg",
+    "alt": "A hotel bedroom with a made double bed, bedside tables and lamps",
+    "credit": "Julius Barclay / CC BY-SA 4.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:A_bedroom_of_the_Grand_Hotel_Campo_dei_Fiori.jpg"
+  },
+  "search": false,
+  "listTitle": "Latest posts",
+  "keywords": [
+    "hotel blog",
+    "uk hotel tips",
+    "hotel booking guide",
+    "hotel deals advice",
+    "how to book a hotel"
+  ],
+  "cardText": "UK hotel booking tips, price-comparison guides and how to spot a genuine deal."
+}

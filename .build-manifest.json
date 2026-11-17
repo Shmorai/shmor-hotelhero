@@ -1,4 +1,6 @@
 [
+  "blog/hidden-hotel-fees-and-fake-discounts/index.html",
+  "blog/index.html",
   "compare/index.html",
   "dog-friendly-hotels/index.html",
   "family-hotels/index.html",
@@ -19,6 +21,7 @@
   "search/index.html",
   "search-index.json",
   "404.html",
+  "blog/feed.xml",
   "sitemap.xml",
   "robots.txt"
 ]
