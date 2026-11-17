@@ -476,3 +476,9 @@ section h2, .block-head h2 { font-size: clamp(22px, 2.6vw, 30px); }
 .hh-hp-name small { display: block; font-size: 10.5px; font-weight: 800; color: var(--green); text-transform: uppercase; letter-spacing: .04em; }
 .hh-hp-price { font: 800 17px var(--display); color: var(--navy); }
 .hh-hprices .is-best a { border-color: var(--green); background: #E7F5EE; }
+
+
+/* Affiliate disclosure bar at the top of every page (tools/build.js "aff-top"). Theme-neutral: inherits each site's colours. */
+.aff-top { order: -99; font-size: 12.5px; line-height: 1.5; border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent); }
+.aff-top p { margin: 0; padding: 7px 0; opacity: .78; }
+.aff-top a { text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }

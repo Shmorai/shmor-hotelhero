@@ -59,6 +59,7 @@ const WORDS = {
     seePlans: 'See {title} plans', readGuide: 'Read the guide', explore: 'Explore', all: 'All', partnersTitle: 'Compare deals from our partners',
     viewDeal: 'View deal →', comparePrices: 'Compare prices at {merchant}', visit: 'Visit {merchant} →',
     affNote: 'We may earn a commission if you book through these links, at no extra cost to you.', moneyLink: 'How we make money',
+    affTop: '{name} is free to use. Some links on this site are affiliate links: if you buy or sign up through them, we may earn a commission at no extra cost to you.',
     onThisPage: 'On this page', lastUpdated: 'Last updated: {date}', faqTitle: 'Frequently asked questions', keepExploring: 'Keep exploring',
     notFoundTitle: 'Page not found', notFoundNav: 'Not found', notFoundDesc: 'This page could not be found on {name}.',
     notFoundH1: "We couldn't find that page", notFoundText: 'Try a search, or head back to the {home}.', homepage: '{name} homepage',
@@ -71,6 +72,7 @@ const WORDS = {
     seePlans: 'Voir les offres {title}', readGuide: 'Lire le guide', explore: 'Découvrir', all: 'Tout', partnersTitle: 'Nos partenaires',
     viewDeal: 'Voir l’offre →', comparePrices: 'Comparer chez {merchant}', visit: 'Aller sur {merchant} →',
     affNote: 'Nous pouvons percevoir une commission lorsque vous passez par ces liens, sans aucun surcoût pour vous.', moneyLink: 'Comment nous sommes rémunérés',
+    affTop: '{name} est gratuit. Certains liens de ce site sont des liens d’affiliation : si vous achetez ou vous inscrivez par leur intermédiaire, nous pouvons percevoir une commission, sans aucun surcoût pour vous.',
     onThisPage: 'Sur cette page', lastUpdated: 'Dernière mise à jour : {date}', faqTitle: 'Questions fréquentes', keepExploring: 'À découvrir aussi',
     notFoundTitle: 'Page introuvable', notFoundNav: 'Page introuvable', notFoundDesc: 'Cette page n’existe pas ou plus sur {name}.',
     notFoundH1: 'Nous n’avons pas trouvé cette page', notFoundText: 'Lancez une recherche ou revenez à l’{home}.', homepage: 'accueil de {name}',
@@ -83,6 +85,7 @@ const WORDS = {
     seePlans: '{title}-Angebote ansehen', readGuide: 'Ratgeber lesen', explore: 'Entdecken', all: 'Alle', partnersTitle: 'Unsere Partner',
     viewDeal: 'Zum Angebot →', comparePrices: 'Bei {merchant} vergleichen', visit: 'Zu {merchant} →',
     affNote: 'Wenn Sie über diese Links gehen, erhalten wir unter Umständen eine Provision. Für Sie entstehen keine Mehrkosten.', moneyLink: 'Wie wir uns finanzieren',
+    affTop: '{name} ist kostenlos. Einige Links auf dieser Seite sind Affiliate-Links: Wenn Sie darüber kaufen oder sich anmelden, erhalten wir unter Umständen eine Provision. Für Sie entstehen keine Mehrkosten.',
     onThisPage: 'Auf dieser Seite', lastUpdated: 'Zuletzt aktualisiert: {date}', faqTitle: 'Häufige Fragen', keepExploring: 'Das könnte Sie auch interessieren',
     notFoundTitle: 'Seite nicht gefunden', notFoundNav: 'Nicht gefunden', notFoundDesc: 'Diese Seite gibt es auf {name} nicht (mehr).',
     notFoundH1: 'Diese Seite haben wir nicht gefunden', notFoundText: 'Starten Sie eine Suche oder kehren Sie zur {home} zurück.', homepage: '{name}-Startseite',
@@ -545,9 +548,14 @@ const navHtml = navPages.map(p => `<a href="${pagePath(p)}">${esc(label(p))}</a>
 const footerNav = pages.filter(p => p.slug && !p.noindex && p.type !== 'post').sort((a, b) => (a.navOrder ?? 99) - (b.navOrder ?? 99) || a.slug.localeCompare(b.slug))
   .map(p => `<li><a href="${pagePath(p)}">${esc(label(p))}</a></li>`).join('');
 
+// Affiliate disclosure at the top of every page (networks such as Impact require it above the fold,
+// not only in the footer). Wording: seo.strings.affTop; turn off with seo.affTop: false.
+const affTop = seo.affTop === false ? '' : `<div class="aff-top" role="note"><div class="wrap"><p>${esc(t('affTop', { name: NAME }))} <a href="${MASTER}/affiliate-disclosure/">${esc(t('moneyLink'))}</a></p></div></div>
+`;
+
 function render(p, main, opts) {
   const fill = {
-    head: head(p, opts), nav: navHtml, main, footer_nav: footerNav,
+    head: head(p, opts), nav: navHtml, main: affTop + main, footer_nav: footerNav,
     year: String(new Date().getFullYear()), site_name: esc(NAME), contact_email: `${site.subdomain}@shmor.ai`,
     body_class: p.slug ? `page page-${p.slug.split('/')[0]}` : 'home',
   };
