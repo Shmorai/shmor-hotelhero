@@ -1,0 +1,81 @@
+{
+  "updated": "2026-11-18",
+  "date": "2026-11-18",
+  "slug": "blog/uk-visitor-levy-edinburgh-wales-hotel-bookings",
+  "type": "post",
+  "title": "UK Visitor Levy: Edinburgh and Wales Hotel Costs",
+  "description": "Edinburgh's visitor levy is 5% from 24 July 2026 and Wales adds £1.30 a night from April 2027. See what it means for your hotel booking and total price.",
+  "h1": "UK visitor levy: what Edinburgh and Wales hotel guests will pay",
+  "eyebrow": "Hotel tips · Tourist tax",
+  "intro": "Britain now has its first tourist tax. Edinburgh began charging a visitor levy on paid overnight stays in July 2026, and Wales has a nightly levy starting in April 2027. Here is what the official sources say, and how to check it when you compare hotel prices.",
+  "image": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Edinburgh_Skyline_%2831186849414%29.jpg/1920px-Edinburgh_Skyline_%2831186849414%29.jpg",
+    "alt": "The Edinburgh skyline with the Old Town rooftops and spires",
+    "credit": "Graham Haley / CC BY-SA 2.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_Skyline_(31186849414).jpg"
+  },
+  "keywords": [
+    "edinburgh visitor levy",
+    "edinburgh tourist tax",
+    "uk tourist tax",
+    "uk hotel tourist tax",
+    "wales visitor levy",
+    "cardiff tourist tax",
+    "visitor levy hotel booking",
+    "tourist tax edinburgh hotels",
+    "do i pay tourist tax uk",
+    "hotel tax uk 2027"
+  ],
+  "cardText": "Edinburgh's 5% visitor levy and Wales' nightly levy explained, plus how to compare the true hotel total.",
+  "sections": [
+    {
+      "h2": "Edinburgh visitor levy: 5% on paid overnight stays",
+      "html": "<p>According to the City of Edinburgh Council, the visitor levy is <strong>5% of the cost of paid overnight accommodation</strong>, applying to stays from 24 July 2026. It is calculated before VAT and is not charged on extras such as parking, meals, drinks or transport. It is only charged on the <strong>first 5 nights</strong> of a stay, at the same rate every day of the year.</p><p>The council says anyone staying in paid overnight accommodation in Edinburgh pays it, including tourists and people travelling for work, and UK and Scottish residents are included. The accommodation provider is liable for the levy and passes the money to the council.</p>"
+    },
+    {
+      "h2": "A worked example for an Edinburgh hotel stay",
+      "html": "<p>Say a room costs £150 a night before the levy (a made-up figure purely to show the sums, not a real price). Over 3 nights the room cost is £450, so a 5% levy would be £22.50. For a 7-night stay, only the first 5 nights count: 5 × £150 = £750, so the levy would be £37.50, not £52.50.</p><p>The council says the levy is calculated before VAT, so check how a hotel shows the final total. Our <a href=\"/hotels/edinburgh/\">Edinburgh hotels page</a> has the places to start comparing.</p>"
+    },
+    {
+      "h2": "Bookings made before the levy started",
+      "html": "<p>The council says stays on or after 24 July 2026 are not subject to the levy if they were booked and paid for, in whole or in part, before 1 October 2025. If you have a stay arranged long ago, ask the hotel which rule applies to your booking rather than assuming.</p>"
+    },
+    {
+      "h2": "Wales visitor levy: £1.30 per person per night from April 2027",
+      "html": "<p>The Welsh Government says the visitor levy applies to new bookings for stays from 1 April 2027, and it names Cardiff as the council that has introduced it. The rates are per person, per night: <strong>£1.30</strong> for most accommodation and <strong>75p</strong> for shared rooms in hostels, bunkhouses, bothies or dormitories and for tent pitches. The 75p rate does not apply to children under 18.</p><p>Accommodation providers pay the levy to the Welsh Revenue Authority and can absorb the cost or pass it on. The Welsh Government says that if a provider is VAT-registered, VAT applies to the total the visitor pays, including any passed-on levy. Other councils may follow, so use the Welsh Government's council checker before booking a Welsh break.</p>"
+    },
+    {
+      "h2": "How to compare hotel prices when a levy applies",
+      "html": "<p>A levy may or may not be included in the headline rate, depending on the hotel and the booking site. To compare fairly:</p><ul><li>Open the final booking step on each site and note the full amount for your dates and guests.</li><li>Look for a line mentioning a visitor levy, tourist tax or local tax, and whether it is paid now or at the hotel.</li><li>Check whether the figure is per room or per person, since Wales charges per person per night.</li><li>Compare cancellation terms too.</li></ul><p>Our <a href=\"/compare/\">compare page</a> opens several booking sites for the same stay, and our guide to <a href=\"/blog/hidden-hotel-fees-and-fake-discounts/\">hidden hotel fees and fake discounts</a> explains why the total price matters more than the headline rate.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much is the Edinburgh tourist tax?",
+      "a": "The City of Edinburgh Council's visitor levy is 5% of the cost of paid overnight accommodation, charged on the first 5 nights of a stay, for stays from 24 July 2026."
+    },
+    {
+      "q": "Do UK residents pay the Edinburgh visitor levy?",
+      "a": "Yes. The council says the levy applies to anyone staying in paid overnight accommodation in Edinburgh, including UK and Scottish residents."
+    },
+    {
+      "q": "How much is the Wales visitor levy?",
+      "a": "As of November 2026, the Welsh Government lists £1.30 per person per night for most accommodation and 75p for hostels, bunkhouses and tent pitches, for stays from 1 April 2027 where a council has introduced it."
+    }
+  ],
+  "related": [
+    "hotels/edinburgh",
+    "compare",
+    "weekend-breaks"
+  ],
+  "sources": [
+    {
+      "title": "City of Edinburgh Council: About the Edinburgh Visitor Levy",
+      "url": "https://www.edinburgh.gov.uk/visitor-levy-summary"
+    },
+    {
+      "title": "Welsh Government: Visitor levy in Wales",
+      "url": "https://www.gov.wales/visitor-levy-wales"
+    }
+  ]
+}
