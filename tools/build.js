@@ -96,7 +96,9 @@ const W = { ...WORDS.en, ...(WORDS[String(seo.locale || '').slice(0, 2).toLowerC
 const t = (k, v = {}) => String(W[k] ?? k).replace(/{(\w+)}/g, (m, x) => (x in v ? v[x] : m));
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const strip = s => String(s ?? '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+// Affiliate tokens in page HTML (see affTokens below) become plain text wherever text is extracted
+const untoken = s => String(s ?? '').replace(/\[\[link:[^|\]]+\|([^\]]+)\]\]/g, '$1').replace(/\[\[(?:button|banner):[^\]]*\]\]/g, '');
+const strip = s => untoken(s).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const slugify = s => strip(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const errors = [], warnings = [];
 
@@ -135,6 +137,27 @@ for (const p of pages) {
   if (p.image && typeof p.image === 'object' && !p.image.alt) warnings.push(`${id}: "image" has no "alt" text`);
 }
 for (const o of site.offers || []) if (!LINKS[o.link]) errors.push(`shmor-site.json: offer "${o.title}" uses unknown link "${o.link}"`);
+// Referral link extras: "banner": { src, width, height, alt } (an image creative from the network),
+// "expires": "YYYY-MM-DD" (last day it may be shown; after it the build hides it and /go/ sends clicks to "then")
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+for (const [slug, l] of Object.entries(LINKS)) {
+  if (l.banner && !(l.banner.src && l.banner.width && l.banner.height)) errors.push(`shmor-site.json: link "${slug}" banner needs src, width and height`);
+  if (l.expires && !DATE_RE.test(l.expires)) errors.push(`shmor-site.json: link "${slug}" expires must be YYYY-MM-DD`);
+  if (l.then && !LINKS[l.then]) errors.push(`shmor-site.json: link "${slug}" then "${l.then}" isn't a known link`);
+  if (l.expires && l.expires < TODAY) warnings.push(`link "${slug}" expired on ${l.expires}: hidden on every page${l.then ? `, clicks go to "${l.then}"` : ''}`);
+}
+for (const o of site.offers || []) if (o.expires && o.expires < TODAY) warnings.push(`offer "${o.title}" expired on ${o.expires}: hidden`);
+// Tokens used in page HTML must point at known links
+for (const p of pages) {
+  const text = JSON.stringify([p.intro, p.sections, p.faqs, p.blocks]);
+  for (const m of text.matchAll(/\[\[(link|button|banner):([^\]|]+)(?:\|([^\]]*))?\]\]/g)) {
+    const slugs = m[1] === 'banner' ? [m[2], m[3]].filter(Boolean) : [m[2]];
+    for (const s of slugs) {
+      if (!LINKS[s]) errors.push(`${p._file}: [[${m[1]}:${s}]] isn't in shmor-site.json "links"`);
+      else if (m[1] === 'banner' && !LINKS[s].banner) errors.push(`${p._file}: [[banner:${s}]] has no "banner" image in shmor-site.json`);
+    }
+  }
+}
 
 if (warnings.length) console.log('Warnings:\n  ! ' + warnings.join('\n  ! '));
 if (errors.length) { console.error('\nBuild stopped:\n  ✗ ' + errors.join('\n  ✗ ')); process.exit(1); }
@@ -150,6 +173,34 @@ const pagePath = p => `/${p.slug ? p.slug + '/' : ''}`;
 const label = p => p.nav || p.short || p.h1;
 const goHref = (slug, src) => `${MASTER}/go/?to=${encodeURIComponent(slug)}&src=${encodeURIComponent(`${site.id}-${(src || 'home').replace(/\//g, '-')}`)}`;
 const AFF = 'rel="sponsored nofollow noopener" target="_blank"';
+
+/* ---------- Affiliate placements ----------
+   live(slug): the link exists and hasn't expired.
+   Tokens anywhere in intro / sections[].html / faqs[].a / block html:
+     [[link:slug|anchor text]]   inline sponsored text link (plain text once expired)
+     [[button:slug|Button label]] call-to-action button
+     [[banner:slug]] or [[banner:desktopSlug|mobileSlug]]  network banner (e.g. 728x90 on desktop, 300x250 on phones)
+   Page block { "type": "banner", "link": slug, "mobile": slug } places a banner between sections. */
+const live = slug => !!LINKS[slug] && !(LINKS[slug].expires && LINKS[slug].expires < TODAY);
+const AD_LABEL = { en: 'Advertisement', fr: 'Publicité', de: 'Anzeige' }[String(seo.locale || 'en').slice(0, 2)] || 'Advertisement';
+function bannerImg(slug, src, cls) {
+  const l = LINKS[slug], b = l.banner;
+  return `<a class="${cls}" href="${goHref(slug, src)}" ${AFF}><img src="${esc(b.src)}" width="${b.width}" height="${b.height}" alt="${esc(b.alt || l.merchant)}" loading="lazy" decoding="async"></a>`;
+}
+function bannerHtml(desk, mob, src) {
+  const d = live(desk) ? desk : null, m = mob && live(mob) ? mob : null;
+  if (!d && !m) return '';
+  const both = d && m;
+  const merchants = [...new Set([d, m].filter(Boolean).map(s => LINKS[s].merchant))].join(', ');
+  return `<figure class="aff-banner${both ? ' has-mobile' : ''}">${d ? bannerImg(d, src, both ? 'aff-b aff-b-desk' : 'aff-b') : ''}${m ? bannerImg(m, src, d ? 'aff-b aff-b-mob' : 'aff-b') : ''}<figcaption>${esc(AD_LABEL)} · ${esc(merchants)}</figcaption></figure>`;
+}
+function affTokens(html, p) {
+  const src = (p && p.slug) || 'home';
+  return String(html ?? '')
+    .replace(/\[\[link:([^|\]]+)\|([^\]]+)\]\]/g, (m, s, text) => live(s) ? `<a class="aff-link" href="${goHref(s, src)}" ${AFF}>${text}</a>` : text)
+    .replace(/(<p>\s*)?\[\[button:([^|\]]+)\|([^\]]+)\]\](\s*<\/p>)?/g, (m, a, s, label) => live(s) ? `<p class="aff-cta"><a class="aff-btn" href="${goHref(s, src)}" ${AFF}>${label} <span aria-hidden="true">→</span></a></p>` : '')
+    .replace(/(<p>\s*)?\[\[banner:([^|\]]+)(?:\|([^\]]+))?\]\](\s*<\/p>)?/g, (m, a, d, mob) => bannerHtml(d, mob, src));
+}
 
 // People: profile link (editorial page anchor, else their own url), schema.org Person, byline parts
 const personHref = id => EDITORIAL ? `/${EDITORIAL}/#person-${id}` : PEOPLE[id].url || '';
@@ -256,7 +307,7 @@ function hero(p) {
   return `<section class="hero${p.slug ? ' hero-page' : ' hero-home'}${i ? ' has-img' : ''}">${photo}<div class="wrap">
   ${p.eyebrow ? `<p class="eyebrow">${esc(p.eyebrow)}</p>` : ''}
   <h1>${p.h1Html || esc(p.h1)}</h1>
-  ${p.intro ? `<p class="lede">${p.intro}</p>` : ''}${p.heroHtml || ''}
+  ${p.intro ? `<p class="lede">${affTokens(p.intro, p)}</p>` : ''}${p.heroHtml || ''}
   ${p.type === 'post' ? `<p class="post-byline">${t('by')} ${byWho(p)}${p.reviewedBy ? ` · ${reviewedHtml(p)}` : ''} · <time datetime="${p.date}">${fmtDate(p.date)}</time>${p.updated && p.updated !== p.date ? ` · ${t('updated')} <time datetime="${p.updated}">${fmtDate(p.updated)}</time>` : ''} · ${t('minRead', { n: readMins(p) })}</p>` : ''}
   ${p.search === false || (p.type === 'post' && p.search !== true) ? '' : searchForm(p.searchPlaceholder)}
   ${p.chips?.length ? `<div class="chips">${p.chips.map(c => `<a href="${c.slug !== undefined ? pagePath(bySlug.get(c.slug) || { slug: c.slug }) : `/search/?q=${encodeURIComponent(c.q)}`}">${esc(c.label)}</a>`).join('')}</div>` : ''}
@@ -397,7 +448,7 @@ function peopleBlock(b) {
 
 function specCard(it, src) {
   const host = it.url ? new URL(it.url).hostname.replace(/^www\./, '') : '';
-  const foot = [it.link && LINKS[it.link] ? `<a class="spec-go" href="${goHref(it.link, src)}" ${AFF}>${esc(it.cta || t('seePlans', { title: it.title }))} →</a>` : '',
+  const foot = [it.link && live(it.link) ? `<a class="spec-go" href="${goHref(it.link, src)}" ${AFF}>${esc(it.cta || t('seePlans', { title: it.title }))} →</a>` : '',
     it.href ? `<a class="spec-more" href="${esc(it.href)}">${esc(it.more || t('readGuide'))} →</a>` : '',
     host ? `<a class="spec-site" href="${esc(it.url)}" rel="nofollow noopener" target="_blank">${esc(host)} ↗</a>` : ''].filter(Boolean).join('');
   return `<article class="spec"${it.tag ? ` data-tag="${esc(it.tag)}"` : ''}>
@@ -409,6 +460,8 @@ function specCard(it, src) {
 const CUSTOM = fs.existsSync(path.join(__dirname, 'blocks.js')) ? require('./blocks.js') : {};
 function block(b, p = {}) {
   if (b.type === 'people') return peopleBlock(b);
+  if (b.type === 'banner') { const h = bannerHtml(b.link, b.mobile, p.slug || 'home'); return h ? `<section class="blocks blocks-banner${b.class ? ' ' + esc(b.class) : ''}"><div class="wrap">${h}</div></section>` : ''; }
+  if (b.type === 'html' && b.html) b = { ...b, html: affTokens(b.html, p) };
   if (CUSTOM[b.type]) return CUSTOM[b.type](b, p, { esc, icon, pagePath, bySlug, goHref, LINKS, AFF, site, imgSrc, imgOf, errors });
   for (const it of b.items || []) if (it.link && !LINKS[it.link]) errors.push(`${p._file}: block item link "${it.link}" isn't in shmor-site.json "links"`);
   const items = (b.items || []).map(it => {
@@ -437,8 +490,8 @@ const blocks = (p, top) => (p.blocks || []).filter(b => (b.position === 'top') =
 
 function partnerBlock(p) {
   const src = p.slug || 'home';
-  const offers = (site.offers || []).filter(o => !o.pages || o.pages.includes(p.slug));
-  const partners = (p.partners || []).map(slug => ({ slug, ...LINKS[slug] }));
+  const offers = (site.offers || []).filter(o => (!o.pages || o.pages.includes(p.slug)) && live(o.link) && !(o.expires && o.expires < TODAY));
+  const partners = (p.partners || []).filter(live).map(slug => ({ slug, ...LINKS[slug] }));
   if (!offers.length && !partners.length) return '';
   return `<section class="partners"><div class="wrap">
   <h2>${esc(p.partnersTitle || t('partnersTitle'))}</h2>
@@ -463,7 +516,7 @@ function sections(p) {
   const toc = p.sections.length >= 4 ? `<nav class="toc" aria-label="${esc(t('onThisPage'))}"><p>${esc(t('onThisPage'))}</p><ol>${p.sections.map(s => `<li><a href="#${slugify(s.h2)}">${esc(s.h2)}</a></li>`).join('')}</ol></nav>` : '';
   return `<section class="content"><div class="wrap content-grid">${toc}<article class="prose">${p.sections.map(s => `
     <h2 id="${slugify(s.h2)}">${esc(s.h2)}</h2>
-    ${s.html}`).join('')}
+    ${affTokens(s.html, p)}`).join('')}
     ${p.updated ? `<p class="updated">${t('lastUpdated', { date: new Date(p.updated).toLocaleDateString(W.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' }) })}</p>` : ''}
   </article></div></section>`;
 }
@@ -471,7 +524,7 @@ function sections(p) {
 function faqs(p) {
   if (!p.faqs?.length) return '';
   return `<section class="faq"><div class="wrap"><h2>${esc(p.faqTitle || t('faqTitle'))}</h2>${p.faqs.map(f => `
-    <details><summary>${esc(f.q)}</summary><div>${f.a}</div></details>`).join('')}</div></section>`;
+    <details><summary>${esc(f.q)}</summary><div>${affTokens(f.a, p)}</div></details>`).join('')}</div></section>`;
 }
 
 function related(p) {
