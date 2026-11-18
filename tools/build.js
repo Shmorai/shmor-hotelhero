@@ -237,6 +237,8 @@ function head(p, { noindex = false, canonical = true } = {}) {
     `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`,
     `<link href="${esc(seo.fontsUrl || 'https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap')}" rel="stylesheet">`,
     `<link rel="stylesheet" href="/assets/site.css">`,
+    // Network-wide cookie banner + Google Analytics (ID and logic in shmor-ai/assets/js/consent.js); opt out with seo.analytics: false
+    seo.analytics === false ? '' : `<script src="${MASTER}/assets/js/consent.js" defer></script>`,
     `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })}</script>`,
   ].filter(Boolean).join('\n');
 }
