@@ -45,6 +45,8 @@ const seo = site.seo || {};
 const NAME = seo.siteName || site.name;
 const BASE = `https://${site.subdomain}.shmor.ai`;
 const MASTER = 'https://shmor.ai';
+// Cache-busting version for site.css (changes whenever the file changes, so browsers never show stale styles)
+const CSS_V = (() => { try { return require('crypto').createHash('md5').update(fs.readFileSync(path.join(ROOT, 'assets', 'site.css'))).digest('hex').slice(0, 8); } catch (e) { return '1'; } })();
 const TODAY = new Date().toISOString().slice(0, 10);
 const LINKS = site.links || {};
 const PEOPLE = site.people || {};
@@ -287,7 +289,7 @@ function head(p, { noindex = false, canonical = true } = {}) {
     `<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">`,
     `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`,
     `<link href="${esc(seo.fontsUrl || 'https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap')}" rel="stylesheet">`,
-    `<link rel="stylesheet" href="/assets/site.css">`,
+    `<link rel="stylesheet" href="/assets/site.css?v=${CSS_V}">`,
     // Network-wide cookie banner + Google Analytics (ID and logic in shmor-ai/assets/js/consent.js); opt out with seo.analytics: false
     seo.analytics === false ? '' : `<script src="${MASTER}/assets/js/consent.js" defer></script>`,
     `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })}</script>`,
