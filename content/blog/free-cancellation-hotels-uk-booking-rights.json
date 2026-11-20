@@ -1,0 +1,72 @@
+{
+  "title": "Free Cancellation Hotels: Your UK Booking Rights",
+  "description": "Changed your mind on a hotel booking? Citizens Advice says hotel rooms get no 14-day cooling-off. What free cancellation really means and how to check.",
+  "h1": "Free cancellation hotel bookings: what your UK rights are and what to check",
+  "eyebrow": "Booking tips · Your rights",
+  "intro": "Many people assume they can cancel an online hotel booking within 14 days, as with most online shopping. For hotel rooms that is not the case. Here is what Citizens Advice says, and how to read a \"free cancellation\" label so it does not cost you later.",
+  "image": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Bedroom_hotel_interior_with_open_door_window._%2851536308276%29.jpg/1920px-Bedroom_hotel_interior_with_open_door_window._%2851536308276%29.jpg",
+    "alt": "A hotel bedroom with a double bed and an open door to a window",
+    "credit": "Nenad Stojkovic / CC BY 2.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Bedroom_hotel_interior_with_open_door_window._(51536308276).jpg"
+  },
+  "keywords": [
+    "free cancellation hotels uk",
+    "hotel booking cancellation rights uk",
+    "14 day cooling off hotel",
+    "can i cancel a hotel booking",
+    "hotel cancellation policy",
+    "non refundable hotel booking",
+    "refundable hotel rate",
+    "cancel hotel booking refund uk",
+    "booking.com free cancellation",
+    "hotel deposit cancellation fee"
+  ],
+  "cardText": "No 14-day cooling-off for hotel rooms: how free cancellation works and what to check before you book.",
+  "sections": [
+    {
+      "h2": "Is there a 14-day cooling-off period for hotel bookings?",
+      "html": "<p>No. Citizens Advice lists accommodation, such as a hotel room or short-term let, among the services that do <strong>not</strong> get the usual 14-day cooling-off period for online and phone bookings. That is because the booking is for a specific date. For these services, your cancellation rights are the same as if you had made the booking in the hotel itself, and mainly come from the booking terms you agreed to.</p>"
+    },
+    {
+      "h2": "What does \"free cancellation\" actually mean?",
+      "html": "<p>It is a term of the rate you chose, not a legal right, so what it covers depends on the wording of that booking. Check three things before you click: the <strong>deadline</strong> (often a date and time, sometimes in the hotel's local time zone), whether any <strong>deposit or prepayment</strong> is taken now, and whether the free cancellation applies to the whole stay or only part of it. Citizens Advice also suggests checking the terms and conditions in case you have been given longer to change your mind than the minimum.</p><p>Many sites show both flexible and cheaper non-refundable rates for the same room. The cheaper one is not a bargain if your plans might change, so compare the difference in price. Our <a href=\"/blog/hidden-hotel-fees-and-fake-discounts/\">guide to hidden hotel fees</a> explains what else to look for in the total price.</p>"
+    },
+    {
+      "h2": "What if you cancel after the deadline?",
+      "html": "<p>According to Citizens Advice, for services arranged this way the business may charge a cancellation fee, keep some or all of your deposit to cover its financial loss, or ask for more money if the loss is not covered. It says you are unlikely to get all your money back unless your contract has a generous cancellation clause. If a charge seems unfair, check your contract and try negotiating with the hotel or the booking site before paying.</p>"
+    },
+    {
+      "h2": "Booking direct, via a site, or via a comparison?",
+      "html": "<p>Where you book decides who handles a change or refund. If you book through an online travel agent, you usually have to cancel through that agent, not with the hotel. If you compare on HotelHero, our <a href=\"/compare/\">compare page</a> sends you to the booking site you choose, so always read that site's cancellation terms on the page where you pay. It is also worth checking the same room's terms across sites: free cancellation deadlines can differ even for the same hotel.</p>"
+    },
+    {
+      "h2": "A quick checklist before you book",
+      "html": "<ul><li>Does the rate say <em>free cancellation</em> or <em>non-refundable</em>, and until when?</li><li>Is anything charged now, such as a deposit?</li><li>Is there a separate fee or local tax payable at the hotel? See our guide to the <a href=\"/blog/uk-visitor-levy-edinburgh-wales-hotel-bookings/\">UK visitor levy</a>.</li><li>Save a screenshot or email of the cancellation terms at the time of booking.</li><li>Put the cancellation deadline in your calendar.</li></ul><p>For flexible trips, our <a href=\"/last-minute-hotels/\">last-minute hotels</a> and <a href=\"/weekend-breaks/\">weekend breaks</a> pages are a good place to start comparing.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I cancel a hotel booking within 14 days in the UK?",
+      "a": "Not as a legal right. Citizens Advice says accommodation such as a hotel room is excluded from the 14-day cooling-off period for online bookings. Your options depend on the booking terms, so check them."
+    },
+    {
+      "q": "Will I get my deposit back if I cancel a hotel?",
+      "a": "It depends on the terms. Citizens Advice says a business can keep some or all of a deposit to cover its loss, and you are unlikely to get all your money back unless the contract allows it."
+    },
+    {
+      "q": "Is free cancellation guaranteed on every hotel rate?",
+      "a": "No. It applies only to rates that include it, usually up to a stated deadline. Cheaper non-refundable rates often appear for the same room."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Citizens Advice: Cancelling a service you've arranged",
+      "url": "https://www.citizensadvice.org.uk/consumer/changed-your-mind/cancelling-a-service-youve-arranged/"
+    }
+  ],
+  "updated": "2026-11-20",
+  "date": "2026-11-20",
+  "slug": "blog/free-cancellation-hotels-uk-booking-rights",
+  "type": "post"
+}

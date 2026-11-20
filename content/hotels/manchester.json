@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-11-20",
   "slug": "hotels/manchester",
   "nav": "Manchester",
   "eyebrow": "Manchester, England",
@@ -73,12 +73,28 @@
     {
       "h2": "Manchester hotels on event days",
       "html": "<p>Big concerts, football matches and conferences can fill Manchester hotels and push prices up. If your trip lines up with a big event, compare early, and consider staying a little further out along the Metrolink tram network.</p>"
+    },
+    {
+      "h2": "Choosing where to stay in Manchester",
+      "html": "<p>The city centre is compact, so most visitors choose by what they want nearby. Staying close to <strong>Piccadilly</strong> or <strong>Victoria</strong> stations is handy if you arrive by train, while the Northern Quarter, Deansgate and Spinningfields put bars, restaurants and shops on your doorstep. Salford Quays suits visitors heading to MediaCityUK and is reached by Metrolink tram. Check each hotel's exact address on the map before booking, as \"city centre\" is used loosely by many listings.</p>"
+    },
+    {
+      "h2": "Read the booking terms before you pay",
+      "html": "<p>Rates for the same room can differ between booking sites in both price and cancellation terms. Look for whether a rate is refundable, when free cancellation ends and whether a deposit is taken now. Our guide to <a href=\"/blog/free-cancellation-hotels-uk-booking-rights/\">free cancellation and your booking rights</a> explains what to check, and <a href=\"/blog/hidden-hotel-fees-and-fake-discounts/\">hidden hotel fees</a> covers the extras that can change the final price.</p>"
     }
   ],
   "faqs": [
     {
       "q": "Which area of Manchester is best for a weekend?",
       "a": "The Northern Quarter is known for independent bars and shops, Deansgate and Spinningfields for restaurants and smarter hotels, and Salford Quays for MediaCityUK and waterside views, linked by tram."
+    },
+    {
+      "q": "Is it cheaper to stay outside Manchester city centre?",
+      "a": "Often it can be, especially on busy event nights, but you then pay for transport back into town. Compare the total, check the Metrolink or train times for your dates, and see which hotels are near a tram stop."
+    },
+    {
+      "q": "How do I compare Manchester hotel prices?",
+      "a": "Enter your dates on our compare page to open the same stay on several booking sites, then compare the total price, cancellation terms and any extra charges, not just the headline rate."
     }
   ]
 }
