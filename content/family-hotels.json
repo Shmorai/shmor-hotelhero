@@ -145,6 +145,7 @@
   "related": [
     "seaside-hotels",
     "weekend-breaks",
-    "hotels/london"
+    "hotels/london",
+    "blog/uk-hotel-star-ratings-explained"
   ]
 }

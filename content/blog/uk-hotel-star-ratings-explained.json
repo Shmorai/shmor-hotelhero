@@ -1,0 +1,88 @@
+{
+  "title": "UK Hotel Star Ratings: What 3, 4 and 5 Stars Mean",
+  "description": "How UK hotel star ratings work: who awards them, what 3, 4 and 5 stars mean, what Quality Assessed is and how to check a rating before you book.",
+  "h1": "UK hotel star ratings explained: who awards them and what the stars mean",
+  "eyebrow": "Booking tips · Hotel ratings",
+  "intro": "A star next to a hotel name looks like a simple quality guide, but not every star is equal. Official UK ratings come from inspections, while some booking sites show ratings the hotel supplied itself. Here is how to read them before you compare prices.",
+  "image": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Fairmont_The_Norfolk_Hotel_lobby.jpg/1920px-Fairmont_The_Norfolk_Hotel_lobby.jpg",
+    "alt": "The lobby of a hotel with seating areas and a high ceiling",
+    "credit": "Pi3.124 / CC BY-SA 4.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Fairmont_The_Norfolk_Hotel_lobby.jpg"
+  },
+  "keywords": [
+    "uk hotel star ratings",
+    "hotel star ratings explained",
+    "what do hotel stars mean",
+    "3 star hotel uk",
+    "4 star hotel uk",
+    "5 star hotel uk",
+    "aa hotel ratings",
+    "visitengland star rating",
+    "quality assessed hotel",
+    "are hotel star ratings reliable"
+  ],
+  "cardText": "Who awards UK hotel stars, what 3, 4 and 5 stars mean and why some booking-site ratings differ.",
+  "sections": [
+    {
+      "h2": "Who awards official hotel star ratings in the UK?",
+      "html": "<p>Which? reports that the AA, VisitEngland, Visit Wales and partner national bodies inspect UK hotels and have shared common quality standards since 2006, so the same hotel receives the same rating from each. VisitEngland Assessment Services says hotels are assessed by trained assessors who visit as a \"mystery guest\", with an overnight assessment that tests all services and then feedback to the owner.</p><p>Taking part is voluntary and hotels pay, so some good hotels have no official rating.</p>"
+    },
+    {
+      "h2": "What do 3, 4 and 5 stars mean?",
+      "html": "<p>VisitEngland describes the levels like this:</p><ul><li><strong>3 stars:</strong> good, basic facilities.</li><li><strong>4 stars:</strong> higher levels of service, enhanced comfort and some additional facilities.</li><li><strong>5 stars:</strong> luxury and extra amenities.</li></ul><p>Which? gives examples from the AA standards, such as a restaurant open to residents for all meals seven days a week at five stars. One- and two-star ratings have been removed for participating hotels, so the scale now runs from three to five stars.</p>"
+    },
+    {
+      "h2": "What is \"Quality Assessed\"?",
+      "html": "<p>Quality Assessed is a full assessment that does not award stars. VisitEngland describes it as meeting the required standards \"without stars awarded\". A hotel with this label has been inspected, so do not read it as a poor result; it simply has no star rating.</p>"
+    },
+    {
+      "h2": "How often are hotels re-checked, and what are the extra awards?",
+      "html": "<p>Which? reports that participating hotels must undergo a secret overnight inspection every year and pay a fee. That is why a rating can go up or down over time. VisitEngland also says that, alongside the annual assessment, accommodation can earn a Gold, Silver or Breakfast Award, or a ROSE Award for customer service. These are extra recognitions on top of the star level, not a replacement for it.</p><p>It also helps to separate two things that are often mixed up. <strong>Stars</strong> describe facilities, service and quality assessed by an inspector against set criteria. <strong>Guest review scores</strong> reflect what paying customers thought of their stay. A 3-star hotel with excellent guest reviews can be a better stay than a 4-star with poor ones, so use both.</p>"
+    },
+    {
+      "h2": "Why booking-site stars can differ",
+      "html": "<p>Which? found that platforms handle ratings differently. It reports that Booking.com lets hotels upload their own ratings and does not verify them, while Hotels.com and Expedia use official local ratings where available. Some holiday companies use their own systems. So the same hotel can appear with different star counts on different sites, and a missing rating may mean the hotel is not in a scheme.</p><p>When you compare prices on our <a href=\"/compare/\">compare page</a>, treat stars as one input. Check the hotel's own page or the official body if the rating matters to you.</p>"
+    },
+    {
+      "h2": "How to choose using stars and everything else",
+      "html": "<ol><li><strong>Match stars to what you need:</strong> a 3-star with a good location can beat a 4-star far from your plans.</li><li><strong>Check facilities:</strong> Which? notes a low or missing rating may reflect missing facilities, such as a restaurant, rather than poor cleanliness.</li><li><strong>Read recent guest reviews</strong> alongside the stars.</li><li><strong>Compare the total price,</strong> as explained in our guide to <a href=\"/blog/hidden-hotel-fees-and-fake-discounts/\">hidden hotel fees</a>, and check cancellation terms using our <a href=\"/blog/free-cancellation-hotels-uk-booking-rights/\">free cancellation guide</a>.</li></ol><p>Browse by place on our <a href=\"/hotels/\">UK hotel deals</a> pages or plan a <a href=\"/weekend-breaks/\">weekend break</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are hotel star ratings reliable?",
+      "a": "Official UK ratings come from inspections against common standards, so they are a reasonable guide. Ratings on some booking sites may be supplied by the hotel, so check which scheme a rating comes from."
+    },
+    {
+      "q": "Do UK hotels have one-star or two-star ratings?",
+      "a": "Which? reports that one- and two-star ratings have been removed for hotels in the AA and VisitEngland scheme, which now awards three to five stars plus a Quality Assessed accreditation."
+    },
+    {
+      "q": "Is a hotel without stars bad?",
+      "a": "Not necessarily. It may be Quality Assessed, outside a scheme, or lack facilities needed for a star rating. Read recent reviews and the facilities list."
+    },
+    {
+      "q": "How can I check a hotel's official rating?",
+      "a": "Look at the hotel's own website and the official bodies' schemes, such as VisitEngland Assessment Services, rather than relying only on a booking-site label."
+    }
+  ],
+  "sources": [
+    {
+      "title": "VisitEngland Assessment Services: Hotels scheme",
+      "url": "https://visitenglandassessmentservices.com/our-schemes/hotels/"
+    },
+    {
+      "title": "VisitEngland: Quality schemes",
+      "url": "https://www.visitengland.com/visitengland-quality-schemes"
+    },
+    {
+      "title": "Which?: Hotel star ratings explained",
+      "url": "https://www.which.co.uk/reviews/uk-hotel-chains/article/hotel-star-ratings-explained-a0bgV3M8kfx2"
+    }
+  ],
+  "updated": "2026-11-23",
+  "date": "2026-11-23",
+  "slug": "blog/uk-hotel-star-ratings-explained",
+  "type": "post"
+}
