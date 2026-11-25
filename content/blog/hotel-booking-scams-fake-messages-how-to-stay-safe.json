@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-25",
+  "updated": "2026-11-25",
+  "slug": "blog/hotel-booking-scams-fake-messages-how-to-stay-safe",
+  "type": "post",
+  "title": "Hotel Booking Scams: Spot Fake Messages and Stay Safe",
+  "description": "Fake hotel booking messages ask for card details or urgent payment. How the scam works, the warning signs and what to do if you've been caught out.",
+  "h1": "Hotel booking scams: how to spot fake messages and what to do",
+  "eyebrow": "Hotel tips · Staying safe",
+  "intro": "Booking a hotel online is routine, which is exactly why scammers copy the messages you expect to receive. Action Fraud, the UK's reporting centre for fraud, has warned about fake messages that appear to come from hotels on booking platforms. Here are the warning signs and the safest ways to pay and check.",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1621293954908-907159247fc8",
+    "alt": "Modern hotel lobby with designer furniture and wood walls",
+    "credit": "Frames For Your Heart",
+    "creditUrl": "https://unsplash.com/@framesforyourheart"
+  },
+  "keywords": [
+    "hotel booking scam",
+    "booking.com scam message",
+    "fake hotel booking email",
+    "hotel booking scam uk",
+    "booking.com phishing",
+    "hotel payment scam whatsapp",
+    "how to spot a fake hotel booking",
+    "action fraud booking.com",
+    "is my hotel booking real",
+    "report hotel booking scam"
+  ],
+  "cardText": "The warning signs of fake hotel booking messages, how to check a booking and what to do if you've been scammed.",
+  "sections": [
+    {
+      "h2": "How do hotel booking scams work?",
+      "html": "<p>Action Fraud's alert about booking-platform fraud describes criminals who gain control of a hotel's account on the platform and then message guests, through the app, email or WhatsApp, to trick them into making a payment or handing over card details. Fake messages can also link to cloned versions of a booking website. Because the message appears inside a genuine booking conversation, it can look convincing.</p>"
+    },
+    {
+      "h2": "Warning signs of a fake hotel message",
+      "html": "<ul><li><strong>Urgency:</strong> a demand to pay immediately or your booking will be cancelled.</li><li><strong>Card details by message:</strong> a request to send card numbers by email, text or WhatsApp. According to the Action Fraud alert, Booking.com says a genuine transaction will never require you to give card details by phone, email or text message.</li><li><strong>Links, files and QR codes:</strong> an unexpected link, attachment or QR code to \"verify\" your booking.</li><li><strong>Moving the chat elsewhere:</strong> a request to continue on WhatsApp or by email rather than on the booking site.</li><li><strong>Changed payment details:</strong> a new bank account or payment link for a booking you already paid for.</li></ul>"
+    },
+    {
+      "h2": "How to check a booking is real",
+      "html": "<p>Don't use the phone number or link in the suspicious message. Instead, open the booking site or app yourself (or type the address in), find your reservation there and use the customer service contact on the official site. If you booked through a comparison route, our <a href=\"/compare/\">hotel price comparison page</a> sends you to each booking site's own page, so you can log in directly with the provider you chose. You can also phone the hotel using the number on its own website, not the number in the message.</p>"
+    },
+    {
+      "h2": "Paying safely",
+      "html": "<p>Check what the booking says about when and how you pay, and keep a record of confirmations. Paying by credit card can bring extra protection in some situations in the UK; see our guide to <a href=\"/blog/free-cancellation-hotels-uk-booking-rights/\">free cancellation and your UK booking rights</a>, and <a href=\"/blog/hidden-hotel-fees-and-fake-discounts/\">how to spot hidden fees and fake discounts</a>. Your card provider's own terms apply, so ask them what cover you have.</p>"
+    },
+    {
+      "h2": "What to do if you've been scammed",
+      "html": "<ul><li>Call your card provider straight away if you entered card details on a fake site or sent them to a scammer, so it can block and replace your card.</li><li>Report it to Action Fraud (actionfraud.police.uk) in England, Wales and Northern Ireland, or to Police Scotland in Scotland.</li><li>Forward phishing emails to report@phishing.gov.uk and report suspicious texts by forwarding them to 7726.</li><li>Tell the booking platform and the hotel.</li></ul><p>Browse our <a href=\"/hotels/\">UK hotel guides</a> when you're ready to book again.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will Booking.com ever ask for my card details by WhatsApp or email?",
+      "a": "According to the Action Fraud alert, Booking.com says a genuine booking transaction will never require you to provide card details by phone, email or text message, including WhatsApp."
+    },
+    {
+      "q": "A hotel messaged me through the booking app asking for payment. Is it safe?",
+      "a": "Not necessarily: scammers can send messages from a compromised hotel account. If it is urgent or asks for card details, contact the platform's customer service through its official site or app, and the hotel via the number on its own website."
+    },
+    {
+      "q": "Where do I report a hotel booking scam in the UK?",
+      "a": "Report it to Action Fraud (or Police Scotland if you're in Scotland), forward phishing emails to report@phishing.gov.uk and tell your card provider immediately."
+    }
+  ],
+  "related": [],
+  "sources": [
+    {
+      "title": "Action Fraud: alert about phishing messages from hotel accounts on the Booking.com platform",
+      "url": "https://www.actionfraud.police.uk/alert/booking-com-alert"
+    },
+    {
+      "title": "NCSC: Report a suspicious email (report@phishing.gov.uk)",
+      "url": "https://www.ncsc.gov.uk/collection/phishing-scams/report-scam-email"
+    }
+  ]
+}
